@@ -2,15 +2,27 @@ import React from "react";
 
 const Order: React.FC = () => {
   return (
-    <div className="flex flex-col items-center justify-center p-6 bg-yellow-400 rounded-lg shadow-md">
-      <h2 className="text-2xl font-bold mb-4">Hungry?</h2>
-      <p className="text-xl mb-4">Give us a call now and place your order!</p>
-      <a
-        href="tel:+1234567890"
-        className="text-white bg-black px-6 py-2 rounded text-center font-semibold"
-      >
-        Call +1 (234) 567-890
-      </a>
+    <div className="flex justify-center items-center h-screen">
+      <div className="text-center w-full mx-auto   z-20  items-center">
+        <h2 className="text-3xl font-extrabold text-black dark:text-white sm:text-4xl">
+          <span className="block">Craving Our Delicious Sushi? 🍱</span>
+          <span className="block text-white  mx-auto p-5 m-4  w-fit">
+            Give us a call now and place your order!
+          </span>
+        </h2>
+        <div className="lg:mt-0 lg:flex-shrink-0">
+          <div className="inline-flex rounded-md shadow">
+            <a
+              type="button"
+              href="tel:+1234567890"
+              className="py-4 px-6  bg-m-red hover:bg-white 200 text-white hover:text-m-red w-full  text-center text-3xl font-semibold shadow-md rounded-md border-black border "
+            >
+              🍣 Click Here to Call 🍣
+            </a>
+          </div>
+          <p className="text-white m-4 text-2xl">224-388-9024</p>
+        </div>
+      </div>
     </div>
   );
 };

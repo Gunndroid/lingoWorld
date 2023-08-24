@@ -3,7 +3,7 @@ import React from "react";
 
 const Video: React.FC = () => {
   return (
-    <div className="flex items-center">
+    <div className="flex items-center my-10 mx-auto">
       <iframe
         width="560"
         height="315"

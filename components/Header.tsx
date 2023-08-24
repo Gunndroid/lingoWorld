@@ -12,15 +12,16 @@ export default function Header({ setCurrentView }: HeaderProps) {
         <div className="mx-auto  sm:px-6 lg:px-8">
           <div className="flex h-16 items-center justify-between">
             <div className="md:flex md:items-center md:gap-12 w-16">
-              <a className="block text-mesaku-main" href="/">
+              <button className="block text-mesaku-main">
                 <img
                   src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=166,fit=crop,q=95/YD0809eXrXFNB68B/smalllogowhite-YyvXvBLz7lh3eZ9q.png"
                   alt="sushi image"
+                  onClick={() => setCurrentView("home")}
                 ></img>
-              </a>
+              </button>
             </div>
 
-            <div className="hidden md:block">
+            <div className="">
               <nav aria-label="Global">
                 <div className="flex items-center gap-6 text-sm">
                   {" "}
@@ -31,7 +32,7 @@ export default function Header({ setCurrentView }: HeaderProps) {
                     Gallery
                   </button>
                   <button
-                    className=" rounded border border-m-black bg-m-magenta p-2  text-md font-medium text-white hover:bg-white hover:text-m-magenta focus:outline-none "
+                    className=" rounded border border-m-black bg-m-red p-2  text-md font-medium text-white hover:bg-white hover:text-m-red focus:outline-none hover:border-m-red"
                     onClick={() => setCurrentView("order")}
                   >
                     Order Now

@@ -18,7 +18,7 @@ const HomePage: React.FC = () => {
       <Header setCurrentView={setCurrentView} />
 
       {currentView === "home" && <About setCurrentView={setCurrentView} />}
-      {currentView === "menu" && <Menu />}
+      {currentView === "menu" && <Menu setCurrentView={setCurrentView} />}
       {currentView === "gallery" && <Gallery />}
       {currentView === "story" && <StoryPage />}
       {currentView === "order" && <Order />}

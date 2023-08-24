@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-white text-black px-20 py-10 flex justify-between ">
+    <footer className="bg-white text-black px-20 py-12 flex md:flex-row flex-col justify-between gap-10 text-center md:text-left ">
       <div>
         <h2 className="text-red-500">Address</h2>
         <p>4718 W. Touhy Ave.</p>
@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
         <p className="font-bold">Wed: Closed</p>
       </div>
 
-      <div className="flex flex-col gap-4">
+      <div className="flex md:flex-col gap-4 mx-auto md:mx-0">
         <div className="w-10">
           <a
             href="https://www.facebook.com/mesakusushi"
