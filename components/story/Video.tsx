@@ -3,7 +3,7 @@ import React from "react";
 
 const Video: React.FC = () => {
   return (
-    <div className="">
+    <div className="flex items-center">
       <iframe
         width="560"
         height="315"
@@ -11,7 +11,7 @@ const Video: React.FC = () => {
         title="YouTube video player"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
-        className="rounded-lg overflow-hidden"
+        className="rounded-lg overflow-hidden border-white border"
       />
     </div>
   );

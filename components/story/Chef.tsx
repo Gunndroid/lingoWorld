@@ -19,18 +19,23 @@ const Chef: React.FC = () => {
         Chef Chan Kim has been making sushi for over 19 years and has much
         experience with bringing top-quality sushi to his customers.
       </p>
+      <br />
       <p className="">
         &quot;I know many people who have been wanting to try sushi for a long
         time, but because of the price, they have been unable to experience the
         taste of sushi. With Mesaku Sushi, you only need less than ten dollars
         in order to fill your stomach with the wonders of Japan.
       </p>
+      <br />
+
       <p className="">
         I encourage everyone to try this type of unique and cultural food as it
         is a very special type of cuisine that you should get to taste at least
         once in your lifetime. Who knows, maybe you &apos;ll get addicted!
         &quot;
       </p>
+      <br />
+
       <p className="">-Chef Chan Kim</p>
     </div>
   );

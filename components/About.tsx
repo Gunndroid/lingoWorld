@@ -3,7 +3,7 @@
 // components/About.tsx
 import React from "react";
 
-const About: React.FC = () => {
+const About: React.FC = ({ setCurrentView }) => {
   return (
     <div>
       <div>
@@ -17,7 +17,7 @@ const About: React.FC = () => {
         ></img>
       </div>
 
-      <section className="bg-m-feldgrau text-white px-20 py-28 text-2xl ">
+      <section className="bg-m-feldgrau text-white px-32 py-28 text-2xl ">
         <h2 className="text-m-magenta pb-6 text-4xl">
           Welcome to Mesaku Sushi!
         </h2>
@@ -48,7 +48,10 @@ const About: React.FC = () => {
           <br />
           <p>Thank you!</p>
         </div>
-        <button className="mt-10 rounded border border-m-black bg-m-magenta px-12 py-3 text-lg font-medium text-white hover:bg-white hover:text-m-magenta focus:outline-none ">
+        <button
+          onClick={() => setCurrentView("menu")}
+          className="mt-10 rounded border border-m-black bg-m-magenta px-12 py-3 text-lg font-medium text-white hover:bg-white hover:text-m-magenta focus:outline-none "
+        >
           Order Now!
         </button>
       </section>
