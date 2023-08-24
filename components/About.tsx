@@ -17,20 +17,23 @@ const About: React.FC<AboutProps> = ({ setCurrentView }) => {
           alt="Japanese Cuisine Background"
         />
 
-        <div className="absolute inset-0 flex flex-col justify-center bottom-40 left-10  p-10">
-          <p className="text-6xl text-m-red">MESAKU </p>
-          <p className="text-3xl font-extralight mb-4"> JAPANESE CUISINE</p>
+        <div className="absolute inset-0 flex flex-col justify-center md:bottom-40 bottom-14 left-10  p-10">
+          <p className="md:text-6xl text-3xl text-m-red">MESAKU </p>
+          <p className="md:text-3xl text-xl font-extralight mb-4">
+            {" "}
+            JAPANESE CUISINE
+          </p>
           <button
             onClick={() => setCurrentView("menu")}
-            className=" w-1/6 rounded border border-m-black bg-m-red  py-2 text-lg font-medium text-white hover:bg-white hover:text-m-red focus:outline-none hover:border-m-red "
+            className=" md:w-1/6 w-1/3 rounded border border-m-black bg-m-red  py-2 md:text-lg font-medium text-white hover:bg-white hover:text-m-red focus:outline-none hover:border-m-red "
           >
             View Menu
           </button>
         </div>
       </div>
 
-      <section className="bg-m-feldgrau text-white px-32 py-28 text-2xl ">
-        <h2 className="text-white pb-10 text-5xl text-center ">
+      <section className="bg-m-feldgrau text-white md:px-32 px-10 py-28 text-2xl ">
+        <h2 className="text-white pb-10 md:text-5xl text-3xl text-center ">
           Welcome to Mesaku Sushi
         </h2>
         <div className="font-thin ">

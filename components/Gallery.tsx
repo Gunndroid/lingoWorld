@@ -10,7 +10,7 @@ const Gallery: React.FC = () => {
   );
 
   return (
-    <div className="grid md:grid-cols-3 gap-4 m-20">
+    <div className="grid md:grid-cols-3 gap-4 md:m-20 m-6">
       {imageUrls.map((url, index) => (
         <img
           key={index}
