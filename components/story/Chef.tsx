@@ -3,14 +3,14 @@ import React from "react";
 
 const Chef: React.FC = () => {
   return (
-    <div className="md:w-1/2 p-6 rounded-md shadow-md md:mx-auto bg-white text-black m-10">
+    <div className="md:w-2/3 lg:w-1/2 p-6 rounded-md border border-black md:mx-auto bg-white text-black mx-8 mt-10">
       <img
         src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=984,h=1063,fit=crop/YD0809eXrXFNB68B/download-dWxexLjZDZio6oZL.png"
         alt="Chef Chan Kim"
         className="object-cover object-center w-2/5 mx-auto rounded-md"
       />
       <div className="mt-6 mb-2">
-        <span className="block text-lg font-medium tracki uppercase text-m-red">
+        <span className="block text-lg font-medium tracki uppercase text-m-red font-cinzel">
           OUR CHEF
         </span>
         <h2 className="text-xl font-semibold tracki">Chef Chan Kim</h2>

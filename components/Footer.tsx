@@ -4,24 +4,24 @@ import Link from "next/link";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-white text-black px-20 py-12 flex md:flex-row flex-col justify-between gap-10 text-center md:text-left ">
+    <footer className="bg-white text-black text-lg px-20 py-12 flex md:flex-row flex-col justify-between gap-10 text-center md:text-left border-t border-t-black">
       <div>
-        <h2 className="text-red-500">Address</h2>
+        <h2 className="text-m-red font-cinzel text-2xl">Address</h2>
         <p>4718 W. Touhy Ave.</p>
         <p>Lincolnwood IL. 60712</p>
       </div>
 
       <div>
-        <h2 className="text-red-500">Contact</h2>
+        <h2 className="text-m-red font-cinzel text-2xl">Contact</h2>
         <p>224-388-9024</p>
         <p>mesakusushi@gmail.com</p>
       </div>
 
       <div>
-        <h2 className="text-red-500">Business hours</h2>
+        <h2 className="text-m-red font-cinzel text-2xl">Business hours</h2>
         <p>Mon-Sat: 10am-8pm</p>
         <p>Sun: 11am-7pm</p>
-        <p className="font-bold">Wed: Closed</p>
+        <p className="italic">Wed: Closed</p>
       </div>
 
       <div className="flex md:flex-col gap-4 mx-auto md:mx-0">

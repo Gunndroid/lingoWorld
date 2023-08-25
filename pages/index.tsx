@@ -14,14 +14,16 @@ const HomePage: React.FC = () => {
   const [currentView, setCurrentView] = useState("home");
 
   return (
-    <div className="bg-m-feldgrau text-black">
-      <Header setCurrentView={setCurrentView} />
+    <div className="bg-white text-black font">
+      <div className="sticky top-0 z-20 shadow-md">
+        <Header setCurrentView={setCurrentView} />
+      </div>
 
       {currentView === "home" && <About setCurrentView={setCurrentView} />}
       {currentView === "menu" && <Menu setCurrentView={setCurrentView} />}
       {currentView === "gallery" && <Gallery />}
       {currentView === "story" && <StoryPage />}
-      {currentView === "order" && <Order />}
+      {/* {currentView === "order" && <Order />} */}
 
       <Footer />
     </div>
