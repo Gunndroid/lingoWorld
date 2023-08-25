@@ -74,7 +74,9 @@ const About: React.FC<AboutProps> = ({ setCurrentView }) => {
         <div className="mt-10 text-center md:text-left">
           <a
             type="button"
-            href="tel:+1234567890"
+            href="tel:+2243889024
+
+"
             className="rounded border border-m-black bg-m-red px-12 py-3 text-lg font-medium text-white hover:bg-white hover:text-m-red focus:outline-none "
           >
             Call to Order Now

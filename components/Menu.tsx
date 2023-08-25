@@ -16,7 +16,9 @@ const Menu: React.FC<MenuProps> = ({ setCurrentView }) => {
       <div className="flex items-center justify-center mt-4">
         <a
           type="button"
-          href="tel:+1234567890"
+          href="tel:+2243889024
+
+"
           className="mx-auto mt-4 text-center w-3/4 rounded border border-m-black bg-m-red px-12 py-3 md:text-lg text-sm font-medium text-white hover:bg-white hover:text-m-red focus:outline-none"
         >
           Click to Call Now <br /> +224-388-9024

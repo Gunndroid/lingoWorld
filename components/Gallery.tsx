@@ -6,14 +6,14 @@ const Gallery: React.FC = () => {
   // Generate the image URLs dynamically
   const imageUrls = Array.from(
     { length: 31 },
-    (_, i) => `/sushi/mesakuSushi${i + 1}.jpeg`
+    (_, i) => `/sushi/mesakuSushi${i + 1}.jpg`
   );
 
   return (
     <div>
       <h1 className="font-cinzel text-center m-10 text-4xl">Food Gallery</h1>
 
-      <div className="grid lg:grid-cols-3 grid-cols-2 gap-4 lg:gap-8 md:m-20 m-6">
+      <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 sm:gap-4 lg:gap-8 sm:m-14 m-6">
         {imageUrls.map((url, index) => (
           <img
             key={index}

@@ -48,7 +48,9 @@ export default function Header({ setCurrentView }: HeaderProps) {
                   <div className="">
                     <a
                       type="button"
-                      href="tel:+1234567890"
+                      href="tel:+2243889024
+
+"
                       className="rounded border border-m-black bg-m-red p-2 text-md font-medium text-white hover:bg-white hover:text-m-red focus:outline-none hover:border-m-red"
                     >
                       Order Now
@@ -109,7 +111,15 @@ export default function Header({ setCurrentView }: HeaderProps) {
                     Story
                   </DropdownItem>
                   <DropdownItem key="order" className="bg-m-red text-white">
-                    Order Now
+                    <a
+                      type="button"
+                      href="tel:+2243889024
+
+"
+                    >
+                      {" "}
+                      Order Now
+                    </a>
                   </DropdownItem>
                 </DropdownMenu>
               </Dropdown>

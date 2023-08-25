@@ -14,7 +14,9 @@ const Order: React.FC = () => {
           <div className="inline-flex rounded-md shadow">
             <a
               type="button"
-              href="tel:+1234567890"
+              href="tel:+2243889024
+
+"
               className="py-4 px-6  bg-m-red hover:bg-white 200 text-white hover:text-m-red w-full  text-center text-3xl font-semibold shadow-md rounded-md border-black border "
             >
               🍣 Click Here to Call 🍣
