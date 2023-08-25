@@ -4,7 +4,7 @@ import "react-lite-youtube-embed/dist/LiteYouTubeEmbed.css";
 
 const Video: React.FC = () => {
   return (
-    <div className="flex items-center my-10 mx-auto">
+    <div className="flex items-center my-10 mx-auto rounded-lg overflow-hidden">
       <div className="w-[93vw] lg:w-[50vw] rounded-lg overflow-hidden border-black border ">
         <LiteYouTubeEmbed
           aspectHeight={9}
