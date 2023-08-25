@@ -1,5 +1,14 @@
 import React, { Dispatch, SetStateAction, useState } from "react";
 
+import {
+  Button,
+  Dropdown,
+  DropdownTrigger,
+  DropdownMenu,
+  DropdownSection,
+  DropdownItem,
+} from "@nextui-org/react";
+
 // Define the prop types for the Header component
 interface HeaderProps {
   setCurrentView: Dispatch<SetStateAction<string>>;
@@ -23,36 +32,17 @@ export default function Header({ setCurrentView }: HeaderProps) {
               </button>
             </div>
 
-            <div className="md:hidden">
-              <button onClick={() => setIsOpen(!isOpen)}>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  className="h-6 w-6"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
-              </button>
-            </div>
-
             <div
               className={`transition duration-300 ${
                 isOpen ? "block" : "hidden"
               } md:block`}
             >
               <nav aria-label="Global">
-                <div className=" items-center gap-6 text-sm ">
+                <div className="flex items-center gap-6 text-sm ">
                   <button onClick={() => setCurrentView("home")}>Home</button>
                   <button onClick={() => setCurrentView("menu")}>Menu</button>
                   <button onClick={() => setCurrentView("gallery")}>
-                    🍣 Gallery
+                    Gallery
                   </button>
                   <button onClick={() => setCurrentView("story")}>Story</button>
                   <div className="">
@@ -66,6 +56,63 @@ export default function Header({ setCurrentView }: HeaderProps) {
                   </div>
                 </div>
               </nav>
+            </div>
+
+            {/* dropdown */}
+            <div className="md:hidden">
+              <Dropdown>
+                <DropdownTrigger>
+                  <Button variant="bordered">
+                    {" "}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      className="h-6 w-6"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M4 6h16M4 12h16M4 18h16"
+                      />
+                    </svg>
+                  </Button>
+                </DropdownTrigger>
+                <DropdownMenu
+                  aria-label="Static Actions"
+                  className="text-black"
+                >
+                  <DropdownItem
+                    key="home"
+                    onClick={() => setCurrentView("home")}
+                  >
+                    Home
+                  </DropdownItem>
+                  <DropdownItem
+                    key="menu"
+                    onClick={() => setCurrentView("menu")}
+                  >
+                    Menu
+                  </DropdownItem>
+                  <DropdownItem
+                    key="gallery"
+                    onClick={() => setCurrentView("gallery")}
+                  >
+                    Food Gallery
+                  </DropdownItem>
+                  <DropdownItem
+                    key="story"
+                    onClick={() => setCurrentView("story")}
+                  >
+                    Story
+                  </DropdownItem>
+                  <DropdownItem key="order" className="bg-m-red text-white">
+                    Order Now
+                  </DropdownItem>
+                </DropdownMenu>
+              </Dropdown>
             </div>
           </div>
         </div>

@@ -5,6 +5,7 @@ import React from "react";
 
 import { Cinzel } from "next/font/google";
 const cinzel = Cinzel({ subsets: ["latin"] });
+import { Button } from "@nextui-org/button";
 
 type AboutProps = {
   setCurrentView: React.Dispatch<React.SetStateAction<string>>;
@@ -32,7 +33,7 @@ const About: React.FC<AboutProps> = ({ setCurrentView }) => {
         </div>
       </div>
 
-      <section className="bg-m-feldgrau text-white md:px-32 px-10 py-28 text-xl ">
+      <section className="bg-m-feldgrau text-white md:px-32 px-10 md:py-28 py-20 text-xl ">
         <h2 className="text-white pb-10 md:text-5xl text-4xl text-center font-cinzel">
           Welcome to <br /> Mesaku Sushi
         </h2>
@@ -70,11 +71,11 @@ const About: React.FC<AboutProps> = ({ setCurrentView }) => {
         >
           Order Now
         </button> */}
-        <div className="">
+        <div className="mt-10 text-center md:text-left">
           <a
             type="button"
             href="tel:+1234567890"
-            className="mt-10 rounded border border-m-black bg-m-red px-12 py-3 text-lg font-medium text-white hover:bg-white hover:text-m-red focus:outline-none "
+            className="rounded border border-m-black bg-m-red px-12 py-3 text-lg font-medium text-white hover:bg-white hover:text-m-red focus:outline-none "
           >
             Call to Order Now
           </a>

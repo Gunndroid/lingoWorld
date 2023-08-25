@@ -10,7 +10,7 @@ const Video: React.FC = () => {
           className="w-full h-full rounded-lg overflow-hidden border-white border"
         >
           <source
-            src="https://youtu.be/Ag5d6ujms_c?list=TLGGbZ8aUtl7SGMyNTA4MjAyMw"
+            src="https://www.youtube.com/watch?v=Ag5d6ujms_c&list=TLGGbZ8aUtl7SGMyNTA4MjAyMw"
             type="video/mp4"
           />
           Your browser does not support the video tag.

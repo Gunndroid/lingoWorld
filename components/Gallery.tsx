@@ -10,15 +10,19 @@ const Gallery: React.FC = () => {
   );
 
   return (
-    <div className="grid lg:grid-cols-3 grid-cols-2 gap-4 lg:gap-8 md:m-20 m-6">
-      {imageUrls.map((url, index) => (
-        <img
-          key={index}
-          className="object-cover w-full h-full rounded-sm shadow-sm shadow-black border-white border"
-          src={url}
-          alt={`Food ${index + 1}`}
-        />
-      ))}
+    <div>
+      <h1 className="font-cinzel text-center m-10 text-4xl">Food Gallery</h1>
+
+      <div className="grid lg:grid-cols-3 grid-cols-2 gap-4 lg:gap-8 md:m-20 m-6">
+        {imageUrls.map((url, index) => (
+          <img
+            key={index}
+            className="object-cover w-full h-full rounded-sm shadow-sm shadow-black border-white border"
+            src={url}
+            alt={`Food ${index + 1}`}
+          />
+        ))}
+      </div>
     </div>
   );
 };
