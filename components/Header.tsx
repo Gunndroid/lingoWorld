@@ -111,12 +111,7 @@ export default function Header({ setCurrentView }: HeaderProps) {
                     Story
                   </DropdownItem>
                   <DropdownItem key="order" className="bg-m-red text-white">
-                    <a
-                      type="button"
-                      href="tel:+2243889024
-
-"
-                    >
+                    <a type="button" href="tel:+224388902">
                       {" "}
                       Order Now
                     </a>
