@@ -1,21 +1,23 @@
 import React from "react";
-import LiteYouTubeEmbed from "react-lite-youtube-embed";
-import "react-lite-youtube-embed/dist/LiteYouTubeEmbed.css";
 
-const Video: React.FC = () => {
+const VideoPlayer: React.FC = () => {
   return (
-    <div className="flex items-center my-10 mx-auto rounded-lg overflow-hidden">
-      <div className="w-[93vw] lg:w-[50vw] rounded-lg overflow-hidden border-black border ">
-        <LiteYouTubeEmbed
-          aspectHeight={9}
-          aspectWidth={16}
-          id="Ag5d6ujms_c"
-          poster="hqdefault"
-          title="Some title"
-        />
-      </div>
+    <div className="flex flex-col justify-center items-center w-5/6 mx-auto  lg:h-[100vh] sm:h-[80vh] md:h-[90vh] h-[50vh]">
+      <iframe
+        style={{
+          width: "100%",
+          height: "60%", // Note: I changed this from 50% to 100% to fill the space
+          borderRadius: "10px", // Ensures the content inside iframe also has rounded corners
+          border: "solid",
+          borderColor: "black",
+        }}
+        src="https://www.youtube.com/embed/Ag5d6ujms_c"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      />
     </div>
   );
 };
 
-export default Video;
+export default VideoPlayer;

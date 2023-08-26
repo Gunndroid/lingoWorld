@@ -1,20 +1,19 @@
 // components/Footer.tsx
 import React from "react";
-import Link from "next/link";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-white text-black text-lg px-20 py-12 flex md:flex-row flex-col justify-between gap-10 text-center md:text-left border-t border-t-black">
-      <div>
+    <footer className="bg-white text-black text-lg md:px-20 px-10 py-12 flex md:flex-row flex-col justify-between gap-10 text-center md:text-left border-t border-t-black ">
+      <div className="">
         <h2 className="text-m-red font-cinzel text-2xl">Address</h2>
         <p>4718 W. Touhy Ave.</p>
         <p>Lincolnwood IL. 60712</p>
       </div>
 
-      <div>
+      <div className="">
         <h2 className="text-m-red font-cinzel text-2xl">Contact</h2>
         <p>224-388-9024</p>
-        <p>mesakusushi@gmail.com</p>
+        <p className="break-words">mesakusushi@gmail.com</p>
       </div>
 
       <div>
