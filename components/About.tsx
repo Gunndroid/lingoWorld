@@ -27,6 +27,8 @@ const About: React.FC<AboutProps> = ({ setCurrentView }) => {
           <button
             onClick={() => setCurrentView("menu")}
             className=" md:w-1/6 w-1/3 rounded border border-m-black bg-m-red text-sm  py-2 md:text-lg font-medium text-white hover:bg-white hover:text-m-red focus:outline-none hover:border-m-red "
+            aria-label="View Menu"
+
           >
             View Menu
           </button>

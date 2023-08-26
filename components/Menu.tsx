@@ -16,6 +16,7 @@ const Menu: React.FC<MenuProps> = ({ setCurrentView }) => {
 
       <div className="flex items-center justify-center mt-4">
         <a
+          aria-label="Call to Order Now"
           type="button"
           href="tel:+2243889024
 

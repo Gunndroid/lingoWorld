@@ -35,12 +35,30 @@ export default function Header({ setCurrentView }: HeaderProps) {
             <div className="hidden sm:block">
               <nav aria-label="Global">
                 <div className="flex items-center gap-6 text-sm ">
-                  <button onClick={() => setCurrentView("home")}>Home</button>
-                  <button onClick={() => setCurrentView("menu")}>Menu</button>
-                  <button onClick={() => setCurrentView("gallery")}>
+                  <button
+                    onClick={() => setCurrentView("home")}
+                    aria-label="Home"
+                  >
+                    Home
+                  </button>
+                  <button
+                    onClick={() => setCurrentView("menu")}
+                    aria-label="Menu"
+                  >
+                    Menu
+                  </button>
+                  <button
+                    onClick={() => setCurrentView("gallery")}
+                    aria-label="Gallery"
+                  >
                     Gallery
                   </button>
-                  <button onClick={() => setCurrentView("story")}>Story</button>
+                  <button
+                    onClick={() => setCurrentView("story")}
+                    aria-label="Story"
+                  >
+                    Story
+                  </button>
                   <div className="">
                     <a
                       type="button"
