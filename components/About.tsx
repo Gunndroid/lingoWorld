@@ -6,7 +6,6 @@ import Link from "next/link";
 
 import { Cinzel } from "next/font/google";
 const cinzel = Cinzel({ subsets: ["latin"] });
-import { Button } from "@nextui-org/button";
 
 // type AboutProps = {
 //   setCurrentView: React.Dispatch<React.SetStateAction<string>>;
