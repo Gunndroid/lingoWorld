@@ -1,11 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 
-type MenuProps = {
-  setCurrentView: React.Dispatch<React.SetStateAction<string>>;
-};
+// type MenuProps = {
+//   setCurrentView: React.Dispatch<React.SetStateAction<string>>;
+// };
 
-const Menu: React.FC<MenuProps> = ({ setCurrentView }) => {
+const Menu: React.FC = () => {
   return (
     <div className="flex flex-col justify-center my-10 border border-black bg-m-white md:w-1/2 rounded-lg p-4 md:mx-auto mx-4">
       <h1 className="font-cinzel text-center p-6 text-4xl">MENU</h1>

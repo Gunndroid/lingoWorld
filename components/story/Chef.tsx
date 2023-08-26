@@ -13,7 +13,7 @@ const Chef: React.FC = () => {
         <span className="block text-lg font-medium tracki uppercase text-m-red font-cinzel">
           OUR CHEF
         </span>
-        <h2 className="text-xl font-semibold tracki">Chef Chan Kim</h2>
+        <h2 className="text-xl font-semibold tracki pb-2">Chan Kim</h2>
       </div>
       <p className="">
         Chef Chan Kim has been making sushi for over 19 years and has much

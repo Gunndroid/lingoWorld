@@ -12,8 +12,14 @@ const Footer: React.FC = () => {
 
       <div className="">
         <h2 className="text-m-red font-cinzel text-2xl">Contact</h2>
-        <p>224-388-9024</p>
-        <p className="break-words">mesakusushi@gmail.com</p>
+        <p>
+          <a href="tel:224-388-9024" className="text-m-magenta">
+            224-388-9024
+          </a>
+        </p>
+        <p className="break-words ">
+          <a href="mailto:mesakusushi@gmail.com">mesakusushi@gmail.com</a>
+        </p>
       </div>
 
       <div>

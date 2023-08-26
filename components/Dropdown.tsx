@@ -1,5 +1,6 @@
 // Dropdown.tsx
 import { Dispatch, SetStateAction, useState } from "react";
+import Link from "next/link";
 
 interface DropdownProps {
   setCurrentView: Dispatch<SetStateAction<string>>;
@@ -119,7 +120,7 @@ const Dropdown: React.FC<DropdownProps> = ({ setCurrentView }) => {
         </svg>
       </button>
 
-      {isOpen && (
+      {/* {isOpen && (
         <div className="absolute right-0 mt-2 w-48 rounded-lg   shadow-md shadow-gray-400 bg-white">
           <div className="flex flex-col p-2 gap-1">
             <button
@@ -146,6 +147,38 @@ const Dropdown: React.FC<DropdownProps> = ({ setCurrentView }) => {
             >
               Story
             </button>
+            <a
+              href="tel:+2243889024"
+              className="block px-4 py-2 text-white bg-m-red hover:bg-white hover:text-m-red hover:border hover:border-black text-center rounded-lg"
+            >
+              Call
+            </a>
+          </div>
+        </div>
+      )} */}
+      {isOpen && (
+        <div className="absolute right-0 mt-2 w-48 rounded-lg shadow-md shadow-gray-400 bg-white">
+          <div className="flex flex-col p-2 gap-1">
+            <Link href="/home" passHref>
+              <button className="w-full px-4 py-2 text-gray-700 hover:bg-gray-200 rounded-lg">
+                Home
+              </button>
+            </Link>
+            <Link href="/menu" passHref>
+              <button className="w-full px-4 py-2 text-gray-700 hover:bg-gray-200 rounded-lg">
+                Menu
+              </button>
+            </Link>
+            <Link href="/gallery" passHref>
+              <button className="w-full px-4 py-2 text-gray-700 hover:bg-gray-200 rounded-lg">
+                Gallery
+              </button>
+            </Link>
+            <Link href="/story" passHref>
+              <button className="w-full px-4 py-2 text-gray-700 hover:bg-gray-200 rounded-lg">
+                Story
+              </button>
+            </Link>
             <a
               href="tel:+2243889024"
               className="block px-4 py-2 text-white bg-m-red hover:bg-white hover:text-m-red hover:border hover:border-black text-center rounded-lg"

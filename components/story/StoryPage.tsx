@@ -5,9 +5,11 @@ import Video from "./Video";
 export default function StoryPage() {
   return (
     <div>
-      <h1 className="font-cinzel text-center  text-4xl mt-16 p-6">Our Story</h1>
+      <h1 className="font-cinzel text-center  text-4xl mt-12 pb-6">
+        Our Story
+      </h1>
 
-      <div className="md:text-4xl text-2xl font-cinzel flex flex-col text-center  gap-4">
+      <div className="md:text-3xl text-2xl font-cinzel flex flex-col text-center gap-4">
         <h1>MESAKU Japanese cuisine</h1>
         <h1>Low Price, High quality</h1>
       </div>

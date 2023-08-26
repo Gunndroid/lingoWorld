@@ -11,7 +11,7 @@ const Gallery: React.FC = () => {
 
   return (
     <div>
-      <h1 className="font-cinzel text-center m-10 text-4xl">Food Gallery</h1>
+      <h1 className="font-cinzel text-center m-12 text-4xl">Food Gallery</h1>
 
       <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 sm:gap-4 lg:gap-8 sm:m-14 m-6">
         {imageUrls.map((url, index) => (
