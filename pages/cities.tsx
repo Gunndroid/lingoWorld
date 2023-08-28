@@ -32,7 +32,7 @@ const CitiesPage: React.FC = () => {
       <p className="text-center text-xl">
         Here is a list of cities where our events take place
       </p>
-      <div className="m-20 ">
+      <div className="m-8 md:m-20 ">
         <div className="flex flex-col mb-4 gap-2">
           <label>Search</label>
           <input
