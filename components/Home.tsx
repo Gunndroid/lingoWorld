@@ -153,7 +153,7 @@ const About: React.FC = () => {
                   Join, it's free
                 </span> */}
                 <h3 className="text-3xl font-bold">
-                  Our battle cry - "Take community economy back"
+                  Our battle cry - &quot;Take community economy back&quot;
                 </h3>
                 <p className="my-6 dark:text-gray-400">
                   Our communities are suffocating as local shops, small traders,
@@ -162,8 +162,8 @@ const About: React.FC = () => {
                   reinforcing local community+businesses. Say no to regional
                   poverty, slow the flight of local wealth to overseas tax
                   havens by consuming local goods and services, and acting on
-                  local ideas and collaboration – we're building a space with
-                  the tools to do that right here.
+                  local ideas and collaboration; we&apos;re building a space
+                  with the tools to do that right here.
                 </p>
                 {/* <button type="button" className="self-start">
                   Action
@@ -186,8 +186,8 @@ const About: React.FC = () => {
                 <p className="my-6 dark:text-gray-400">
                   Integrity - We do not sell your data, nor sell you as
                   advertising space. Dignity - Personal space respected, on and
-                  offline. Community - We don't interfere, build your community
-                  freely.
+                  offline. Community - We don&apos;t interfere, build your
+                  community freely.
                 </p>
                 {/* <button type="button" className="self-start">
                   Action
