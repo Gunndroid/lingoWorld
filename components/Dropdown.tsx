@@ -164,17 +164,17 @@ const Dropdown: React.FC<DropdownProps> = ({ setCurrentView }) => {
                 Home
               </button>
             </Link>
-            <Link href="/menu" passHref>
+            <Link href="/history" passHref>
               <button className="w-full px-4 py-2 text-gray-700 hover:bg-gray-200 rounded-lg">
                 Menu
               </button>
             </Link>
-            <Link href="/gallery" passHref>
+            <Link href="/joinus" passHref>
               <button className="w-full px-4 py-2 text-gray-700 hover:bg-gray-200 rounded-lg">
                 Gallery
               </button>
             </Link>
-            <Link href="/story" passHref>
+            <Link href="/philosophy" passHref>
               <button className="w-full px-4 py-2 text-gray-700 hover:bg-gray-200 rounded-lg">
                 Story
               </button>

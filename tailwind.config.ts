@@ -1,7 +1,5 @@
 // tailwind.config.ts
 import type { Config } from "tailwindcss";
-const defaultTheme = require("tailwindcss/defaultTheme");
-const colors = require("tailwindcss/colors");
 
 const config: Config = {
   content: [
@@ -12,10 +10,10 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        "m-feldgrau": "#485d58",
+        "m-feldgrau": "#82baf1",
         "m-white": "#F0F0F0",
         "m-onyx": "#414141",
-        "m-red": "#A30212",
+        "m-red": "#af1d6a",
         "m-magenta": "#AE759F",
       },
       backgroundImage: {
@@ -28,6 +26,7 @@ const config: Config = {
       },
     },
   },
+  plugins: [require("@tailwindcss/forms")],
 };
 
 export default config;

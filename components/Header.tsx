@@ -2,8 +2,7 @@
 
 import React, { Dispatch, SetStateAction, useState } from "react";
 import Dropdown from "./Dropdown";
-import Link from 'next/link';
-
+import Link from "next/link";
 
 // Define the prop types for the Header component
 interface HeaderProps {
@@ -11,6 +10,9 @@ interface HeaderProps {
 }
 
 export default function Header({ setCurrentView }: HeaderProps) {
+  const pinkButton =
+    "mt-4 text-white bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 shadow-sm shadow-pink-500/50 dark:shadow-sm dark:shadow-pink-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2";
+
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleDropdown = () => {
@@ -24,20 +26,13 @@ export default function Header({ setCurrentView }: HeaderProps) {
           <div className="flex h-fit items-center justify-between">
             {/* Logo */}
 
-
-
-<div className="md:flex md:items-center md:gap-12 w-2/12 sm:w-1/12">
-  <Link legacyBehavior href="/home">
-    <a>
-      <button className="block text-mesaku-main">
-        <img
-          src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=166,fit=crop,q=95/YD0809eXrXFNB68B/smalllogowhite-YyvXvBLz7lh3eZ9q.png"
-          alt="sushi image"
-        />
-      </button>
-    </a>
-  </Link>
-</div>
+            <div className="md:flex md:items-center md:gap-12 w-2/12 sm:w-1/12">
+              <Link legacyBehavior href="/home">
+                <a>
+                  <button className="block bg-black w-10 h-10"></button>
+                </a>
+              </Link>
+            </div>
 
             {/* Desktop header links */}
             <div className="hidden sm:block">
@@ -46,24 +41,22 @@ export default function Header({ setCurrentView }: HeaderProps) {
                   <Link legacyBehavior href="/home">
                     <a aria-label="Home">Home</a>
                   </Link>
-                  <Link legacyBehavior href="/menu">
-                    <a aria-label="Menu">Menu</a>
+                  <Link legacyBehavior href="/cities">
+                    <a aria-label="cities">Cities</a>
                   </Link>
-                  <Link legacyBehavior href="/gallery">
-                    <a aria-label="Gallery">Gallery</a>
+                  <Link legacyBehavior href="/history">
+                    <a aria-label="history">History</a>
                   </Link>
-                  <Link legacyBehavior href="/story">
-                    <a aria-label="Story">Story</a>
+                  <Link legacyBehavior href="/philosophy">
+                    <a aria-label="philosophy">Philosophy</a>
                   </Link>
-                  <div className="">
-                    <a
-                      type="button"
-                      href="tel:+2243889024"
-                      className="rounded border border-m-black bg-m-red p-2 text-md font-medium text-white hover:bg-white hover:text-m-red focus:outline-none hover:border-m-red"
-                    >
-                      Order Now
-                    </a>
-                  </div>
+                  <Link legacyBehavior href="/joinus">
+                    <a aria-label="joinus">Join Us</a>
+                  </Link>
+                  <Link legacyBehavior href="/contact">
+                    <a aria-label="Contact">Contact</a>
+                  </Link>
+                  <button className={pinkButton}>Log In</button>
                 </div>
               </nav>
             </div>
