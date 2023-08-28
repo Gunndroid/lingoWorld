@@ -95,14 +95,16 @@ const About: React.FC = () => {
         </div> */}
 
         <section className="p-4 lg:p-8  ">
-          <div className="container mx-auto space-y-12">
+          <div className="container mx-auto space-y-20">
             {/* Feature 1 */}
-            <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
-              <img
-                src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2321&q=80"
-                alt=""
-                className="h-80 dark:bg-gray-500 bg-cover"
-              />
+            <div className="flex overflow-hidden rounded-md shadow-sm lg:flex-row">
+              <div className="flex-shrink-0 flex-1">
+                <img
+                  src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2321&q=80"
+                  alt=""
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <div className="flex flex-col justify-center flex-1 p-6 dark:bg-gray-900">
                 {/* <span className="text-xs uppercase dark:text-gray-400">
                   Join, it's free
@@ -141,13 +143,14 @@ const About: React.FC = () => {
               </div>
             </div>
             {/* Feature 3 */}
-            <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
-              <img
-                src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2321&q=80"
-                alt=""
-                className="h-80 dark:bg-gray-500 "
-                // aspect-video
-              />
+            <div className="flex overflow-hidden rounded-md shadow-sm lg:flex-row">
+              <div className="flex-shrink-0 flex-1">
+                <img
+                  src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2321&q=80"
+                  alt=""
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <div className="flex flex-col justify-center flex-1 p-6 dark:bg-gray-900">
                 {/* <span className="text-xs uppercase dark:text-gray-400">
                   Join, it's free
@@ -195,13 +198,14 @@ const About: React.FC = () => {
               </div>
             </div>
             {/* Feature 5 */}
-            <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
-              <img
-                src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2321&q=80"
-                alt=""
-                className="h-80 dark:bg-gray-500 "
-                // aspect-video
-              />
+            <div className="flex overflow-hidden rounded-md shadow-sm lg:flex-row">
+              <div className="flex-shrink-0 flex-1">
+                <img
+                  src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2321&q=80"
+                  alt=""
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <div className="flex flex-col justify-center flex-1 p-6 dark:bg-gray-900">
                 {/* <span className="text-xs uppercase dark:text-gray-400">
                   Join, it's free

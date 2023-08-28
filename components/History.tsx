@@ -17,7 +17,7 @@ const Menu: React.FC = () => {
           alt="image"
         /> */}
       </div>
-      <div className="flex flex-col justify-center px-40 py-10">
+      <div className="flex flex-col justify-center px-10 md:px-40 py-10">
         <h1 className="font-cinzel text-center p-6 text-4xl">History</h1>
         <p className="text-lg">
           The story so far...

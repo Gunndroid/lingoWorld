@@ -10,7 +10,7 @@ export default function StoryPage() {
       <div className="border border-black w-fit rounded-xl overflow-hidden mx-auto m-10">
         <Image width={900} height={100} src={philsophy} alt="image" />
       </div>
-      <div className="flex flex-col gap-10 px-40 pb-20 text-lg">
+      <div className="flex flex-col gap-10 px-10 md:px-40 pb-20 text-lg">
         <h1 className="font-cinzel text-center  text-4xl mt-12 pb-6">
           Our Philosophy{" "}
         </h1>
