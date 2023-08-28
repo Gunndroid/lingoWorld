@@ -52,25 +52,25 @@ const About: React.FC = () => {
         <div className="font-thin bg-gray-900">
           <h2>Our Mission</h2>
           <p>
-            "Build community and solidarity in-real-life, online and around the
-            world.”
+            &quot;Build community and solidarity in-real-life, online and around
+            the world.&quot;
           </p>
           <br />
           <h2>We pivoted… upwards!</h2>
           <p>
             Pre-2020 we built communities in 30+ cities around the world. 2020
-            ‘happened’, and we gave ourselves an additional mission; “to
-            organise the world’s communities.”
+            &apos;happened&apos;, and we gave ourselves an additional mission;
+            &quot;to organise the world&apos;s communities.&quot;
           </p>
           <br />
-          <h2>Our battle cry - “Take community economy back”</h2>
+          <h2>Our battle cry - &quot;Take community economy back&quot;</h2>
           <p className="">
             Our communities are suffocating as local shops, small traders, are
             pushed out of business, unable to compete with large corps and big
             tech. Help your city counterbalance this by reinforcing local
             community+businesses. Say no to regional poverty, slow the flight of
             local wealth to overseas tax havens by consuming local goods and
-            services, and acting on local ideas and collaboration – we’re
+            services, and acting on local ideas and collaboration – we&apos;re
             building a space with the tools to do that right here.
           </p>
           <br />
@@ -78,7 +78,7 @@ const About: React.FC = () => {
           <p>
             Integrity - We do not sell your data, nor sell you as advertising
             space. Dignity - Personal space respected, on and offline. Community
-            - We don’t interfere, build your community freely.
+            - We don&apos;t interfere, build your community freely.
           </p>
           <br />
           <br />

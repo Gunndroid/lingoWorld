@@ -19,9 +19,9 @@ const Contact: React.FC = () => {
             className="p-6 h-52 md:h-64"
           />
         </div>
-        <form novalidate="" className="space-y-6">
+        <form noValidate className="space-y-6">
           <div>
-            <label for="name" className="text-sm">
+            <label htmlFor="name" className="text-sm">
               Full Name
             </label>
             <input
@@ -32,7 +32,7 @@ const Contact: React.FC = () => {
             />
           </div>
           <div>
-            <label for="email" className="text-sm">
+            <label htmlFor="email" className="text-sm">
               Your Email
             </label>
             <input
@@ -42,12 +42,12 @@ const Contact: React.FC = () => {
             />
           </div>
           <div>
-            <label for="message" className="text-sm">
+            <label htmlFor="message" className="text-sm">
               Message
             </label>
             <textarea
               id="message"
-              rows="3"
+              rows={3}
               className="w-full p-3 rounded dark:bg-gray-800"
             ></textarea>
           </div>
