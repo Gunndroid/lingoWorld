@@ -15,7 +15,13 @@ const CitiesPage: React.FC = () => {
 
   return (
     <Layout>
-      <div className="m-32">
+      <h1 className="font-cinzel text-center p-6 text-4xl mt-10">
+        Mundo Lingo Cities
+      </h1>
+      <p className="text-center text-xl">
+        Here is a list of cities where our events take place
+      </p>
+      <div className="m-20 ">
         <div className="flex flex-col mb-4 gap-2">
           <label>Search</label>
           <input
@@ -25,7 +31,7 @@ const CitiesPage: React.FC = () => {
             className="mb-4 p-2 w-1/2 rounded-md"
           />
         </div>
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-3 gap-6 ">
           {filteredCities.map((city, index) => (
             <div
               key={index}

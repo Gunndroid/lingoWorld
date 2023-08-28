@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Image from "next/image";
-import history from "../public/mundoLingo/mundoLingo-history.jpg";
+import history from "../public/mundoLingo/mundolingo-history.jpg";
 // type MenuProps = {
 //   setCurrentView: React.Dispatch<React.SetStateAction<string>>;
 // };
