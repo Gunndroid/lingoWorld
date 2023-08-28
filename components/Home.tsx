@@ -101,7 +101,7 @@ const About: React.FC = () => {
               <img
                 src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2321&q=80"
                 alt=""
-                className="h-80 dark:bg-gray-500 "
+                className="h-80 dark:bg-gray-500 bg-cover"
               />
               <div className="flex flex-col justify-center flex-1 p-6 dark:bg-gray-900">
                 {/* <span className="text-xs uppercase dark:text-gray-400">
