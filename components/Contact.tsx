@@ -3,9 +3,9 @@ import React from "react";
 const Contact: React.FC = () => {
   return (
     <div className="flex justify-center items-center h-screen">
-      <div className="grid max-w-screen-xl grid-cols-1 gap-8 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 dark:bg-gray-800 dark:text-gray-100">
+      <div className=" grid-cols-1 gap-8 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 bg-gray-800 text-gray-100">
         <div className="flex flex-col justify-between">
-          <div className="space-y-2">
+          <div className="space-y-2 mb-10">
             <h2 className="text-4xl font-bold leadi lg:text-5xl">
               Let&apos;s talk!
             </h2>
@@ -13,11 +13,11 @@ const Contact: React.FC = () => {
               Vivamus in nisl metus? Phasellus.
             </div>
           </div>
-          <img
+          {/* <img
             src="assets/svg/doodle.svg"
             alt=""
-            className="p-6 h-52 md:h-64"
-          />
+            className=" h-52 md:h-64 bg-white"
+          /> */}
         </div>
         <form noValidate className="space-y-6">
           <div>

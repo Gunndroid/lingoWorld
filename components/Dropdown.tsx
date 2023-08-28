@@ -10,13 +10,13 @@ const Dropdown: React.FC<DropdownProps> = ({ setCurrentView }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const pinkButton =
-    "mt-4 text-white bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 shadow-sm shadow-pink-500/50 dark:shadow-sm dark:shadow-pink-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2";
+    "text-white bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 shadow-sm shadow-pink-500/50 dark:shadow-sm dark:shadow-pink-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2";
 
   return (
     <div className="relative ">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="border-black border text-white px-2 py-2 rounded-lg w-14 h-14"
+        className="border-black border text-white p-2 rounded-md w-12 h-12"
       >
         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -113,10 +113,15 @@ const Dropdown: React.FC<DropdownProps> = ({ setCurrentView }) => {
                 Join Us
               </button>
             </Link>
+            <Link href="/contact" passHref>
+              <button className="w-full px-4 py-2 text-gray-700 hover:bg-gray-200 rounded-lg">
+                Contact
+              </button>
+            </Link>
 
-            <a className="block px-4 py-2 text-white bg-m-red hover:bg-white hover:text-m-red hover:border hover:border-black text-center rounded-lg">
+            {/* <a className="block px-4 py-2 text-white bg-m-red hover:bg-white hover:text-m-red hover:border hover:border-black text-center rounded-lg">
               Contact
-            </a>
+            </a> */}
             <button className={pinkButton}>Log In</button>
           </div>
         </div>

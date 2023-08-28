@@ -59,13 +59,13 @@ export default function ContactYourCity() {
         {filteredManagers.map((manager, index) => (
           <div
             key={index}
-            className="max-w-md p-4 sm:flex sm:space-x-6 rounded-xl border border-black "
+            className="max-w-md p-4 flex gap-4 sm:space-x-6 rounded-lg border border-black "
           >
-            <div className="flex-shrink-0 w-1/3">
+            <div className="flex-shrink-0 w-20 md:w-1/3 ">
               <img
                 src={`https://source.unsplash.com/100x100/?portrait?${index}`}
                 alt={`${manager.name}'s Avatar`}
-                className="object-cover object-center w-full rounded-full dark:bg-gray-500"
+                className="object-cover object-center w-full rounded-full dark:bg-gray-500 shadow-sm shadow-black"
               />
             </div>
             <div className="flex flex-col space-y-4 ta">

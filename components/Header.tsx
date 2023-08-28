@@ -29,7 +29,7 @@ export default function Header({ setCurrentView }: HeaderProps) {
             <div className="md:flex md:items-center md:gap-12 w-2/12 sm:w-1/12">
               <Link legacyBehavior href="/home">
                 <a>
-                  <button className="block bg-black w-10 h-10"></button>
+                  <button className="block w-10 h-10">LOGO</button>
                 </a>
               </Link>
             </div>
