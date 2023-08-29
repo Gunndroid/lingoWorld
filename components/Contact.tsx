@@ -9,7 +9,9 @@ const Contact: React.FC = () => {
       <div className=" grid-cols-1 gap-8 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32  text-black  border border-black">
         <div className="flex flex-col justify-between">
           <div className="space-y-2 mb-10">
-            <h2 className="text-4xl font-bold py-4">Contact Mundo Lingo</h2>
+            <h2 className="text-4xl font-bold py-4">
+              Contact <br /> Mundo Lingo
+            </h2>
             <div className="dark:text-black">
               Reach out to Mundo Lingo and share your thoughts! We&apos;re
               always glad to connect.

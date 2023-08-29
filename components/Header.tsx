@@ -35,7 +35,7 @@ export default function Header({ setCurrentView }: HeaderProps) {
                   width={90}
                   height={90}
                   alt="logo"
-                  className="rounded-2xl border border-yellow-600"
+                  className="rounded-lg border border-yellow-600"
                 />
               </Link>
             </div>

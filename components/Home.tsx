@@ -10,7 +10,7 @@ const cinzel = Cinzel({ subsets: ["latin"] });
 // type AboutProps = {
 //   setCurrentView: React.Dispatch<React.SetStateAction<string>>;
 // };
-// 
+//
 const About: React.FC = () => {
   return (
     <div>
@@ -44,9 +44,9 @@ const About: React.FC = () => {
           <h3 className="text-white pb-10 md:text-2xl text-2xl text-center font-cinzel">
             Connect with your community on every level
           </h3>
-          <h4 className="text-white pb-10 md:text-2xl text-2xl text-center font-cinzel">
+          {/* <h4 className="text-white pb-10 md:text-2xl text-2xl text-center font-cinzel">
             Check out your city!
-          </h4>
+          </h4> */}
         </div>
 
         {/* <div className="font-thin bg-gray-900">
