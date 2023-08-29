@@ -3,6 +3,8 @@
 import React, { Dispatch, SetStateAction, useState } from "react";
 import Dropdown from "./Dropdown";
 import Link from "next/link";
+import logo from "../public/mundoLingo/mundoLogo.png";
+import Image from "next/image";
 
 // Define the prop types for the Header component
 interface HeaderProps {
@@ -28,9 +30,7 @@ export default function Header({ setCurrentView }: HeaderProps) {
 
             <div className="md:flex md:items-center md:gap-12 w-2/12 sm:w-1/12">
               <Link legacyBehavior href="/home">
-                <a>
-                  <button className="block w-10 h-10">LOGO</button>
-                </a>
+                <Image src={logo} width={90} height={90} alt="logo" />
               </Link>
             </div>
 

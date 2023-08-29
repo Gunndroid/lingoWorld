@@ -12,7 +12,7 @@ const Menu: React.FC = () => {
   return (
     <div>
       <div className="relative border border-black md:w-3/4 md:rounded-xl overflow-hidden h-40 md:h-60  mx-auto md:my-10 mb-10">
-        <Image width={900} height={100} src={history} alt="image" />
+        <Image layout="fill" objectFit="cover" src={history} alt="image" />
       </div>
       <div className="flex flex-col justify-center px-10 md:px-40 md:py-10 pb-20">
         <h1 className="font-cinzel text-center text-4xl pb-6">History</h1>

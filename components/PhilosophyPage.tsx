@@ -8,7 +8,14 @@ export default function StoryPage() {
   return (
     <div className="">
       <div className="relative border border-black md:w-3/4 md:rounded-xl overflow-hidden h-40 md:h-60  mx-auto md:my-10 mb-10">
-        <Image width={900} height={300} src={philsophy} alt="image" />
+        <Image
+          layout="fill"
+          objectFit="cover"
+          // width={900}
+          // height={300}
+          src={philsophy}
+          alt="image"
+        />
       </div>
       <div className="flex flex-col gap-10 px-10 md:px-40 pb-20 text-lg">
         <h1 className="font-cinzel text-center text-4xl md:mt-12 pb-6">

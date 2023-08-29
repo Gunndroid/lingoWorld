@@ -11,14 +11,16 @@ const GalleryPage: React.FC = () => {
     <Layout>
       <div className="relative border border-black md:w-3/4 md:rounded-xl overflow-hidden h-40 md:h-60  mx-auto md:my-10 mb-10">
         <Image
-          width={900}
-          height={100}
+          layout="fill"
+          objectFit="cover"
+          // width={900}
+          // height={100}
           src="https://images.unsplash.com/photo-1591035897819-f4bdf739f446?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
           alt="image"
           className="absolute -top-24 "
         />
       </div>
-      <div className="flex flex-col gap-14 text-center text-xl m-20">
+      <div className="flex flex-col gap-14 text-center text-xl m-6">
         <h1 className="text-4xl ">Join Us</h1>
         <div>
           <h2>Want to run a Mundo Lingo in your city?</h2>
