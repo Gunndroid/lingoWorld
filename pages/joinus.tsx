@@ -111,34 +111,34 @@ const JoinUsPage: React.FC = () => {
           className="absolute -top-24 "
         />
       </div>
-      <div className="flex flex-col gap-14 text-center text-xl m-10 md:m-20">
+      <div className="flex flex-col gap-14 text-center text-xl m-6 md:m-20">
         <h1 className="text-4xl ">Join Us</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          <div className="flex flex-col items-center border-black border rounded-xl p-4">
+          <div className="flex flex-col items-center border-gray-400 border rounded-xl py-8 px-4">
             <h2>Want to run a Mundo Lingo in your city?</h2>
             <button type="button" className={pinkButton}>
               Run an Event in Your City
             </button>
           </div>
-          <div className="flex flex-col items-center border-black border rounded-xl p-4">
+          <div className="flex flex-col items-center border-gray-400 border rounded-xl py-8 px-4">
             <h2>Shape the community by joining the local Ambassador Team</h2>
             <button type="button" className={pinkButton}>
               Become an Ambassador
             </button>{" "}
           </div>
-          <div className="flex flex-col items-center border-black border rounded-xl p-4">
+          <div className="flex flex-col items-center border-gray-400 border rounded-xl py-8 px-4">
             <h2>Join our community of Photographers</h2>
             <button type="button" className={pinkButton}>
               Share Your Creativity
             </button>{" "}
           </div>
-          <div className="flex flex-col items-center border-black border rounded-xl p-4">
+          <div className="flex flex-col items-center border-gray-400 border rounded-xl py-8 px-4">
             <h2>Know a venue we should be operating at?</h2>
             <button type="button" className={pinkButton}>
               Share the Venue
             </button>{" "}
           </div>
-          <div className="flex flex-col items-center border-black border rounded-xl p-4">
+          <div className="flex flex-col items-center border-gray-400 border rounded-xl py-8 px-4">
             <h2>
               Promote Mundo Lingo in your Uni, Hostel, Café, Dorms, Language
               school or other location? We have a gift for you!
@@ -149,7 +149,7 @@ const JoinUsPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="md:w-3/4 text-center flex flex-col gap-6 bg-m-goldlight border border-black rounded-lg mx-auto p-10">
+        <div className="md:w-3/4 text-center flex flex-col gap-6 bg-m-goldlight border border-gray-400 rounded-lg mx-auto p-10">
           <div>
             <h2>Want to grow with Mundo Lingo?</h2>
           </div>

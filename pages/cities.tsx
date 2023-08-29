@@ -61,14 +61,17 @@ const CitiesPage: React.FC = () => {
           className="absolute md:-top-24"
         />
       </div>
-      <h1 className="font-cinzel text-center text-4xl mb-6  ">
-        Mundo Lingo Cities
-      </h1>
+      {/* Text */}
+      <div>
+        <h1 className="font-cinzel text-center text-4xl mb-6  ">
+          Mundo Lingo Cities
+        </h1>
+        <p className="text-center text-xl">
+          Here is a list of cities where our events take place
+        </p>
+      </div>
 
-      <p className="text-center text-xl">
-        Here is a list of cities where our events take place
-      </p>
-
+      {/* Button */}
       <div className=" text-center m-4">
         <button onClick={() => setView("grid")} className={pinkButton}>
           Grid View
@@ -78,9 +81,20 @@ const CitiesPage: React.FC = () => {
         </button>
       </div>
 
+      <div className="flex flex-col gap-2 mx-20  ">
+        {/* <label>Search</label> */}
+
+        <input
+          type="text"
+          placeholder="Search by city or country"
+          onChange={(e) => setSearch(e.target.value)}
+          className="mb-4  md:w-1/2 rounded-md md:mx-auto"
+        />
+      </div>
+
       {view === "grid" ? (
         <div className="m-8 md:mx-20 ">
-          <div className="flex flex-col mb-4 gap-2">
+          {/* <div className="flex flex-col mb-4 gap-2">
             <label>Search</label>
             <input
               type="text"
@@ -88,13 +102,13 @@ const CitiesPage: React.FC = () => {
               onChange={(e) => setSearch(e.target.value)}
               className="mb-4 p-2 md:w-1/2 rounded-md"
             />
-          </div>
+          </div> */}
           {/* GridView */}
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 ">
             {filteredCities.map((city: City, index: number) => (
               <div
                 key={index}
-                className="rounded-xl shadow-md md:w-72 md:h-72 bg-cover bg-center overflow-hidden border-black border"
+                className="rounded-xl shadow-md md:w-72 md:h-72 bg-cover bg-center overflow-hidden border-black border mx-auto"
                 style={{
                   backgroundImage: `url(https://source.unsplash.com/random/300x300/?${city.name.replace(
                     /\s/g,
@@ -136,7 +150,7 @@ const CitiesPage: React.FC = () => {
         // List View
         <div className="m-8 md:mx-20 ">
           <ul className="mb-20">
-            <div className="flex flex-col mb-4 gap-2">
+            {/* <div className="flex flex-col mb-4 gap-2">
               <label>Search</label>
               <input
                 type="text"
@@ -144,7 +158,7 @@ const CitiesPage: React.FC = () => {
                 onChange={(e) => setSearch(e.target.value)}
                 className="mb-4 p-2 md:w-1/2 rounded-md"
               />
-            </div>
+            </div> */}
             {Object.entries(groupedCities).map(([continent, cities]) => (
               <li key={continent}>
                 <h2 className="text-2xl m-10 text-center">{continent}</h2>
@@ -154,7 +168,7 @@ const CitiesPage: React.FC = () => {
                     href={`/cities/${city.name}`}
                     legacyBehavior
                   >
-                    <span className="text-xl m-2 flex border border-black rounded-md p-2 md:w-1/2 w-11/12 mx-auto">
+                    <span className="text-xl my-4 flex border border-gray-400 rounded-md p-2 md:w-1/2 w-11/12 mx-auto">
                       {city.name}, {city.country}
                     </span>
                   </Link>

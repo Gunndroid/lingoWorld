@@ -57,13 +57,14 @@ export default function ContactYourCity() {
         />
       </div>
       {/* Contacts List */}
-      <div className="grid gap-4 md:h-[80vh] md:overflow-y-scroll border border-black p-10 rounded-lg">
+      <div className="grid gap-4 md:h-[80vh] md:overflow-y-scroll md:border border-gray-400 md:p-10 rounded-lg">
         {filteredManagers.map((manager, index) => (
+          // CARD
           <div
             key={index}
-            className="max-w-md p-4 flex gap-4 sm:space-x-6 rounded-lg border border-black bg-gray-100 "
+            className=" p-3 flex gap-4 sm:space-x-6 rounded-lg border border-gray-400 bg-gray-50 "
           >
-            <div className="flex-shrink-0 w-20 md:w-1/3  ">
+            <div className="flex-shrink-0 w-16 md:w-1/5  ">
               <img
                 src={`https://source.unsplash.com/100x100/?portrait?${index}`}
                 alt={`${manager.name}'s Avatar`}

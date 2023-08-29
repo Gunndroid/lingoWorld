@@ -6,7 +6,7 @@ const Contact: React.FC = () => {
 
   return (
     <div className="flex justify-center items-center h-screen">
-      <div className=" grid-cols-1 gap-8 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32  text-black  border border-black">
+      <div className=" grid-cols-1 gap-8 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32  text-black  border border-gray-400">
         <div className="flex flex-col justify-between">
           <div className="space-y-2 mb-10">
             <h2 className="text-4xl font-bold py-4">

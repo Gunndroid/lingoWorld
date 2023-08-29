@@ -19,7 +19,7 @@ const ContactPage: React.FC = () => {
           className="absolute md:-top-28 -top-10 "
         />{" "}
       </div>
-      <div className="flex flex-col md:flex-row gap-10 m-10 md:m-20">
+      <div className="flex flex-col md:flex-row gap-10 m-6 md:m-20">
         <div className="md:w-1/2">
           <Contact />
         </div>
