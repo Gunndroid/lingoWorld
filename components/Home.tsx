@@ -10,7 +10,7 @@ const cinzel = Cinzel({ subsets: ["latin"] });
 // type AboutProps = {
 //   setCurrentView: React.Dispatch<React.SetStateAction<string>>;
 // };
-
+// 
 const About: React.FC = () => {
   return (
     <div>
