@@ -35,7 +35,7 @@ export default function Header({ setCurrentView }: HeaderProps) {
             </div>
 
             {/* Desktop header links */}
-            <div className="hidden sm:block">
+            <div className="hidden md:block">
               <nav aria-label="Global">
                 <div className="flex items-center gap-6 text-sm ">
                   <Link legacyBehavior href="/home">
@@ -63,7 +63,7 @@ export default function Header({ setCurrentView }: HeaderProps) {
 
             {/* dropdown */}
 
-            <div className="sm:hidden">
+            <div className="md:hidden">
               <Dropdown setCurrentView={setCurrentView} />
             </div>
           </div>
