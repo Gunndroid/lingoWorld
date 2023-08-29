@@ -44,6 +44,7 @@ export default function ContactYourCity() {
 
   return (
     <div>
+      {/* Search Box */}
       <div className="flex flex-col gap-2">
         {" "}
         <h1>Contact Your Local Manager</h1>
@@ -55,26 +56,27 @@ export default function ContactYourCity() {
           className="mb-4 p-2 border border-gray-300 rounded"
         />
       </div>
-      <div className="grid gap-4 h-[80vh] overflow-y-scroll border border-black p-10 rounded-lg">
+      {/* Contacts List */}
+      <div className="grid gap-4 md:h-[80vh] md:overflow-y-scroll border border-black p-10 rounded-lg">
         {filteredManagers.map((manager, index) => (
           <div
             key={index}
-            className="max-w-md p-4 flex gap-4 sm:space-x-6 rounded-lg border border-black "
+            className="max-w-md p-4 flex gap-4 sm:space-x-6 rounded-lg border border-black bg-gray-100 "
           >
-            <div className="flex-shrink-0 w-20 md:w-1/3 ">
+            <div className="flex-shrink-0 w-20 md:w-1/3  ">
               <img
                 src={`https://source.unsplash.com/100x100/?portrait?${index}`}
                 alt={`${manager.name}'s Avatar`}
                 className="object-cover object-center w-full rounded-full dark:bg-gray-500 shadow-sm shadow-black"
               />
             </div>
-            <div className="flex flex-col space-y-4 ta">
+            <div className="flex flex-col space-y-4 ">
               <div className="flex flex-col">
                 <h2 id="name" className="text-2xl font-semibold">
                   {manager.name}
                 </h2>
 
-                <span id="city" className="text-sm ">
+                <span id="city" className="text-m-golddark ">
                   {manager.city}
                 </span>
               </div>

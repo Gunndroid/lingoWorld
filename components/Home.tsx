@@ -36,7 +36,7 @@ const About: React.FC = () => {
         </div>
       </div> */}
 
-      <section className="bg-m-feldgrau text-white md:px-32 px-10 md:py-28 py-20 text-xl ">
+      <section className="bg-m-gold text-white md:px-32 px-10 md:py-28 py-20 text-xl ">
         <div>
           <h2 className="text-white pb-10 md:text-5xl text-4xl text-center font-cinzel">
             Mundo Lingo&apos;s Community Hub

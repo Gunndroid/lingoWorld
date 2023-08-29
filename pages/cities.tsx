@@ -134,29 +134,35 @@ const CitiesPage: React.FC = () => {
         </div>
       ) : (
         // List View
-        <ul className="mb-20">
-          <div className="flex flex-col m-4 gap-2 text-center">
-            <label>Search</label>
-            <input
-              type="text"
-              placeholder="Search by city or country"
-              onChange={(e) => setSearch(e.target.value)}
-              className="mb-4 p-2 md:w-1/2 rounded-md mx-auto"
-            />
-          </div>
-          {Object.entries(groupedCities).map(([continent, cities]) => (
-            <li key={continent}>
-              <h2 className="text-2xl m-10 text-center">{continent}</h2>
-              {cities.map((city: City, index: number) => (
-                <Link key={index} href={`/cities/${city.name}`} legacyBehavior>
-                  <span className="text-xl m-2 flex border border-black rounded-md p-2 md:w-1/2 w-11/12 mx-auto">
-                    {city.name}, {city.country}
-                  </span>
-                </Link>
-              ))}
-            </li>
-          ))}
-        </ul>
+        <div className="m-8 md:mx-20 ">
+          <ul className="mb-20">
+            <div className="flex flex-col mb-4 gap-2">
+              <label>Search</label>
+              <input
+                type="text"
+                placeholder="Search by city or country"
+                onChange={(e) => setSearch(e.target.value)}
+                className="mb-4 p-2 md:w-1/2 rounded-md"
+              />
+            </div>
+            {Object.entries(groupedCities).map(([continent, cities]) => (
+              <li key={continent}>
+                <h2 className="text-2xl m-10 text-center">{continent}</h2>
+                {cities.map((city: City, index: number) => (
+                  <Link
+                    key={index}
+                    href={`/cities/${city.name}`}
+                    legacyBehavior
+                  >
+                    <span className="text-xl m-2 flex border border-black rounded-md p-2 md:w-1/2 w-11/12 mx-auto">
+                      {city.name}, {city.country}
+                    </span>
+                  </Link>
+                ))}
+              </li>
+            ))}
+          </ul>
+        </div>
       )}
     </Layout>
   );

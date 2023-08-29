@@ -28,9 +28,15 @@ export default function Header({ setCurrentView }: HeaderProps) {
           <div className="flex h-fit items-center justify-between">
             {/* Logo */}
 
-            <div className="md:flex md:items-center md:gap-12 w-2/12 sm:w-1/12">
+            <div className="md:flex md:items-center md:gap-12 w-2/12 sm:w-1/12 ">
               <Link legacyBehavior href="/home">
-                <Image src={logo} width={90} height={90} alt="logo" />
+                <Image
+                  src={logo}
+                  width={90}
+                  height={90}
+                  alt="logo"
+                  className="rounded-2xl border border-yellow-600"
+                />
               </Link>
             </div>
 

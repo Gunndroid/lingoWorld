@@ -15,6 +15,10 @@ const config: Config = {
         "m-onyx": "#414141",
         "m-red": "#af1d6a",
         "m-magenta": "#AE759F",
+        "m-goldlight": "#fdf7e6",
+        "m-gold": "#f1b805",
+        "m-golddark": "#c09304",
+        "m-golddarkest": "#483701",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

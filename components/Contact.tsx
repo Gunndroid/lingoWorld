@@ -1,16 +1,18 @@
 import React from "react";
 
 const Contact: React.FC = () => {
+  const goldButton =
+    "border border-black mt-4 w-fit text-black bg-m-gold hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-m-gold dark:focus:ring-m-gold shadow-sm shadow-m-gold/50 dark:shadow-sm dark:shadow-m-gold/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2";
+
   return (
     <div className="flex justify-center items-center h-screen">
-      <div className=" grid-cols-1 gap-8 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 bg-gray-800 text-gray-100">
+      <div className=" grid-cols-1 gap-8 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32  text-black  border border-black">
         <div className="flex flex-col justify-between">
           <div className="space-y-2 mb-10">
-            <h2 className="text-4xl font-bold leadi lg:text-5xl">
-              Let&apos;s talk!
-            </h2>
-            <div className="dark:text-gray-400">
-              Vivamus in nisl metus? Phasellus.
+            <h2 className="text-4xl font-bold py-4">Contact Mundo Lingo</h2>
+            <div className="dark:text-black">
+              Reach out to Mundo Lingo and share your thoughts! We&apos;re
+              always glad to connect.
             </div>
           </div>
           {/* <img
@@ -28,7 +30,7 @@ const Contact: React.FC = () => {
               id="name"
               type="text"
               placeholder=""
-              className="w-full p-3 rounded dark:bg-gray-800"
+              className="w-full p-3 rounded dark:bg-gray-100"
             />
           </div>
           <div>
@@ -38,7 +40,7 @@ const Contact: React.FC = () => {
             <input
               id="email"
               type="email"
-              className="w-full p-3 rounded dark:bg-gray-800"
+              className="w-full p-3 rounded dark:bg-gray-100"
             />
           </div>
           <div>
@@ -48,12 +50,13 @@ const Contact: React.FC = () => {
             <textarea
               id="message"
               rows={3}
-              className="w-full p-3 rounded dark:bg-gray-800"
+              className="w-full p-3 rounded dark:bg-gray-100"
             ></textarea>
           </div>
           <button
             type="submit"
-            className="w-full p-3 text-sm font-bold tracki uppercase rounded dark:bg-violet-400 dark:text-gray-900"
+            className={goldButton}
+            // className="w-full p-3 text-sm font-bold tracki uppercase rounded dark:bg-violet-400 dark:text-gray-900"
           >
             Send Message
           </button>
