@@ -5,6 +5,13 @@ import Link from "next/link";
 import { cities } from "@/utils/cities";
 import Image from "next/image";
 
+type City = {
+  name: string;
+  country: string;
+  description: string;
+  continent: string;
+};
+
 const CitiesPage: React.FC = () => {
   const [search, setSearch] = useState("");
   const [view, setView] = useState("grid"); // Add this line to manage the view state
@@ -31,14 +38,17 @@ const CitiesPage: React.FC = () => {
   });
 
   // Group cities by continent
-  const groupedCities = sortedCities.reduce((groups, city) => {
-    const key = city.continent;
-    if (!groups[key]) {
-      groups[key] = [];
-    }
-    groups[key].push(city);
-    return groups;
-  }, {});
+  const groupedCities = sortedCities.reduce<Record<string, any[]>>(
+    (groups, city) => {
+      const key = city.continent;
+      if (!groups[key]) {
+        groups[key] = [];
+      }
+      groups[key].push(city);
+      return groups;
+    },
+    {}
+  );
 
   return (
     <Layout>
@@ -81,7 +91,7 @@ const CitiesPage: React.FC = () => {
           </div>
           {/* GridView */}
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 ">
-            {filteredCities.map((city, index) => (
+            {filteredCities.map((city: City, index: number) => (
               <div
                 key={index}
                 className="rounded-xl shadow-md md:w-72 md:h-72 bg-cover bg-center overflow-hidden border-black border"
@@ -137,7 +147,7 @@ const CitiesPage: React.FC = () => {
           {Object.entries(groupedCities).map(([continent, cities]) => (
             <li key={continent}>
               <h2 className="text-2xl m-10 text-center">{continent}</h2>
-              {cities.map((city, index) => (
+              {cities.map((city: City, index: number) => (
                 <Link key={index} href={`/cities/${city.name}`} legacyBehavior>
                   <span className="text-xl m-2 flex border border-black rounded-md p-2 md:w-1/2 w-11/12 mx-auto">
                     {city.name}, {city.country}
