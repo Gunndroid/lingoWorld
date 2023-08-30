@@ -121,7 +121,8 @@ const About: React.FC = () => {
               </div>
             </div>
             {/* Feature 2 */}
-            <div className="flex m-6 gap-4">
+            {/* group of 2 */}
+            <div className="flex md:flex-row flex-col  m-6 gap-4">
               <div className="flex flex-col flex-1 overflow-hidden rounded-md shadow-sm  border border-black">
                 <img
                   src="https://images.unsplash.com/photo-1550096141-7263640aa48c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y29tbXVuaXR5fGVufDB8fDB8fHww&auto=format&fit=crop&w=700&q=60"

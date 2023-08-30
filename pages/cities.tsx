@@ -52,7 +52,7 @@ const CitiesPage: React.FC = () => {
 
   return (
     <Layout>
-      <div className="relative border border-black  overflow-hidden h-40 md:h-44 mx-auto mb-10">
+      <div className="relative border border-black md:hidden  overflow-hidden h-40 md:h-44 mx-auto mb-10">
         <Image
           layout="fill"
           objectFit="cover"
