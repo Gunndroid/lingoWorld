@@ -62,7 +62,7 @@ const ContactYourCity: React.FC<ContactYourCityProps> = ({
 
       <div className="flex flex-col gap-2">
         {" "}
-        <h1>Select Your Local Manager</h1>
+        <h1>1. Select Your Local Manager</h1>
         <input
           type="text"
           placeholder="Search by city..."

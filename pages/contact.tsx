@@ -10,7 +10,7 @@ const ContactPage: React.FC = () => {
 
   return (
     <Layout>
-      <div className="relative border border-black md:w-3/4 md:rounded-xl overflow-hidden h-40 md:h-60  mx-auto md:my-10 mb-10 md:hidden">
+      <div className="relative border border-black  overflow-hidden h-40 md:h-44 mx-auto mb-10">
         <Image
           src="https://images.unsplash.com/photo-1626388129566-b25c51bc1942?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2231&q=80"
           alt="Contact Image"

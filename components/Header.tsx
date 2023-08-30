@@ -34,14 +34,14 @@ export default function Header({
           <div className="flex h-fit items-center justify-between">
             {/* Logo */}
 
-            <div className="md:flex md:items-center md:gap-12 w-2/12 ">
+            <div className="md:flex md:items-center md:gap-12 w-2/12  ">
               <Link legacyBehavior href="/home">
                 <Image
                   src={logo}
                   width={90}
                   height={90}
                   alt="logo"
-                  className="rounded-lg border border-m-gold"
+                  className="rounded-lg border border-m-gold hover:cursor-pointer"
                 />
               </Link>
             </div>

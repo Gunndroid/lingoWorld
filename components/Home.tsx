@@ -96,7 +96,7 @@ const About: React.FC = () => {
 
         <section className="  ">
           {/* container */}
-          <div className=" mx-auto space-y-20 ">
+          <div className=" mx-auto md:space-y-20 ">
             {/* Feature 1 */}
             <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row m-6 border border-black">
               <div className="flex-shrink-0 flex-1">
@@ -121,32 +121,65 @@ const About: React.FC = () => {
               </div>
             </div>
             {/* Feature 2 */}
-            <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row-reverse m-6 border border-black">
-              <img
-                src="https://images.unsplash.com/photo-1550096141-7263640aa48c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y29tbXVuaXR5fGVufDB8fDB8fHww&auto=format&fit=crop&w=700&q=60"
-                alt=""
-                className="h-80 dark:bg-gray-500"
-              />
-              <div className="flex flex-col justify-center flex-1 p-6 bg-white">
-                {/* <span className="text-xs uppercase ">
+            <div className="flex m-6 gap-4">
+              <div className="flex flex-col flex-1 overflow-hidden rounded-md shadow-sm  border border-black">
+                <img
+                  src="https://images.unsplash.com/photo-1550096141-7263640aa48c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y29tbXVuaXR5fGVufDB8fDB8fHww&auto=format&fit=crop&w=700&q=60"
+                  alt=""
+                  className="h-80 dark:bg-gray-500"
+                />
+                <div className="flex flex-col justify-center flex-1 p-6 bg-white">
+                  {/* <span className="text-xs uppercase ">
+                    Join, it's free
+                  </span> */}
+                  <h3 className="text-3xl font-bold">We pivoted… upwards!</h3>
+                  <p className="my-6 ">
+                    Pre-2020 we built communities in 30+ cities around the
+                    world.
+                    <br />
+                    <br />
+                    2020 &apos;happened&apos;, and we gave ourselves an
+                    additional mission... to organise the world&apos;s
+                    communities!
+                  </p>
+                  {/* <button type="button" className="self-start">
+                    Action
+                  </button> */}
+                </div>
+              </div>
+
+              {/* Feature 4 */}
+              <div className="flex flex-col flex-1 overflow-hidden rounded-md shadow-sm  border border-black">
+                <img
+                  src="https://images.unsplash.com/photo-1444210971048-6130cf0c46cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fGNvbW11bml0eXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=700&q=60"
+                  alt=""
+                  className="h-80 dark:bg-gray-500"
+                />
+                <div className="flex flex-col justify-center flex-1 p-6 bg-white">
+                  {/* <span className="text-xs uppercase ">
                   Join, it's free
                 </span> */}
-                <h3 className="text-3xl font-bold">We pivoted… upwards!</h3>
+                  <h3 className="text-3xl font-bold">Mundo Lingo Promise</h3>
 
-                <p className="my-6 ">
-                  Pre-2020 we built communities in 30+ cities around the world.
-                  <br />
-                  <br />
-                  2020 &apos;happened&apos;, and we gave ourselves an additional
-                  mission... to organise the world&apos;s communities!
-                </p>
-                {/* <button type="button" className="self-start">
+                  <p className="my-6 ">
+                    Integrity: we do not sell your data, nor sell you as
+                    advertising space.
+                    <br />
+                    <br />
+                    Dignity: personal space respected, online and offline.
+                    <br />
+                    <br />
+                    Community: we don&apos;t interfere, build your community
+                    freely.
+                  </p>
+                  {/* <button type="button" className="self-start">
                   Action
                 </button> */}
+                </div>
               </div>
             </div>
             {/* Feature 3 */}
-            <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row m-6 border border-black ">
+            <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row-reverse m-6 border border-black">
               <div className="flex-shrink-0 flex-1">
                 <img
                   src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29tbXVuaXR5fGVufDB8fDB8fHww&auto=format&fit=crop&w=700&q=60"
@@ -156,8 +189,8 @@ const About: React.FC = () => {
               </div>
               <div className="flex flex-col justify-center flex-1 p-6 bg-white">
                 {/* <span className="text-xs uppercase ">
-                  Join, it's free
-                </span> */}
+                    Join, it's free
+                  </span> */}
                 <h3 className="text-3xl font-bold">
                   Our Battle Cry:
                   <br />
@@ -178,39 +211,11 @@ const About: React.FC = () => {
                   do that right here.
                 </p>
                 {/* <button type="button" className="self-start">
-                  Action
-                </button> */}
+                    Action
+                  </button> */}
               </div>
             </div>
-            {/* Feature 4 */}
-            <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row-reverse m-6 border border-black">
-              <img
-                src="https://images.unsplash.com/photo-1444210971048-6130cf0c46cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fGNvbW11bml0eXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=700&q=60"
-                alt=""
-                className="h-80 dark:bg-gray-500"
-              />
-              <div className="flex flex-col justify-center flex-1 p-6 bg-white">
-                {/* <span className="text-xs uppercase ">
-                  Join, it's free
-                </span> */}
-                <h3 className="text-3xl font-bold">Mundo Lingo Promise</h3>
 
-                <p className="my-6 ">
-                  Integrity: we do not sell your data, nor sell you as
-                  advertising space.
-                  <br />
-                  <br />
-                  Dignity: personal space respected, online and offline.
-                  <br />
-                  <br />
-                  Community: we don&apos;t interfere, build your community
-                  freely.
-                </p>
-                {/* <button type="button" className="self-start">
-                  Action
-                </button> */}
-              </div>
-            </div>
             {/* Feature 5 */}
             <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row m-6 border border-black">
               <div className="flex-shrink-0 flex-1">

@@ -52,7 +52,7 @@ const CitiesPage: React.FC = () => {
 
   return (
     <Layout>
-      <div className="relative border border-black md:w-3/4 md:rounded-xl overflow-hidden h-40 md:h-60 mx-auto md:my-10 mb-10">
+      <div className="relative border border-black  overflow-hidden h-40 md:h-44 mx-auto mb-10">
         <Image
           layout="fill"
           objectFit="cover"
@@ -63,7 +63,7 @@ const CitiesPage: React.FC = () => {
       </div>
       {/* Text */}
       <div>
-        <h1 className="font-cinzel text-center text-4xl mb-6  ">
+        <h1 className="font-cinzel text-center text-4xl m-10 mt-14  ">
           Mundo Lingo Cities
         </h1>
         <p className="text-center text-xl">

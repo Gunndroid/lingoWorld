@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function StoryPage() {
   return (
     <div className="">
-      <div className="relative border border-black md:w-3/4 md:rounded-xl overflow-hidden h-40 md:h-60  mx-auto md:my-10 mb-10">
+      <div className="relative border border-black  overflow-hidden h-40 md:h-44 mx-auto mb-10">
         <Image
           layout="fill"
           objectFit="cover"
