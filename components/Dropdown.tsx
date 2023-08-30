@@ -4,9 +4,13 @@ import Link from "next/link";
 
 interface DropdownProps {
   setCurrentView: Dispatch<SetStateAction<string>>;
+  setIsLoginOpen: Dispatch<SetStateAction<boolean>>;
 }
 
-const Dropdown: React.FC<DropdownProps> = ({ setCurrentView }) => {
+const Dropdown: React.FC<DropdownProps> = ({
+  setCurrentView,
+  setIsLoginOpen,
+}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const pinkButton =
@@ -122,7 +126,9 @@ const Dropdown: React.FC<DropdownProps> = ({ setCurrentView }) => {
             {/* <a className="block px-4 py-2 text-white bg-m-red hover:bg-white hover:text-m-red hover:border hover:border-black text-center rounded-lg">
               Contact
             </a> */}
-            <button className={pinkButton}>Log In</button>
+            <button className={pinkButton} onClick={() => setIsLoginOpen(true)}>
+              Log In
+            </button>
           </div>
         </div>
       )}

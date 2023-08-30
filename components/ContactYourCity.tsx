@@ -35,19 +35,34 @@ const managers = [
   { name: "Senote Keriakes", city: "Melbourne" },
 ];
 
-export default function ContactYourCity() {
+interface ContactYourCityProps {
+  setSelectedManager: React.Dispatch<React.SetStateAction<string>>;
+}
+
+const ContactYourCity: React.FC<ContactYourCityProps> = ({
+  setSelectedManager,
+}) => {
   const [searchTerm, setSearchTerm] = useState("");
+  const [selectedManagerName, setSelectedManagerName] = useState<string | null>(
+    null
+  );
 
   const filteredManagers = managers.filter((manager) =>
     manager.city.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
+  const handleManagerSelect = (managerName: string) => {
+    setSelectedManager(managerName);
+    setSelectedManagerName(managerName); // Update this line
+  };
+
   return (
     <div>
       {/* Search Box */}
+
       <div className="flex flex-col gap-2">
         {" "}
-        <h1>Contact Your Local Manager</h1>
+        <h1>Select Your Local Manager</h1>
         <input
           type="text"
           placeholder="Search by city..."
@@ -57,12 +72,15 @@ export default function ContactYourCity() {
         />
       </div>
       {/* Contacts List */}
-      <div className="grid gap-4 md:h-[80vh] md:overflow-y-scroll md:border border-gray-400 md:p-10 rounded-lg">
+      <div className="grid gap-4 max-h-[80vh] overflow-y-scroll border border-gray-400 p-4 md:p-10 rounded-lg">
         {filteredManagers.map((manager, index) => (
           // CARD
           <div
+            onClick={() => handleManagerSelect(manager.name)} // changed to use handleManagerSelect
             key={index}
-            className=" p-3 flex gap-4 sm:space-x-6 rounded-lg border border-gray-400 bg-gray-50 "
+            className={`p-3 flex gap-4 sm:space-x-6 rounded-lg border border-gray-400 ${
+              selectedManagerName === manager.name ? "bg-m-gold" : "bg-gray-50"
+            } hover:cursor-pointer`}
           >
             <div className="flex-shrink-0 w-16 md:w-1/5  ">
               <img
@@ -77,7 +95,7 @@ export default function ContactYourCity() {
                   {manager.name}
                 </h2>
 
-                <span id="city" className="text-m-golddark ">
+                <span id="city" className="text-black ">
                   {manager.city}
                 </span>
               </div>
@@ -87,4 +105,6 @@ export default function ContactYourCity() {
       </div>
     </div>
   );
-}
+};
+
+export default ContactYourCity;
