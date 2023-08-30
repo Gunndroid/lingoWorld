@@ -1,6 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter, Cinzel } from "next/font/google";
+import { Inter, Cinzel, Crimson_Pro } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
 

@@ -14,7 +14,7 @@ const Contact: React.FC<ContactProps> = ({ selectedManager }) => {
         <div className="flex flex-col justify-between">
           <div className="space-y-2 mb-10">
             <span className="">2.</span>
-            <h2 className="text-4xl font-bold py-4 ">
+            <h2 className="text-4xl font-bold py-4">
               <span className="text-m-gold">Contact</span> <br />{" "}
               {selectedManager || "Mundo Lingo"}
             </h2>

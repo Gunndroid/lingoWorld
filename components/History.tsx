@@ -15,7 +15,9 @@ const Menu: React.FC = () => {
         <Image layout="fill" objectFit="cover" src={history} alt="image" />
       </div>
       <div className="flex flex-col justify-center px-10 md:px-40 md:py-10 pb-20">
-        <h1 className="font-cinzel text-center text-4xl pb-6">History</h1>
+        <h1 className="font-crimson-pro text-center text-4xl pb-6 uppercase">
+          History
+        </h1>
         <p className="text-lg">
           The story so far...
           <br />

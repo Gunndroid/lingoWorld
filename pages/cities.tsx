@@ -63,7 +63,7 @@ const CitiesPage: React.FC = () => {
       </div>
       {/* Text */}
       <div>
-        <h1 className="font-cinzel text-center text-4xl m-10 mt-14  ">
+        <h1 className="font-crimson-pro uppercase text-center text-4xl m-10 mt-14   ">
           Mundo Lingo Cities
         </h1>
         <p className="text-center text-xl">

@@ -18,7 +18,7 @@ export default function StoryPage() {
         />
       </div>
       <div className="flex flex-col gap-10 px-10 md:px-40 pb-20 text-lg">
-        <h1 className="font-cinzel text-center text-4xl md:mt-12 pb-6">
+        <h1 className="font-crimson-pro uppercase text-center text-4xl md:mt-12 pb-6">
           Our Philosophy{" "}
         </h1>
         <p>
@@ -32,7 +32,7 @@ export default function StoryPage() {
           flyers, sign-up lists, raffles, no messing around. We respect your
           personal space.
         </p>
-        <h2 className="md:text-3xl text-2xl font-cinzel flex flex-col text-center gap-4">
+        <h2 className="md:text-3xl text-2xl font-crimson-pro flex flex-col text-center gap-4">
           A Word On Spam
         </h2>
         <p>
@@ -41,7 +41,7 @@ export default function StoryPage() {
           we may talk about a free and language related service just because we
           want to.
         </p>
-        <h2 className="md:text-3xl text-2xl font-cinzel flex flex-col text-center gap-4">
+        <h2 className="md:text-3xl text-2xl font-crimson-pro flex flex-col text-center gap-4">
           Politics
         </h2>
         <p>
@@ -51,7 +51,7 @@ export default function StoryPage() {
           languages and dialects that you speak. Talking about politics however,
           is encouraged. Play nicely.
         </p>
-        <h2 className="md:text-3xl text-2xl font-cinzel flex flex-col text-center gap-4">
+        <h2 className="md:text-3xl text-2xl font-crimson-pro flex flex-col text-center gap-4">
           Commissions
         </h2>
         <p>
@@ -61,7 +61,7 @@ export default function StoryPage() {
           nor receive commissions of any kind. We hope our friends in our
           various associated industries will understand.
         </p>
-        <h2 className="md:text-3xl text-2xl font-cinzel flex flex-col text-center gap-4">
+        <h2 className="md:text-3xl text-2xl font-crimson-pro flex flex-col text-center gap-4">
           Collaborations
         </h2>
         <p>

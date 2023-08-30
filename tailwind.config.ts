@@ -27,6 +27,8 @@ const config: Config = {
       },
       fontFamily: {
         cinzel: ["Cinzel", "serif"],
+        'crimson-pro': ['"Crimson Pro"', 'serif'], // new line
+
       },
     },
   },

@@ -22,7 +22,7 @@ const About: React.FC = () => {
         />
 
         <div className="absolute inset-0 flex flex-col justify-center md:bottom-40 bottom-10 left-10  p-10">
-          <p className="text-5xl text-m-red font-cinzel">MESAKU </p>
+          <p className="text-5xl text-m-red font-crimson-pro">MESAKU </p>
           <p className="text-xl  font-extralight mb-4"> JAPANESE CUISINE</p>
           <Link href="/history" passHref>
             <button
@@ -38,13 +38,13 @@ const About: React.FC = () => {
 
       <section className="bg-m-gold text-black md:py-28 py-20 text-xl ">
         <div>
-          <h2 className="text-white pb-10 md:text-5xl text-5xl text-center font-cinzel">
+          <h2 className="text-white pb-10 md:text-5xl text-5xl text-center font-crimson-pro uppercase">
             Mundo Lingo&apos;s <br /> Community Hub
           </h2>
-          <h3 className="text-white pb-10 md:text-2xl text-2xl text-center font-cinzel">
+          <h3 className="text-white pb-10 md:text-2xl text-2xl text-center font-crimson-pro">
             Connect with your community on every level
           </h3>
-          {/* <h4 className="text-white pb-10 md:text-2xl text-2xl text-center font-cinzel">
+          {/* <h4 className="text-white pb-10 md:text-2xl text-2xl text-center font-crimson-pro">
             Check out your city!
           </h4> */}
         </div>
@@ -150,7 +150,7 @@ const About: React.FC = () => {
               </div>
 
               {/* Feature 4 */}
-              <div className="flex flex-col flex-1 overflow-hidden rounded-md shadow-sm  border border-black">
+              <div className="flex flex-col md:flex-col-reverse flex-1 overflow-hidden rounded-md shadow-sm  border border-black">
                 <img
                   src="https://images.unsplash.com/photo-1444210971048-6130cf0c46cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fGNvbW11bml0eXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=700&q=60"
                   alt=""

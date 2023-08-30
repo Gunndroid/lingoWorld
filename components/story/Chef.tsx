@@ -10,7 +10,7 @@ const Chef: React.FC = () => {
         className="object-cover object-center w-2/5 mx-auto rounded-md"
       />
       <div className="mt-6 mb-2">
-        <span className="block text-lg font-medium tracki uppercase text-m-red font-cinzel">
+        <span className="block text-lg font-medium tracki uppercase text-m-red font-crimson-pro">
           OUR CHEF
         </span>
         <h2 className="text-xl font-semibold tracki pb-2">Chan Kim</h2>

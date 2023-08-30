@@ -5,13 +5,13 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-white text-black text-lg md:px-20 px-10 py-8 flex md:flex-row flex-col justify-between gap-6 text-center md:text-left border-t border-t-black ">
       {/* <div className="">
-        <h2 className="text-m-red font-cinzel text-2xl">Address</h2>
+        <h2 className="text-m-red font-crimson-pro text-2xl">Address</h2>
         <p>1234 W. Touhy Ave.</p>
         <p>Lincolnwood IL. 12345</p>
       </div> */}
 
       <div className="">
-        {/* <h2 className="text-m-red font-cinzel text-2xl">Contact</h2> */}
+        {/* <h2 className="text-m-red font-crimson-pro text-2xl">Contact</h2> */}
         <p>
           {/* <a href="tel:224-388-9024" className="text-m-magenta">
             #

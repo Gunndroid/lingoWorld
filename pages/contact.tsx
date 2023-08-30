@@ -6,7 +6,13 @@ import ContactYourCity from "@/components/ContactYourCity";
 import Image from "next/image";
 
 const ContactPage: React.FC = () => {
-  const [selectedManager, setSelectedManager] = useState<string>("");
+  const [selectedManager, setSelectedManager] = useState<string>(
+    "International Inquiries"
+  );
+
+  const handleInternationalSelect = () => {
+    setSelectedManager("International Inquiries");
+  };
 
   return (
     <Layout>
@@ -21,12 +27,15 @@ const ContactPage: React.FC = () => {
           className="absolute md:-top-28 -top-10 "
         />{" "}
       </div>
-      <h1 className="font-cinzel text-center text-4xl m-10 mt-14  ">
+      <h1 className="font-crimson-pro uppercase text-center text-4xl m-10 mt-14  ">
         Contact Us
       </h1>
       <div className="flex flex-col md:flex-row gap-10 m-6 md:m-20">
         <div className="md:w-1/2 ">
-          <ContactYourCity setSelectedManager={setSelectedManager} />
+          <ContactYourCity
+            setSelectedManager={setSelectedManager}
+            handleInternationalSelect={handleInternationalSelect}
+          />{" "}
         </div>
         <div className="md:w-1/2">
           <Contact selectedManager={selectedManager} />

@@ -5,7 +5,9 @@ import React from "react";
 const Gallery: React.FC = () => {
   return (
     <div>
-      <h1 className="font-cinzel text-center m-12 text-4xl">Food Gallery</h1>
+      <h1 className="font-crimson-pro text-center m-12 text-4xl">
+        Food Gallery
+      </h1>
     </div>
   );
 };

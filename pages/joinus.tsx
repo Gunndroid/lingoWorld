@@ -112,7 +112,7 @@ const JoinUsPage: React.FC = () => {
         />
       </div>
       <div className="flex flex-col gap-14 text-center text-xl m-6 md:m-20">
-        <h1 className="text-4xl ">Join Us</h1>
+        <h1 className="text-4xl font-crimson-pro  uppercase">Join Us</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           <div className="flex flex-col items-center border-gray-400 border rounded-xl py-8 px-4">
             <h2>Want to run a Mundo Lingo in your city?</h2>
