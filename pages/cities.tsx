@@ -52,7 +52,7 @@ const CitiesPage: React.FC = () => {
 
   return (
     <Layout>
-      <div className="relative border border-black md:hidden  overflow-hidden h-40 md:h-44 mx-auto mb-10">
+      <div className="relative border border-black   overflow-hidden h-40 md:h-44 mx-auto mb-10">
         <Image
           layout="fill"
           objectFit="cover"
@@ -106,43 +106,42 @@ const CitiesPage: React.FC = () => {
           {/* GridView */}
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 ">
             {filteredCities.map((city: City, index: number) => (
-              <div
-                key={index}
-                className="rounded-xl shadow-md md:w-72 md:h-72 bg-cover bg-center overflow-hidden border-black border mx-auto"
-                style={{
-                  backgroundImage: `url(https://source.unsplash.com/random/300x300/?${city.name.replace(
-                    /\s/g,
-                    ""
-                  )})`,
-                }}
-              >
-                {/* Shape Div */}
-                <div className="flex flex-col justify-center items-center h-full p-6 space-y-8 bg-black bg-opacity-50 text-white">
-                  {/* Text Divs */}
-                  <div className="space-y-2 text-center">
-                    {/* City */}
-                    <h2
-                      id="city"
-                      className="text-2xl font-semibold tracking-wide text-shadow"
-                    >
-                      <Link href={`/cities/${city.name}`} legacyBehavior>
+              <Link key={index} href={`/${city.name}`} legacyBehavior>
+                <a
+                  className="rounded-xl shadow-md md:w-72 md:h-72 bg-cover bg-center overflow-hidden border-black border mx-auto"
+                  style={{
+                    backgroundImage: `url(https://source.unsplash.com/random/300x300/?${city.name.replace(
+                      /\s/g,
+                      ""
+                    )})`,
+                  }}
+                >
+                  {/* Shape Div */}
+                  <div className="flex flex-col justify-center items-center h-full p-6 space-y-8 bg-black bg-opacity-50 text-white">
+                    {/* Text Divs */}
+                    <div className="space-y-2 text-center">
+                      {/* City */}
+                      <h2
+                        id="city"
+                        className="text-2xl font-semibold tracking-wide text-shadow"
+                      >
                         {city.name}
-                      </Link>
-                    </h2>
-                    {/* Country */}
-                    <h3
-                      id="country"
-                      className="text-xl font-semibold tracking-wide text-shadow"
-                    >
-                      {city.country}
-                    </h3>
-                    {/* Desc */}
-                    <p id="description" className="text-shadow">
-                      {city.description}
-                    </p>
+                      </h2>
+                      {/* Country */}
+                      <h3
+                        id="country"
+                        className="text-xl font-semibold tracking-wide text-shadow"
+                      >
+                        {city.country}
+                      </h3>
+                      {/* Desc */}
+                      <p id="description" className="text-shadow">
+                        {city.description}
+                      </p>
+                    </div>
                   </div>
-                </div>
-              </div>
+                </a>
+              </Link>
             ))}
           </div>
         </div>
@@ -163,11 +162,7 @@ const CitiesPage: React.FC = () => {
               <li key={continent}>
                 <h2 className="text-2xl m-10 text-center">{continent}</h2>
                 {cities.map((city: City, index: number) => (
-                  <Link
-                    key={index}
-                    href={`/cities/${city.name}`}
-                    legacyBehavior
-                  >
+                  <Link key={index} href={`/${city.name}`} legacyBehavior>
                     <span className="text-xl my-4 flex border border-gray-400 rounded-md p-2 md:w-1/2 w-11/12 mx-auto">
                       {city.name}, {city.country}
                     </span>
