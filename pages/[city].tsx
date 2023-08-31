@@ -68,6 +68,12 @@ const CityPage: React.FC = () => {
   if (!cityInfo) {
     return (
       <Layout>
+        <div className="text-left ml-10">
+          <Link href="/cities" className={blueButton}>
+            {" "}
+            Back to Cities
+          </Link>
+        </div>
         <h1 className="font-crimson-pro uppercase text-center text-4xl m-10 mt-14">
           {city}
         </h1>
@@ -85,7 +91,7 @@ const CityPage: React.FC = () => {
   return (
     <Layout>
       <div className="mb-20">
-        <div className="text-right mr-10">
+        <div className="text-left ml-10">
           <Link href="/cities" className={blueButton}>
             {" "}
             Back to Cities
@@ -104,22 +110,26 @@ const CityPage: React.FC = () => {
         {/* <Meetups meetups={cityInfo.meetups} /> */}
         <div className="lg:w-2/3 mx-auto">
           {/* {selected === "meetups" && <Meetups meetups={cityInfo.meetups} />} */}
-          {selected === "meetups" && cityInfo.meetups && <Meetups meetups={cityInfo.meetups} />}
+          {selected === "meetups" && cityInfo.meetups && (
+            <Meetups meetups={cityInfo.meetups} />
+          )}
         </div>
         <div className="">
-          {selected === "members" && cityInfo.members  && <MembersList members={cityInfo.members} />}
+          {selected === "members" && cityInfo.members && (
+            <MembersList members={cityInfo.members} />
+          )}
         </div>
         <div className="">
-          {selected === "questions"&& cityInfo.questions  &&
+          {selected === "questions" && cityInfo.questions && (
             // <QuestionsList questions={cityInfo.questions} />
             <QuestionsList questions={cityInfo.questions} />
-          }
+          )}
         </div>
         <div className="">
-          {selected === "proposals" && cityInfo.proposals &&
+          {selected === "proposals" && cityInfo.proposals && (
             // <QuestionsList questions={cityInfo.questions} />
             <ProposalsList proposals={cityInfo.proposals} />
-          }
+          )}
         </div>
         {/* <MembersList members={cityInfo.members} /> */}
       </div>
