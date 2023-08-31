@@ -10,11 +10,11 @@ import history from "../public/mundoLingo/mundolingo-history.jpg";
 
 const Menu: React.FC = () => {
   return (
-    <div>
+    <div className="mb-20">
       <div className="relative border border-black  overflow-hidden h-40 md:h-44 mx-auto mb-10">
         <Image layout="fill" objectFit="cover" src={history} alt="image" />
       </div>
-      <div className="flex flex-col justify-center px-10 md:px-40 md:py-10 pb-20">
+      <div className="flex flex-col justify-center px-10 md:px-40 md:py-10">
         <h1 className="font-crimson-pro text-center text-4xl pb-6 uppercase">
           History
         </h1>

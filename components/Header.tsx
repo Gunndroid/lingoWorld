@@ -29,12 +29,12 @@ export default function Header({
 
   return (
     <div className="">
-      <header className="bg-white p-4">
+      <header className="bg-white p-3">
         <div className="mx-auto sm:px-6 lg:px-8">
           <div className="flex h-fit items-center justify-between">
             {/* Logo */}
 
-            <div className="md:flex md:items-center md:gap-12 w-2/12  ">
+            <div className="md:flex md:items-center md:gap-12 w-16  ">
               <Link legacyBehavior href="/home">
                 <Image
                   src={logo}

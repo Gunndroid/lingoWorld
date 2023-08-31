@@ -9,7 +9,7 @@ const Contact: React.FC<ContactProps> = ({ selectedManager }) => {
     "border border-black mt-4 w-fit text-black bg-m-gold hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-m-gold dark:focus:ring-m-gold shadow-sm shadow-m-gold/50 dark:shadow-sm dark:shadow-m-gold/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2";
 
   return (
-    <div className="flex justify-center items-center mt-8 pb-20">
+    <div className="flex justify-center items-center mt-8 ">
       <div className=" grid-cols-1 gap-8 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32  text-black  border border-gray-400">
         <div className="flex flex-col justify-between">
           <div className="space-y-2 mb-10">

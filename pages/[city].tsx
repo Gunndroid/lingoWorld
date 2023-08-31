@@ -7,23 +7,41 @@ import { cityData } from "@/utils/cityData";
 import Meetups from "@/components/Meetups";
 import MembersList from "@/components/MembersList";
 import Link from "next/link";
+import QuestionsList from "@/components/QuestionsList";
+import ProposalsList from "@/components/ProposalsList";
 
 type CityDataType = {
   name: string;
   country: string;
   description: string;
   continent: string;
-  meetups: {
+  meetups?: {
     title: string;
     time: string;
     location: string;
     description: string;
+    image: string;
   }[];
-  members: {
+  members?: {
     name: string;
     bio: string;
     imgUrl: string;
   }[];
+  questions?: {
+    name: string;
+    question: string;
+    imgUrl: string;
+  }[];
+  proposals?: {
+    name: string;
+    proposal: string;
+    imgUrl: string;
+  }[];
+  // members: {
+  //   name: string;
+  //   bio: string;
+  //   imgUrl: string;
+  // }[];
 };
 
 const blueButton =
@@ -50,48 +68,61 @@ const CityPage: React.FC = () => {
   if (!cityInfo) {
     return (
       <Layout>
-        <div className="text-center m-20">Nothing found... </div>
+        <h1 className="font-crimson-pro uppercase text-center text-4xl m-10 mt-14">
+          {city}
+        </h1>
         <CityInfo
           city={"missing"}
           selected={selected}
           setSelected={setSelected}
         />
-        <div className="text-center">
-          <Link href="/cities" className={blueButton}>
-            {" "}
-            Back to Cities
-          </Link>
-        </div>
+
+        <div className="text-center m-20">Nothing found... </div>
       </Layout>
     );
   }
 
   return (
     <Layout>
-      <h1 className="font-crimson-pro uppercase text-center text-4xl m-10 mt-14">
-        {cityInfo.name}, <br />
-        {cityInfo.country}
-      </h1>
-      <div className="text-center">
-        <Link href="/cities" className={blueButton}>
-          {" "}
-          Back to Cities
-        </Link>
+      <div className="mb-20">
+        <div className="text-right mr-10">
+          <Link href="/cities" className={blueButton}>
+            {" "}
+            Back to Cities
+          </Link>
+        </div>
+        <h1 className="font-crimson-pro uppercase text-center text-4xl  mt-14">
+          {cityInfo.name}, <br />
+          {cityInfo.country}
+        </h1>
+        <CityInfo
+          city={cityInfo.name}
+          selected={selected}
+          setSelected={setSelected}
+        />
+        {/* Render the rest of the city information */}
+        {/* <Meetups meetups={cityInfo.meetups} /> */}
+        <div className="lg:w-2/3 mx-auto">
+          {/* {selected === "meetups" && <Meetups meetups={cityInfo.meetups} />} */}
+          {selected === "meetups" && cityInfo.meetups && <Meetups meetups={cityInfo.meetups} />}
+        </div>
+        <div className="">
+          {selected === "members" && cityInfo.members  && <MembersList members={cityInfo.members} />}
+        </div>
+        <div className="">
+          {selected === "questions"&& cityInfo.questions  &&
+            // <QuestionsList questions={cityInfo.questions} />
+            <QuestionsList questions={cityInfo.questions} />
+          }
+        </div>
+        <div className="">
+          {selected === "proposals" && cityInfo.proposals &&
+            // <QuestionsList questions={cityInfo.questions} />
+            <ProposalsList proposals={cityInfo.proposals} />
+          }
+        </div>
+        {/* <MembersList members={cityInfo.members} /> */}
       </div>
-      <CityInfo
-        city={cityInfo.name}
-        selected={selected}
-        setSelected={setSelected}
-      />
-      {/* Render the rest of the city information */}
-      {/* <Meetups meetups={cityInfo.meetups} /> */}
-      <div className="md:w-2/3 mx-auto">
-        {selected === "meetups" && <Meetups meetups={cityInfo.meetups} />}
-      </div>
-      <div className="">
-        {selected === "members" && <MembersList members={cityInfo.members} />}
-      </div>
-      {/* <MembersList members={cityInfo.members} /> */}
     </Layout>
   );
 };
