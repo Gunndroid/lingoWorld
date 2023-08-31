@@ -14,10 +14,10 @@ export default function cityInfoPage() {
         <h1 className="font-crimson-pro uppercase text-center text-4xl m-10 mt-14   ">
           City Name
         </h1>{" "}
-        <CityInfo city={city} selected={selected} setSelected={setSelected} />        <div className="w-2/3 mx-auto">
+        {/* <CityInfo city={city} selected={selected} setSelected={setSelected} />        <div className="w-2/3 mx-auto">
           {selected === "meetups" && <Meetups />}
-        </div>
-        {selected === "members" && <MemberList />}
+        </div> */}
+        {/* {selected === "members" && <MemberList />} */}
         {/* {selected === "meetups" && <Meetups />}
         {selected === "meetups" && <Meetups />} */}
         {/* <Manager /> */}

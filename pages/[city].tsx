@@ -51,6 +51,11 @@ const CityPage: React.FC = () => {
     return (
       <Layout>
         <div className="text-center m-20">Nothing found... </div>
+        <CityInfo
+          city={"missing"}
+          selected={selected}
+          setSelected={setSelected}
+        />
         <div className="text-center">
           <Link href="/cities" className={blueButton}>
             {" "}
@@ -80,10 +85,12 @@ const CityPage: React.FC = () => {
       />
       {/* Render the rest of the city information */}
       {/* <Meetups meetups={cityInfo.meetups} /> */}
-      <div className="w-2/3 mx-auto">
+      <div className="md:w-2/3 mx-auto">
         {selected === "meetups" && <Meetups meetups={cityInfo.meetups} />}
       </div>
-      {selected === "members" && <MembersList members={cityInfo.members} />}
+      <div className="">
+        {selected === "members" && <MembersList members={cityInfo.members} />}
+      </div>
       {/* <MembersList members={cityInfo.members} /> */}
     </Layout>
   );

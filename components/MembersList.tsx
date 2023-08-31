@@ -18,7 +18,7 @@ const MemberList: React.FC<MembersListProps> = ({ members }) => {
   };
 
   return (
-    <div className="flex flex-col gap-4  w-1/2 mx-auto">
+    <div className="flex flex-col gap-4 w-11/12  md:w-1/2 mx-auto">
       {/* <h1 className="text-center text-3xl font-crimson-pro">Members</h1> */}
       {members.map((member) => (
         <Member key={member.name} member={member} onClick={handleMemberClick} />
