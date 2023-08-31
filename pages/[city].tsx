@@ -105,17 +105,17 @@ const CityPage: React.FC = () => {
 
   return (
     <Layout>
-      <div className="relative border border-black w-full overflow-hidden h-40 md:h-52 mx-auto mb-10 bg-black">
-        <h1 className="absolute  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-crimson-pro uppercase text-center text-2xl md:text-4xl text-black z-10 border border-black rounded-md w-fit p-4 md:p-6 bg-white">
-          {cityInfo.name}, <br />
-          {cityInfo.country}
+      <div className="relative border border-black w-full overflow-hidden h-40 md:h-60 mx-auto  bg-black">
+        <h1 className="absolute  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-crimson-pro uppercase text-center text-3xl md:text-5xl text-white z-10  w-fit p-4 md:p-g">
+          {cityInfo.name} <br />
+          <span className="md:text-xl text-sm">{cityInfo.country}</span>
         </h1>
         <Image
           layout="fill"
           objectFit="cover"
           src={imageUrl}
           alt="image"
-          className="absolute md:-top-24 z-0 opacity-40"
+          className="absolute md:-top-24 z-0 opacity-30"
         />
       </div>
 
