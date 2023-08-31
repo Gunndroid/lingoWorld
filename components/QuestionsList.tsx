@@ -6,6 +6,7 @@ type QuestionType = {
   name: string;
   question: string;
   imgUrl: string;
+  answer: string;
 };
 
 type QuestionsListProps = {
@@ -18,7 +19,7 @@ const QuestionsList: React.FC<QuestionsListProps> = ({ questions }) => {
   };
 
   return (
-    <div className="flex flex-col gap-4 w-11/12  md:w-1/2 mx-auto">
+    <div className="flex flex-col gap-4 w-11/12  md:w-2/3 mx-auto">
       {questions.map((question) => (
         <Question
           key={question.name}

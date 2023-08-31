@@ -103,33 +103,75 @@ export const cityData = [
         question:
           "Is there a specific location in Buenos Aires where the Mundo Lingo events are regularly held?",
         imgUrl: "https://source.unsplash.com/100x100/?portrait?2",
+        answer:
+          "Yes, the events are usually held at [Location Name], but it's always best to check the meetup page for the latest updates.",
       },
       {
         name: "Charlie Black",
         question:
           "Are there any requirements to participate in a Mundo Lingo event in Buenos Aires?",
         imgUrl: "https://source.unsplash.com/100x100/?portrait?3",
+        answer:
+          "There are no specific requirements! All language levels and backgrounds are welcome. Just come with an open mind and a willingness to learn and communicate.",
       },
       {
         name: "Daisy Brown",
         question:
           "Do I need to be fluent in Spanish to attend a Mundo Lingo event in Buenos Aires, or can beginners participate?",
         imgUrl: "https://source.unsplash.com/100x100/?portrait?4",
+        answer:
+          "Beginners are absolutely welcome! Mundo Lingo events are designed to be inclusive for everyone, regardless of language proficiency.",
       },
       {
         name: "Edward Blue",
         question:
           "How often does Mundo Lingo host events in Buenos Aires, and are they free of charge?",
         imgUrl: "https://source.unsplash.com/100x100/?portrait?5",
+        answer:
+          "Mundo Lingo hosts events every [specific day, e.g., 'Tuesday'] in Buenos Aires. While most events are free, some special events might have a cover charge, so it's best to check the event details.",
       },
       {
         name: "Fiona Grey",
         question:
           "Can I bring a friend with me to the Mundo Lingo event, or is there a limit to the number of attendees?",
         imgUrl: "https://source.unsplash.com/100x100/?portrait?6",
+        answer:
+          "You're welcome to bring a friend! However, there might be a limit on attendees due to venue capacity, especially for popular events, so it's always a good idea to RSVP in advance.",
       },
     ],
-    proposals: [{ name: "name", proposal: "proposal", imgUrl: "" }],
+
+    proposals: [
+      {
+        name: "Carlos Gomez",
+        proposal:
+          "Suggest organizing a weekly virtual language exchange to cater to members from different parts of the world.",
+        imgUrl: "https://source.unsplash.com/100x100/?portrait?2",
+      },
+      {
+        name: "Lucia Morales",
+        proposal:
+          "How about creating a mentorship program where fluent speakers can mentor those wanting to learn their language?",
+        imgUrl: "https://source.unsplash.com/100x100/?portrait?3",
+      },
+      {
+        name: "Gabriel Rodriguez",
+        proposal:
+          "Can we have a special event for indigenous languages? It could help promote and preserve them.",
+        imgUrl: "https://source.unsplash.com/100x100/?portrait?4",
+      },
+      {
+        name: "Sofia Perez",
+        proposal:
+          "Proposal for a 'language of the month' initiative to introduce and immerse members in a new language.",
+        imgUrl: "https://source.unsplash.com/100x100/?portrait?5",
+      },
+      {
+        name: "Diego Fernandez",
+        proposal:
+          "I believe it would be beneficial to organize workshops focused on language learning techniques and resources.",
+        imgUrl: "https://source.unsplash.com/100x100/?portrait?6",
+      },
+    ],
   },
   // Cordoba
   {

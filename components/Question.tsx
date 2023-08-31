@@ -6,6 +6,7 @@ interface QuestionProps {
     name: string;
     question: string;
     imgUrl: string;
+    answer: string;
   };
   onClick: (name: string) => void;
 }
@@ -22,11 +23,15 @@ const Question: React.FC<QuestionProps> = ({ question, onClick }) => {
           alt={`${question.name}'s Avatar`}
           className="object-cover object-center w-full rounded-full dark:bg-gray-500 shadow-sm shadow-black"
         />
+        <h2 className="text-md italic p-2 text-center">{question.name}</h2>
       </div>
       <div className="flex flex-col space-y-4">
-        <div className="flex flex-col">
-          <h2 className="text-2xl font-semibold">{question.name}</h2>
-          <span className="text-black ">{question.question}</span>
+        <div className="flex flex-col p-2">
+          <span className="text-m-golddark text-xl pb-2 ">
+            {question.question}
+          </span>
+
+          <span className="text-black text-xl pb-2 ">{question.answer}</span>
         </div>
       </div>
     </div>

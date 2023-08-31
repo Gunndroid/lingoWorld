@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Image from "next/image";
 
 type CityInfoProps = {
   city: string;
@@ -28,7 +29,9 @@ const CityInfo: React.FC<CityInfoProps> = ({ city, selected, setSelected }) => {
   );
 
   return (
-    <div className="m-10  border border-black rounded-xl overflow-hidden p-10 lg:w-fit w-3/4 mx-auto">
+    <div className="m-10 mb-10 border border-black rounded-xl overflow-hidden p-10 lg:w-fit w-3/4 mx-auto">
+      {/* <div className="m-10 mb-10 border border-black rounded-xl overflow-hidden p-10 lg:w-fit w-3/4 mx-auto"> */}
+
       <div className="flex flex-col lg:flex-row lg:space-x-4 gap-4 justify-between ">
         {[
           // "all",
