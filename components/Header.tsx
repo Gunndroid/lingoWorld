@@ -34,7 +34,7 @@ export default function Header({
           <div className="flex h-fit items-center justify-between">
             {/* Logo */}
 
-            <div className="md:flex md:items-center md:gap-12 w-16  ">
+            <div className="md:flex md:items-center md:gap-12 md:w-16 w-12 ">
               <Link legacyBehavior href="/home">
                 <Image
                   src={logo}
