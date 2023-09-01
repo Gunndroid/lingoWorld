@@ -11,12 +11,14 @@ import QuestionsList from "@/components/QuestionsList";
 import ProposalsList from "@/components/ProposalsList";
 import Image from "next/image";
 import { cityImages } from "@/utils/cityImages";
+import MediaList from "@/components/MediaList";
 
 type CityImagesType = {
   [key: string]: string[];
 };
 
 type CityDataType = {
+  media?: any[] | null; // replace with the actual type if known
   name: string;
   country: string;
   description: string;
@@ -187,7 +189,7 @@ const CityPage: React.FC = () => {
               setSelected={setSelected}
             />
             {/* conditionally rendered view based on selected button */}
-            <div className="lg:w-2/3 mx-auto">
+            <div id="meetups" className="lg:w-2/3 mx-auto">
               {selected === "meetups" &&
               cityInfo.meetups &&
               cityInfo.meetups.length > 0 ? (
@@ -196,22 +198,34 @@ const CityPage: React.FC = () => {
                 <div className="text-center m-20">Nothing found...</div>
               ) : null}
             </div>
-            <div className="">
+            <div id="members" className="">
               {selected === "members" && cityInfo.members && (
                 <MembersList members={cityInfo.members} />
               )}
             </div>
-            <div className="">
+
+            <div id="questions" className="">
               {selected === "questions" && cityInfo.questions && (
                 // <QuestionsList questions={cityInfo.questions} />
                 <QuestionsList questions={cityInfo.questions} />
               )}
             </div>
-            <div className="">
+
+            <div id="proposals" className="">
               {selected === "proposals" && cityInfo.proposals && (
                 // <QuestionsList questions={cityInfo.questions} />
                 <ProposalsList proposals={cityInfo.proposals} />
               )}
+            </div>
+
+            <div id="media" className="lg:w-2/3 mx-auto">
+              {selected === "media" &&
+              cityInfo.media &&
+              cityInfo.media.length > 0 ? (
+                <MediaList media={cityInfo.media} />
+              ) : selected === "media" ? (
+                <div className="text-center m-20">Nothing found...</div>
+              ) : null}
             </div>
             {/* <div className="lg:w-2/3 mx-auto">
               {selected === "swaps" &&
@@ -223,15 +237,6 @@ const CityPage: React.FC = () => {
               ) : null}
             </div>
 
-            <div className="lg:w-2/3 mx-auto">
-              {selected === "media" &&
-              cityInfo.media &&
-              cityInfo.media.length > 0 ? (
-                <MediaList media={cityInfo.media} />
-              ) : selected === "media" ? (
-                <div className="text-center m-20">Nothing found...</div>
-              ) : null}
-            </div>
 
             <div className="lg:w-2/3 mx-auto">
               {selected === "avatars" &&

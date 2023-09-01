@@ -36,7 +36,6 @@
 // export default Member;
 
 import React from "react";
-import { members } from "../utils/members";
 
 interface MemberProps {
   member: {
@@ -44,14 +43,17 @@ interface MemberProps {
     bio: string;
     imgUrl: string;
   };
-  onClick: (name: string) => void;
+  // onClick: (name: string) => void;
 }
 
-const Member: React.FC<MemberProps> = ({ member, onClick }) => {
+const Member: React.FC<MemberProps> = ({
+  member,
+  // onClick
+}) => {
   return (
     <div
-      onClick={() => onClick(member.name)}
-      className={`p-3 flex md:flex-col gap-4 sm:space-x-6 rounded-lg border border-gray-400 bg-gray-50 hover:cursor-pointer items-center`}
+      // onClick={() => onClick(member.name)}
+      className={`p-3 flex md:flex-col gap-4 sm:space-x-6 rounded-lg border border-gray-400 bg-gray-50 items-center select-none`}
     >
       {/* Image */}
       <div className="flex-shrink-0 w-16 md:w-1/8 ">

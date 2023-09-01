@@ -14,7 +14,7 @@ const Proposal: React.FC<ProposalProps> = ({ proposal, onClick }) => {
   return (
     <div
       onClick={() => onClick(proposal.name)}
-      className="p-4 flex gap-4 sm:space-x-6 rounded-lg border border-gray-400 bg-gray-50 hover:cursor-pointer items-center"
+      className="p-4 flex gap-4 sm:space-x-6 rounded-lg border border-gray-400 bg-gray-50 select-none items-center"
     >
       <div className="flex-shrink-0 w-16 md:w-1/8 m-2">
         <img

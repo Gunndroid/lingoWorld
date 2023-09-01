@@ -4,7 +4,7 @@ export const cityData = [
   {
     name: "Buenos Aires",
     country: "Argentina",
-    description: "A vibrant city in Argentina.",
+    description: "A vibrant city in Argentina",
     continent: "Americas",
     meetups: [
       {
@@ -173,7 +173,7 @@ export const cityData = [
     ],
     swaps: [],
     media: [],
-    avatars: []
+    avatars: [],
   },
   // Cordoba
   {
@@ -206,7 +206,8 @@ export const cityData = [
   {
     name: "Rio de Janeiro",
     country: "Brazil",
-    description: "A vibrant city known for its stunning beaches and the iconic Christ the Redeemer statue.",
+    description:
+      "A vibrant city known for its stunning beaches and the iconic Christ the Redeemer statue",
     continent: "Americas",
     meetups: [
       {
@@ -214,14 +215,16 @@ export const cityData = [
         title: "Copacabana Language Exchange",
         time: "Every Friday at 7 PM",
         location: "📍Copacabana Beach",
-        description: "Meet locals and travelers to exchange languages. Free entry and all are welcome.",
+        description:
+          "Meet locals and travelers to exchange languages. Free entry and all are welcome.",
       },
       {
         image: "https://source.unsplash.com/100x100/?rio",
         title: "Ipanema Language Exchange",
         time: "Every Saturday at 6 PM",
         location: "📍Ipanema Beach",
-        description: "Join us for a fun language exchange at the beautiful Ipanema Beach. All language levels welcome.",
+        description:
+          "Join us for a fun language exchange at the beautiful Ipanema Beach. All language levels welcome.",
       },
     ],
     members: [
@@ -244,33 +247,38 @@ export const cityData = [
     questions: [
       {
         name: "Carlos Silva",
-        question: "Are there any requirements to participate in a Rio de Janeiro language exchange event?",
+        question:
+          "Are there any requirements to participate in a Rio de Janeiro language exchange event?",
         imgUrl: "https://source.unsplash.com/100x100/?portrait?11",
-        answer: "There are no specific requirements! All language levels and backgrounds are welcome. Just come with an open mind and a willingness to learn and communicate.",
+        answer:
+          "There are no specific requirements! All language levels and backgrounds are welcome. Just come with an open mind and a willingness to learn and communicate.",
       },
       {
         name: "Lucas Costa",
-        question: "Do I need to be fluent in Portuguese to attend a language exchange event in Rio de Janeiro?",
+        question:
+          "Do I need to be fluent in Portuguese to attend a language exchange event in Rio de Janeiro?",
         imgUrl: "https://source.unsplash.com/100x100/?portrait?13",
-        answer: "Not at all! People of all language levels, including beginners, are welcome at our events.",
+        answer:
+          "Not at all! People of all language levels, including beginners, are welcome at our events.",
       },
     ],
     proposals: [
       {
         name: "Ana Santos",
-        proposal: "How about creating a mentorship program where fluent speakers can mentor those wanting to learn their language?",
+        proposal:
+          "How about creating a mentorship program where fluent speakers can mentor those wanting to learn their language?",
         imgUrl: "https://source.unsplash.com/100x100/?portrait?12",
       },
       {
         name: "Lucas Costa",
-        proposal: "I suggest we organize a monthly 'cultural day' where we focus on the culture and language of a specific country.",
+        proposal:
+          "I suggest we organize a monthly 'cultural day' where we focus on the culture and language of a specific country.",
         imgUrl: "https://source.unsplash.com/100x100/?portrait?13",
       },
     ],
     swaps: [],
     media: [],
-    avatars: []
+    avatars: [],
   },
   // Add more cities here
 ];
-

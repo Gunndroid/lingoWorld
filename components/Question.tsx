@@ -15,7 +15,7 @@ const Question: React.FC<QuestionProps> = ({ question, onClick }) => {
   return (
     <div
       onClick={() => onClick(question.name)}
-      className="p-3 flex gap-4 sm:space-x-6 rounded-lg border border-gray-400 bg-gray-50 hover:cursor-pointer items-center"
+      className="p-3 flex gap-4 sm:space-x-6 rounded-lg border border-gray-400 bg-gray-50 items-center select-none"
     >
       <div className="flex-shrink-0 w-16 md:w-1/8">
         <img
