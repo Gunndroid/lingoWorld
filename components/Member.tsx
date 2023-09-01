@@ -66,7 +66,16 @@ const Member: React.FC<MemberProps> = ({
       {/* Text */}
       <div className="flex flex-col space-y-4">
         <div className="flex flex-col">
-          <h2 className="text-2xl font-semibold">{member.name}</h2>
+          {/* <h2 className="text-2xl font-semibold">{member.name}</h2> */}
+
+          <h2 className="text-2xl font-semibold ">
+            {member.name
+              .split(" ")
+              .map((word, index, arr) =>
+                index === arr.length - 1 ? `${word[0]}.` : word
+              )
+              .join(" ")}
+          </h2>
           <span className="text-black ">{member.bio}</span>
         </div>
       </div>

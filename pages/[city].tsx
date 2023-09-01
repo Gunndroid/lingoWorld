@@ -173,7 +173,7 @@ const CityPage: React.FC = () => {
 
       <div className="mb-20">
         <div className="text-left ml-10">
-          <Link href="/cities" className="border border-black rounded-lg p-3">
+          <Link href="/cities" className="border border-black rounded-md p-2">
             {/* <Link href="/cities" className={blueButton}> */} Back to Cities
           </Link>
         </div>

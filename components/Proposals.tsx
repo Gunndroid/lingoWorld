@@ -22,7 +22,9 @@ const Proposal: React.FC<ProposalProps> = ({ proposal, onClick }) => {
           alt={`${proposal.name}'s Avatar`}
           className="object-cover object-center w-full rounded-full dark:bg-gray-500 shadow-sm shadow-black"
         />
-        <h2 className="text-md pb-2 text-center">{proposal.name}</h2>
+        <h2 className="text-md pb-2 text-center">  {proposal.name.split(' ').map((word, index, arr) => 
+    index === arr.length - 1 ? `${word[0]}.` : word
+  ).join(' ')}</h2>
       </div>
       <div className="flex flex-col space-y-4 p-2">
         <div className="flex flex-col">

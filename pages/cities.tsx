@@ -17,10 +17,10 @@ const CitiesPage: React.FC = () => {
   const [view, setView] = useState("grid"); // Add this line to manage the view state
 
   const pinkButton =
-    " text-white bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 shadow-sm shadow-pink-500/50 dark:shadow-sm dark:shadow-pink-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2";
+    " text-white bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 shadow-sm shadow-pink-500/50 dark:shadow-sm dark:shadow-pink-800/80 font-medium rounded-lg text-sm px-2 py-2 text-center mr-2 mb-2";
 
   const blueButton =
-    " text-white bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-sm shadow-blue-500/50 dark:shadow-sm dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2";
+    " text-white bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-sm shadow-blue-500/50 dark:shadow-sm dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-2 py-2 text-center mr-2 mb-2";
 
   const filteredCities = cities.filter(
     (city) =>
@@ -64,15 +64,15 @@ const CitiesPage: React.FC = () => {
         </div> */}
         {/* Text */}
         <div className="mb-6">
-          <h1 className="font-crimson-pro uppercase text-center text-4xl mt-14 pb-2">
+          <h1 className="font-crimson-pro uppercase text-center text-4xl mt-14 pb-2 px-4">
             Mundo Lingo Cities
           </h1>
-          <p className="text-center text-xl">
+          <p className="text-center md:text-xl">
             Here is a list of cities where our events take place
           </p>
         </div>
 
-        <div className="flex flex-row justify-center mb-10 mx-6 md:mx-12 gap-4 ">
+        <div className="flex flex-row justify-center mb-10 mx- md:mx-12 gap-2 md:gap-4 ">
           {/* <label>Search</label> */}
           <div className="">
             <input
@@ -83,7 +83,7 @@ const CitiesPage: React.FC = () => {
             />
           </div>
           {/* Button */}
-          <div className=" text-center ">
+          <div className="flex flex-row text-center ">
             <button onClick={() => setView("grid")} className={pinkButton}>
               Grid View
             </button>

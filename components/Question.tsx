@@ -23,7 +23,12 @@ const Question: React.FC<QuestionProps> = ({ question, onClick }) => {
           alt={`${question.name}'s Avatar`}
           className="object-cover object-center w-full rounded-full dark:bg-gray-500 shadow-sm shadow-black"
         />
-        <h2 className="text-md italic p-2 text-center">{question.name}</h2>
+        {/* <h2 className="text-md italic p-2 text-center">{question.name}</h2> */}
+        <h2 className="text-md italic p-2 text-center">
+  {question.name.split(' ').map((word, index, arr) => 
+    index === arr.length - 1 ? `${word[0]}.` : word
+  ).join(' ')}
+</h2>
       </div>
       <div className="flex flex-col space-y-4">
         <div className="flex flex-col p-2">

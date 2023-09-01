@@ -53,27 +53,7 @@ const About: React.FC = () => {
 
             {/* group */}
             <div className="flex md:flex-row flex-col  p-10 gap-8 text-center ">
-              <div className="flex flex-col flex-1 overflow-hidden rounded-md shadow-md  border border-black">
-                {/* <img
-                  src="https://images.unsplash.com/photo-1550096141-7263640aa48c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y29tbXVuaXR5fGVufDB8fDB8fHww&auto=format&fit=crop&w=700&q=60"
-                  alt=""
-                  className="h-80 dark:bg-gray-500"
-                /> */}
-                <div className="flex flex-col justify-center flex-1 p-6 bg-white">
-                  <h3 className="text-3xl font-bold">We pivoted… upwards!</h3>
-                  <p className="my-6 ">
-                    Pre-2020 we built communities in 30+ cities around the
-                    world.
-                    <br />
-                    <br />
-                    2020 &apos;happened&apos;, and we gave ourselves an
-                    additional mission... to organise the world&apos;s
-                    communities!
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex flex-col md:flex-col-reverse flex-1 overflow-hidden rounded-md shadow-md  border border-black">
+              <div className="flex flex-col md:flex-col-reverse md:w-2/3 overflow-hidden rounded-md shadow-md  border border-black">
                 {/* <img
                   src="https://images.unsplash.com/photo-1444210971048-6130cf0c46cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fGNvbW11bml0eXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=700&q=60"
                   alt=""
@@ -81,48 +61,70 @@ const About: React.FC = () => {
                 /> */}
                 <div className="flex flex-col justify-center flex-1 p-10 bg-white">
                   <h3 className="text-3xl font-bold">Mundo Lingo Promise</h3>
-
                   <p className="my-6 ">
-                    Integrity: we do not sell your data, nor sell you as
-                    advertising space.
+                    <span className="font-bold">Community</span>
+                    <br />
+                    We don&apos;t interfere, build your community freely.
                     <br />
                     <br />
-                    Dignity: personal space respected, online and offline.
+                    <span className="font-bold">Dignity</span>
+                    <br />
+                    Personal space respected, online and offline.
                     <br />
                     <br />
-                    Community: we don&apos;t interfere, build your community
-                    freely.
+                    <span className="font-bold">Integrity</span>
+                    <br />
+                    We do not sell your data, nor sell you as advertising space.
                   </p>
                 </div>
               </div>
 
-              {/* Feature 5 */}
-              <div className="flex flex-col md:flex-col-reverse flex-1 overflow-hidden rounded-md shadow-md  border border-black">
-                {/* <div className="flex-shrink-0 flex-1">
-                <img
-                  src="https://images.unsplash.com/photo-1461709444300-a6217cec3dff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTEwfHxjb21tdW5pdHl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=700&q=60"
-                  alt=""
-                  className="w-full h-full object-cover"
-                />
-              </div> */}
-                <div className="flex flex-col justify-center flex-1 p-6 bg-white">
-                  <h3 className="text-3xl font-bold">
-                    Mundo Lingo IRL Format + Spaces
-                  </h3>
-                  <p className="my-6 ">
-                    Native language at the top, the rest below stand to mingle,
-                    sit to quit
-                  </p>
-
-                  <p className="mb-6 ">
-                    None-interfering music, beautiful venues, personal space is
-                    respected.
-                  </p>
+              <div className="flex flex-col gap-6">
+                <div className="flex flex-col  overflow-hidden rounded-md shadow-md  border border-black">
+                  {/* <img
+                    src="https://images.unsplash.com/photo-1550096141-7263640aa48c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y29tbXVuaXR5fGVufDB8fDB8fHww&auto=format&fit=crop&w=700&q=60"
+                    alt=""
+                    className="h-80 dark:bg-gray-500"
+                  /> */}
+                  <div className="flex flex-col justify-center flex-1 p-10 bg-white">
+                    <h3 className="text-3xl font-bold">We pivoted, upwards!</h3>
+                    <p className="my-6 ">
+                      Pre-2020 we built communities in 30+ cities around the
+                      world.
+                      <br />
+                      <br />
+                      2020 &apos;happened&apos;, and we gave ourselves an
+                      additional mission... to organise the world&apos;s
+                      communities!
+                    </p>
+                  </div>
+                </div>
+                <div className="flex flex-col md:flex-col-reverse overflow-hidden rounded-md shadow-md  border border-black">
+                  {/* <div className="flex-shrink-0 flex-1">
+                  <img
+                    src="https://images.unsplash.com/photo-1461709444300-a6217cec3dff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTEwfHxjb21tdW5pdHl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=700&q=60"
+                    alt=""
+                    className="w-full h-full object-cover"
+                  />
+                </div> */}
+                  <div className="flex flex-col justify-center flex-1 p-10 bg-white">
+                    <h3 className="text-3xl font-bold">
+                      Mundo Lingo IRL Format + Spaces
+                    </h3>
+                    <p className="my-6 ">
+                      Native language at the top, the rest below stand to
+                      mingle, sit to quit
+                    </p>
+                    <p className="mb-6 ">
+                      None-interfering music, beautiful venues, personal space
+                      is respected.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
 
-            {/* Final */}
+            {/*-------------------- Final-------------------- */}
             <div className="flex flex-col overflow-hidden shadow-md lg:flex-row-reverse  border border-black">
               <div className="flex-shrink-0 flex-1">
                 <img
