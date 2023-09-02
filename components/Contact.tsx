@@ -10,7 +10,7 @@ const Contact: React.FC<ContactProps> = ({ selectedManager }) => {
 
   return (
     <div className="flex justify-center items-center mt-6">
-      <div className=" grid-cols-1 gap-8 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32  text-black  border border-gray-400">
+      <div className=" grid-cols-1 gap-8 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-8 lg:px-16 xl:px-32  text-black  border border-gray-400">
         <div className="flex flex-col justify-between">
           <div className="space-y-2 mb-10">
             <span className="">2.</span>
