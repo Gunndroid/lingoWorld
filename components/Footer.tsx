@@ -18,14 +18,15 @@ const Footer: React.FC = () => {
           </a> */}
         </p>
         <p className="break-words ">
-          <a href="mailto:talent@mundolingo.org">talent@mundolingo.org</a>
+          <a href="mailto:talent@mundolingo.org">talent@demo.org</a>
+          {/* <a href="mailto:talent@mundolingo.org">talent@mundolingo.org</a> */}
         </p>
       </div>
 
       <div className="flex gap-4 mx-auto md:mx-0">
         <div className="w-10">
           <a
-            href="https://www.facebook.com/MundoLingo"
+            // href="https://www.facebook.com/MundoLingo"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -50,7 +51,7 @@ const Footer: React.FC = () => {
         </div>
         <div className="w-10">
           <a
-            href="https://www.instagram.com/mundolingo/"
+            // href="https://www.instagram.com/mundolingo/"
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -6,13 +6,18 @@ import Image from "next/image";
 //   setCurrentView: React.Dispatch<React.SetStateAction<string>>;
 // };
 
-import history from "../public/mundoLingo/mundolingo-history.jpg";
+// import history from "../public/mundoLingo/mundolingo-history.jpg";
 
 const Menu: React.FC = () => {
   return (
     <div className="mb-20">
       <div className="relative border border-black  overflow-hidden h-40 md:h-44 mx-auto mb-10">
-        <Image layout="fill" objectFit="cover" src={history} alt="image" />
+        <Image
+          layout="fill"
+          objectFit="cover"
+          src="https://images.unsplash.com/photo-1473163928189-364b2c4e1135?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80"
+          alt="image"
+        />
       </div>
       <div className="flex flex-col justify-center px-10 md:px-40 md:py-10">
         <h1 className="font-crimson-pro text-center text-4xl pb-6 uppercase">

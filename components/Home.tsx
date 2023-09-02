@@ -41,6 +41,9 @@ const Home: React.FC = () => {
               </div>
               <div className="relative z-10 flex flex-col justify-center flex-1 md:p-6 text-center">
                 <div>
+                  <p className="text-white md:text-4xl text-2xl text-center mb-4">
+                    - Demo Site -
+                  </p>
                   <h2 className="text-white pb-10 md:text-7xl text-5xl text-center font-crimson-pro">
                     Mundo Lingo&apos;s <br /> Community Hub
                   </h2>

@@ -165,7 +165,7 @@ const JoinUsPage: React.FC = () => {
           </p>
           <div className="flex justify-center items-center">
             <button className={goldButton}>
-              <a href="mailto:talent@mundolingo.org">talent@mundolingo.org</a>
+              <a href="mailto:talent@mundolingo.org">talent@demo.org</a>
             </button>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import Chef from "./story/Chef";
 import Video from "./story/Video";
-import philsophy from "../public/mundoLingo/mundo_lingo_philosophy.webp";
+// import philsophy from "../public/mundoLingo/mundo_lingo_philosophy.webp";
 import Image from "next/image";
 
 export default function StoryPage() {
@@ -13,7 +13,7 @@ export default function StoryPage() {
           objectFit="cover"
           // width={900}
           // height={300}
-          src={philsophy}
+          src="https://images.unsplash.com/photo-1620549146260-938c38c31c13?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2765&q=80"
           alt="image"
         />
       </div>

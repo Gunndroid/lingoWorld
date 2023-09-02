@@ -66,6 +66,7 @@ const CitiesPage: React.FC = () => {
         {/* Text */}
         <div className="mb-6">
           <h1 className="font-crimson-pro uppercase text-center text-4xl mt-14 pb-2 px-4">
+            <p className="text-center text-2xl">DEMO</p>
             Mundo Lingo Cities
           </h1>
           <p className="text-center md:text-xl">
@@ -171,7 +172,11 @@ const CitiesPage: React.FC = () => {
                     {continent}
                   </h2>
                   {cityData.map((city: City, index: number) => (
-                    <Link key={index} href={`/${city.name}`} legacyBehavior>
+                    <Link
+                      key={index}
+                      href={`/city/${city.name}`}
+                      legacyBehavior
+                    >
                       <span className="text-xl my-2.5 flex border border-gray-400 rounded-md p-2 md:w-1/2 w-11/12 mx-auto hover:cursor-pointer">
                         {city.name}, {city.country}
                       </span>

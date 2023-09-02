@@ -14,7 +14,7 @@ export const cityHeadingImages: CityImagesType = {
   ],
   cordoba: [
     "https://images.unsplash.com/photo-1547492411-4932ec1bab31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2887&q=80",
-    "https://images.unsplash.com/photo-1619906437551-0226322e0a72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80",
+    // "https://images.unsplash.com/photo-1619906437551-0226322e0a72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80",
   ],
   "la plata": [
     "https://images.unsplash.com/photo-1592593640541-9363711fdb2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80",
