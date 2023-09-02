@@ -10,7 +10,7 @@ export default function SignUp({ onClose, isSignUpOpen }: SignUpProps) {
   if (!isSignUpOpen) return null;
 
   return (
-    <div className="md:w-1/2 w-9/12">
+    <div className="md:w-1/2 w-9/12 ">
       <div className="relative flex flex-col p-10 rounded-md sm:p-10 bg-white text-black ">
         {/* Close Button */}
         <div>

@@ -14,112 +14,110 @@ const cinzel = Cinzel({ subsets: ["latin"] });
 const Home: React.FC = () => {
   return (
     <div>
-      <section className="bg-m-gold text-black md:py-28 py-20 text-xl ">
-        <div>
-          <h2 className="text-white pb-10 md:text-5xl text-5xl text-center font-crimson-pro up">
+      <section className="bg-m-gold text-black  text-xl  pb-20">
+        {/* <div>
+          <h2 className="text-white pb-10 md:text-7xl text-5xl text-center font-crimson-pro up">
             Mundo Lingo&apos;s <br /> Community Hub
           </h2>
           <h3 className="text-white pb-20 md:text-2xl text-2xl text-center font-crimson-pro">
             Connect with your community on every level
           </h3>
-        </div>
+        </div> */}
 
         <section className="  ">
           {/* container */}
           <div className=" mx-auto md:space-y-20">
             {/* Feature 1 */}
-            <div className="flex flex-col overflow-hidden  shadow-md lg:flex-row border border-black">
-              <div className="flex-shrink-0 flex-1">
+            <div className="relative flex flex-col justify-center p-20 mb-20  overflow-hidden shadow-md lg:flex-row border border-black bg-black">
+              <div className="absolute inset-0">
                 <img
                   src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fGNvbW11bml0eXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=700&q=60"
                   alt=""
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover opacity-40"
                 />
               </div>
-              <div className="flex flex-col justify-center flex-1 p-6  bg-white">
-                {/* <span className="text-xs uppercase ">
-                  Join, it's free
-                </span> */}
-                <h3 className="text-3xl font-bold">Our Mission</h3>
-                <p className="my-6 ">
+              <div className="relative z-10 flex flex-col justify-center flex-1 p-6 text-center">
+                <div>
+                  <h2 className="text-white pb-10 md:text-7xl text-5xl text-center font-crimson-pro">
+                    Mundo Lingo&apos;s <br /> Community Hub
+                  </h2>
+                  <h3 className="text-white pb-20 md:text-3xl text-2xl text-center font-crimson-pro">
+                    Connect with your community on every level
+                  </h3>
+                </div>
+                <h3 className="text-3xl font-bold text-white">Our Mission</h3>
+                <p className="my-6 text-white">
                   Build community and solidarity in-real-life, online and around
                   the world.
                 </p>
-                {/* <button type="button" className="self-start">
-                  Action
-                </button> */}
               </div>
             </div>
-
-            {/* group */}
-            <div className="flex md:flex-row flex-col  p-10 gap-8 text-center ">
-              <div className="flex flex-col md:flex-col-reverse md:w-2/3 overflow-hidden rounded-md shadow-md  border border-black">
-                {/* <img
+            <div className="flex flex-col md:flex-col-reverse md:w-2/3 w-5/6 overflow-hidden rounded-2xl shadow-md  border border-black mx-auto text-center">
+              {/* <img
                   src="https://images.unsplash.com/photo-1444210971048-6130cf0c46cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fGNvbW11bml0eXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=700&q=60"
                   alt=""
                   className="h-80 dark:bg-gray-500"
                 /> */}
-                <div className="flex flex-col justify-center flex-1 p-10 bg-white">
-                  <h3 className="text-3xl font-bold">Mundo Lingo Promise</h3>
-                  <p className="my-6 ">
-                    <span className="font-bold">Community</span>
-                    <br />
-                    We don&apos;t interfere, build your community freely.
-                    <br />
-                    <br />
-                    <span className="font-bold">Dignity</span>
-                    <br />
-                    Personal space respected, online and offline.
-                    <br />
-                    <br />
-                    <span className="font-bold">Integrity</span>
-                    <br />
-                    We do not sell your data, nor sell you as advertising space.
-                  </p>
-                </div>
+              <div className="flex flex-col justify-center flex-1 p-10 bg-white">
+                <h3 className="text-3xl font-bold">Mundo Lingo Promise</h3>
+                <p className="my-6 ">
+                  <span className="font-bold">Community</span>
+                  <br />
+                  We don&apos;t interfere, build your community freely.
+                  <br />
+                  <br />
+                  <span className="font-bold">Dignity</span>
+                  <br />
+                  Personal space respected, online and offline.
+                  <br />
+                  <br />
+                  <span className="font-bold">Integrity</span>
+                  <br />
+                  We do not sell your data, nor sell you as advertising space.
+                </p>
               </div>
-
-              <div className="flex flex-col gap-6">
-                <div className="flex flex-col  overflow-hidden rounded-md shadow-md  border border-black">
-                  {/* <img
+            </div>
+            {/* group */}
+            <div className="flex flex-row gap-6 p-8">
+              <div className="flex flex-col flex-1  overflow-hidden rounded-2xl shadow-md  border border-black">
+                {/* <img
                     src="https://images.unsplash.com/photo-1550096141-7263640aa48c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y29tbXVuaXR5fGVufDB8fDB8fHww&auto=format&fit=crop&w=700&q=60"
                     alt=""
                     className="h-80 dark:bg-gray-500"
                   /> */}
-                  <div className="flex flex-col justify-center flex-1 p-10 bg-white">
-                    <h3 className="text-3xl font-bold">We pivoted, upwards!</h3>
-                    <p className="my-6 ">
-                      Pre-2020 we built communities in 30+ cities around the
-                      world.
-                      <br />
-                      <br />
-                      2020 &apos;happened&apos;, and we gave ourselves an
-                      additional mission... to organise the world&apos;s
-                      communities!
-                    </p>
-                  </div>
+                <div className="flex flex-col justify-center flex-1 p-10 bg-white">
+                  <h3 className="text-3xl font-bold">We pivoted, upwards!</h3>
+                  <p className="my-6 ">
+                    Pre-2020 we built communities in 30+ cities around the
+                    world.
+                    <br />
+                    <br />
+                    2020 &apos;happened&apos;, and we gave ourselves an
+                    additional mission... to organise the world&apos;s
+                    communities!
+                  </p>
                 </div>
-                <div className="flex flex-col md:flex-col-reverse overflow-hidden rounded-md shadow-md  border border-black">
-                  {/* <div className="flex-shrink-0 flex-1">
+              </div>
+              <div className="flex flex-col flex-1 overflow-hidden rounded-2xl shadow-md  border border-black">
+                {/* <div className="flex-shrink-0 flex-1">
                   <img
                     src="https://images.unsplash.com/photo-1461709444300-a6217cec3dff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTEwfHxjb21tdW5pdHl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=700&q=60"
                     alt=""
                     className="w-full h-full object-cover"
                   />
                 </div> */}
-                  <div className="flex flex-col justify-center flex-1 p-10 bg-white">
-                    <h3 className="text-3xl font-bold">
-                      Mundo Lingo IRL Format + Spaces
-                    </h3>
-                    <p className="my-6 ">
-                      Native language at the top, the rest below stand to
-                      mingle, sit to quit
-                    </p>
-                    <p className="mb-6 ">
-                      None-interfering music, beautiful venues, personal space
-                      is respected.
-                    </p>
-                  </div>
+                <div className="flex flex-col justify-center flex-1 p-10 bg-white">
+                  <h3 className="text-3xl font-bold">
+                    Mundo Lingo IRL Format + Spaces
+                  </h3>
+                  <p className="my-6 ">
+                    Native language at the top, the rest below stand to mingle,
+                    sit to quit
+                  </p>
+                  <p className="mb-6 ">
+                    None-interfering music, beautiful venues, personal space is
+                    respected.
+                  </p>
                 </div>
               </div>
             </div>
