@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
-// components/About.tsx
+// components/Home.tsx
 import React from "react";
 import Link from "next/link";
 
@@ -11,7 +11,7 @@ const cinzel = Cinzel({ subsets: ["latin"] });
 //   setCurrentView: React.Dispatch<React.SetStateAction<string>>;
 // };
 //
-const About: React.FC = () => {
+const Home: React.FC = () => {
   return (
     <div>
       <section className="bg-m-gold text-black md:py-28 py-20 text-xl ">
@@ -170,4 +170,4 @@ const About: React.FC = () => {
   );
 };
 
-export default About;
+export default Home;

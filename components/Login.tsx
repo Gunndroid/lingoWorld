@@ -3,9 +3,14 @@ import React from "react";
 interface LoginProps {
   onClose: () => void;
   isLoginOpen: boolean;
+  setIsSignUpOpen: (value: boolean) => void; // Add this line
 }
 
-export default function Login({ onClose, isLoginOpen }: LoginProps) {
+const Login: React.FC<LoginProps> = ({
+  isLoginOpen,
+  onClose,
+  setIsSignUpOpen,
+}) => {
   if (!isLoginOpen) return null;
 
   return (
@@ -75,9 +80,13 @@ export default function Login({ onClose, isLoginOpen }: LoginProps) {
               <p className="px-6 text-sm text-center dark:text-gray-400">
                 Don&apos;t have an account yet? <br />
                 <a
+                  onClick={() => {
+                    onClose(); // Close the login modal
+                    setIsSignUpOpen(true); // Open the sign up modal
+                  }}
                   rel="noopener noreferrer"
                   href="#"
-                  className="hover:underline text-m-gold              "
+                  className="hover:underline text-m-gold"
                 >
                   Sign up
                 </a>
@@ -89,4 +98,6 @@ export default function Login({ onClose, isLoginOpen }: LoginProps) {
       </div>
     </div>
   );
-}
+};
+
+export default Login;

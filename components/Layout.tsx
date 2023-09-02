@@ -3,6 +3,7 @@ import React, { useState, SetStateAction } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Login from "@/components/Login";
+import SignUp from "@/components/SignUp";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -10,6 +11,7 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   const [isLoginOpen, setIsLoginOpen] = useState(false);
+  const [isSignUpOpen, setIsSignUpOpen] = useState(false);
 
   return (
     <div className="bg-white text-black font">
@@ -28,6 +30,17 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           <Login
             isLoginOpen={isLoginOpen}
             onClose={() => setIsLoginOpen(false)}
+            setIsSignUpOpen={setIsSignUpOpen} // Pass setIsSignUpOpen to Login
+          />
+        </div>
+      )}
+
+      {isSignUpOpen && (
+        <div className="fixed inset-0 flex items-center justify-center z-50 ">
+          <div className="absolute inset-0 bg-black opacity-50"></div>
+          <SignUp
+            isSignUpOpen={isSignUpOpen}
+            onClose={() => setIsSignUpOpen(false)}
           />
         </div>
       )}

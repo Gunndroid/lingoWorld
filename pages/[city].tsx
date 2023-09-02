@@ -166,7 +166,7 @@ const CityPage: React.FC = () => {
             objectFit="cover"
             src={selectedImage}
             alt="image"
-            className="absolute md:-top-24 z-0 opacity-30"
+            className="absolute md:-top-24 z-0 opacity-40"
           />
         )}
       </div>
