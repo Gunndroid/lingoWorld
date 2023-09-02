@@ -15,7 +15,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
   return (
     <div className="bg-white text-black font">
-      <div className="sticky top-0 z-20 shadow-md">
+      <div className="sticky top-0 z-50 shadow-md">
         <Header
           setIsLoginOpen={setIsLoginOpen}
           setCurrentView={(value: SetStateAction<string>): void => {

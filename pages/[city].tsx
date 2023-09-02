@@ -130,13 +130,16 @@ const CityPage: React.FC = () => {
       </div>
 
       <div className="mb-20 m-1 relative">
-        <div className="text-left ml-10 flex justify-between">
+        <div className="text-leftflex justify-between mb-10">
           <div className="">
-            <Link href="/cities" className="border border-black rounded-md p-2">
+            <Link
+              href="/cities"
+              className="border border-black rounded-md p-2 md:ml-10 ml-2"
+            >
               ← Back to Cities
             </Link>
           </div>
-          <div className="flex flex-row gap-4  font-crimson-pro  text-black mr-10 absolute -top-3 right-0 ">
+          <div className="flex flex-row gap-4  font-crimson-pro  text-black md:mr-10 mr-2 absolute -top-3 right-0 ">
             {/* <div className="flex gap-4 justify-end mr-10"> */}
             <Link href={`/${prevCity.name}`}>
               <button className="border hidden md:block  border-black rounded-lg p-1.5 px-4 bg-white md:w-32">
