@@ -7,18 +7,24 @@ export const cities = [
     country: "Argentina",
     name: "Buenos Aires",
     description: "A vibrant city in Argentina.",
+    imgUrl:
+      "https://images.unsplash.com/photo-1586354822120-bf910e563cdf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2874&q=80",
   },
   {
     continent: "Americas",
     country: "Argentina",
     name: "Cordoba",
     description: "A city known for its Spanish colonial architecture.",
+    imgUrl:
+      "https://images.unsplash.com/photo-1547492411-4932ec1bab31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2887&q=80",
   },
   {
     continent: "Americas",
     country: "Argentina",
     name: "La Plata",
     description: "A city known for its unique city layout.",
+    imgUrl:
+      "https://images.unsplash.com/photo-1606881400491-b5884a57bbc9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2934&q=80",
   },
   // {
   //   continent: "Americas",
@@ -31,12 +37,16 @@ export const cities = [
     country: "Mexico",
     name: "Monterrey",
     description: "A bustling city surrounded by mountains in Mexico.",
+    imgUrl:
+      "https://images.unsplash.com/photo-1618597804943-c77470b8c95b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2946&q=80",
   },
   {
     continent: "Americas",
     country: "Canada",
     name: "Montreal",
     description: "A multicultural city in Canada.",
+    imgUrl:
+      "https://images.unsplash.com/photo-1613060688005-0bbcc1d7fbe3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2874&q=80",
   },
   // {
   //   continent: "Americas",
@@ -50,6 +60,8 @@ export const cities = [
     name: "Rio de Janeiro",
     description:
       "Known for its carnivals and the iconic Christ the Redeemer statue.",
+    imgUrl:
+      "https://images.unsplash.com/photo-1605626995364-4b94598c7728?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80",
   },
   // {
   //   continent: "Americas",
@@ -100,6 +112,8 @@ export const cities = [
     country: "Vietnam",
     name: "Saigon",
     description: "Also known as Ho Chi Minh City, the largest city in Vietnam.",
+    imgUrl:
+      "https://images.unsplash.com/photo-1591218160338-076b4d852ea5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80",
   },
   // {
   //   continent: "Asia",
@@ -162,6 +176,8 @@ export const cities = [
     country: "Switzerland",
     name: "Geneva",
     description: "Known for its Red Cross and United Nations offices.",
+    imgUrl:
+      "https://images.unsplash.com/photo-1580316205823-da182af14ab3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80",
   },
   // {
   //   continent: "Europe",
@@ -187,6 +203,8 @@ export const cities = [
     name: "Paris",
     description:
       "The capital city of France, known for its cafes and the Eiffel Tower.",
+    imgUrl:
+      "https://images.unsplash.com/photo-1543349689-9a4d426bee8e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2901&q=80",
   },
   // {
   //   continent: "Europe",

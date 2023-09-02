@@ -10,9 +10,9 @@ const ContactPage: React.FC = () => {
     "International Inquiries"
   );
 
-  const handleInternationalSelect = () => {
-    setSelectedManager("International Inquiries");
-  };
+  // const handleInternationalSelect = () => {
+  //   setSelectedManager("International Inquiries");
+  // };
 
   return (
     <Layout>
@@ -34,7 +34,7 @@ const ContactPage: React.FC = () => {
         <div className="md:w-1/2 ">
           <ContactYourCity
             setSelectedManager={setSelectedManager}
-            handleInternationalSelect={handleInternationalSelect}
+            // handleInternationalSelect={handleInternationalSelect}
           />{" "}
         </div>
         <div className="md:w-1/2">

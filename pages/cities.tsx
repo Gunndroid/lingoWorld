@@ -10,6 +10,7 @@ type City = {
   country: string;
   description: string;
   continent: string;
+  imgUrl: string;
 };
 
 const CitiesPage: React.FC = () => {
@@ -107,13 +108,19 @@ const CitiesPage: React.FC = () => {
             <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 ">
               {filteredCities.map((city: City, index: number) => (
                 <Link key={index} href={`/${city.name}`} legacyBehavior>
-                  <a
+                  {/* <a
                     className="rounded-xl shadow-md md:w-72 md:h-72 bg-cover bg-center overflow-hidden border-black border mx-auto"
                     style={{
                       backgroundImage: `url(https://source.unsplash.com/random/300x300/?${city.name.replace(
                         /\s/g,
                         ""
                       )})`,
+                    }}
+                  > */}
+                  <a
+                    className="rounded-xl shadow-md md:w-72 md:h-72 bg-cover bg-center overflow-hidden border-black border mx-auto"
+                    style={{
+                      backgroundImage: `url(${city.imgUrl})`,
                     }}
                   >
                     {/* Shape Div */}
