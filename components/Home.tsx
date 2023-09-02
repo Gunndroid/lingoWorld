@@ -27,8 +27,11 @@ const Home: React.FC = () => {
         <section className="  ">
           {/* container */}
           <div className=" mx-auto md:space-y-20">
-            {/* Feature 1 */}
-            <div className="relative flex flex-col justify-center p-20 mb-20  overflow-hidden shadow-md lg:flex-row border border-black bg-black">
+            {/* Landing Image */}
+            <div
+              id="landing"
+              className="relative flex flex-col justify-center px-10 py-14 mb-20  overflow-hidden shadow-md lg:flex-row border border-black bg-black"
+            >
               <div className="absolute inset-0">
                 <img
                   src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fGNvbW11bml0eXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=700&q=60"
@@ -36,7 +39,7 @@ const Home: React.FC = () => {
                   className="w-full h-full object-cover opacity-40"
                 />
               </div>
-              <div className="relative z-10 flex flex-col justify-center flex-1 p-6 text-center">
+              <div className="relative z-10 flex flex-col justify-center flex-1 md:p-6 text-center">
                 <div>
                   <h2 className="text-white pb-10 md:text-7xl text-5xl text-center font-crimson-pro">
                     Mundo Lingo&apos;s <br /> Community Hub
@@ -52,7 +55,11 @@ const Home: React.FC = () => {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col md:flex-col-reverse md:w-2/3 w-5/6 overflow-hidden rounded-2xl shadow-md  border border-black mx-auto text-center">
+
+            <div
+              id="promise"
+              className="flex flex-col md:flex-col-reverse md:w-2/3 w-5/6 overflow-hidden rounded-2xl shadow-md  border border-black mx-auto text-center"
+            >
               {/* <img
                   src="https://images.unsplash.com/photo-1444210971048-6130cf0c46cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fGNvbW11bml0eXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=700&q=60"
                   alt=""
@@ -78,7 +85,7 @@ const Home: React.FC = () => {
               </div>
             </div>
             {/* group */}
-            <div className="flex flex-row gap-6 p-8">
+            <div className="flex md:flex-row flex-col gap-6 p-8 text-center">
               <div className="flex flex-col flex-1  overflow-hidden rounded-2xl shadow-md  border border-black">
                 {/* <img
                     src="https://images.unsplash.com/photo-1550096141-7263640aa48c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y29tbXVuaXR5fGVufDB8fDB8fHww&auto=format&fit=crop&w=700&q=60"
@@ -123,15 +130,15 @@ const Home: React.FC = () => {
             </div>
 
             {/*-------------------- Final-------------------- */}
-            <div className="flex flex-col overflow-hidden shadow-md lg:flex-row-reverse  border border-black">
-              <div className="flex-shrink-0 flex-1">
+            <div className="flex flex-col overflow-hidden shadow-md lg:flex-row-reverse  border border-black bg-white">
+              <div className="flex-shrink-0 flex-1 p-4">
                 <img
                   src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29tbXVuaXR5fGVufDB8fDB8fHww&auto=format&fit=crop&w=700&q=60"
                   alt=""
-                  className="w-full h-full object-cover"
+                  className="w-full h-60 sm:h-80  lg:h-full object-cover border border-black rounded-2xl"
                 />
               </div>
-              <div className="flex flex-col justify-center flex-1 p-14 px-20 bg-white ">
+              <div className="flex flex-col justify-center flex-1 py-8 px-20 bg-white ">
                 {/* <span className="text-xs uppercase ">
                     Join, it's free
                   </span> */}
