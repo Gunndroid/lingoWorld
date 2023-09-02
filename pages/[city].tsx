@@ -104,8 +104,8 @@ const CityPage: React.FC = () => {
 
   return (
     <Layout>
-      <div className="relative border border-black w-full overflow-hidden h-44 md:h-72 mx-auto  bg-black">
-        <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-crimson-pro uppercase text-center text-3xl md:text-5xl text-white z-10  w-full md:p-4 ">
+      <div className="relative border border-black w-full overflow-hidden h-44 md:h-72 mx-auto  bg-black z-30">
+        <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-crimson-pro uppercase text-center text-3xl md:text-5xl text-white z-20  w-full md:p-4 ">
           {cityInfo ? cityInfo.name : city} <br />
           {cityInfo && (
             <span className="md:text-xl text-sm">{cityInfo.country}</span>
@@ -117,25 +117,6 @@ const CityPage: React.FC = () => {
             </span>
           )}
         </h1>
-        <div className="flex flex-row gap-4 absolute top-4 md:right-10 right-4 font-crimson-pro  text-black z-10">
-          {/* <div className="flex gap-4 justify-end mr-10"> */}
-          <Link href={`/${prevCity.name}`}>
-            <button className="border hidden md:block  border-black rounded-lg p-1.5 px-4 bg-white md:w-32">
-              Prev City
-            </button>
-            <button className="border md:hidden border-black rounded-lg p-1.5 px-4 bg-white md:w-32 ">
-              ←
-            </button>
-          </Link>
-          <Link href={`/${nextCity.name}`}>
-            <button className="border hidden md:block  border-black rounded-lg p-1.5 px-4 bg-white md:w-32">
-              Next City
-            </button>
-            <button className="border md:hidden border-black rounded-lg p-1.5 px-4 bg-white md:w-32 ">
-              →
-            </button>
-          </Link>
-        </div>
 
         {selectedImage && (
           <Image
@@ -143,16 +124,37 @@ const CityPage: React.FC = () => {
             objectFit="cover"
             src={selectedImage}
             alt="image"
-            className="absolute md:-top-24 z-0 opacity-40"
+            className="absolute md:-top-24 z-10 opacity-40"
           />
         )}
       </div>
 
-      <div className="mb-20">
-        <div className="text-left ml-10">
-          <Link href="/cities" className="border border-black rounded-md p-2">
-            {/* <Link href="/cities" className={blueButton}> */}← Back to Cities
-          </Link>
+      <div className="mb-20 m-1 relative">
+        <div className="text-left ml-10 flex justify-between">
+          <div className="">
+            <Link href="/cities" className="border border-black rounded-md p-2">
+              ← Back to Cities
+            </Link>
+          </div>
+          <div className="flex flex-row gap-4  font-crimson-pro  text-black mr-10 absolute -top-3 right-0 ">
+            {/* <div className="flex gap-4 justify-end mr-10"> */}
+            <Link href={`/${prevCity.name}`}>
+              <button className="border hidden md:block  border-black rounded-lg p-1.5 px-4 bg-white md:w-32">
+                Prev City
+              </button>
+              <button className="border md:hidden border-black rounded-lg p-1.5 px-4 bg-white md:w-32 ">
+                ←
+              </button>
+            </Link>
+            <Link href={`/${nextCity.name}`}>
+              <button className="border hidden md:block  border-black rounded-lg p-1.5 px-4 bg-white md:w-32">
+                Next City
+              </button>
+              <button className="border md:hidden border-black rounded-lg p-1.5 px-4 bg-white md:w-32 ">
+                →
+              </button>
+            </Link>
+          </div>
         </div>
 
         {cityInfo ? (

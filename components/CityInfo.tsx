@@ -29,10 +29,10 @@ const CityInfo: React.FC<CityInfoProps> = ({ city, selected, setSelected }) => {
   );
 
   return (
-    <div className="m-10 mb-10 border border-black rounded-xl overflow-hidden p-4 md:p-10 lg:w-fit w-3/4 mx-auto">
+    <div className="m-6 mb-10 border border-black rounded-xl overflow-hidden p-4 md:p-10 lg:w-fit w-5/6 mx-auto">
       {/* <div className="m-10 mb-10 border border-black rounded-xl overflow-hidden p-10 lg:w-fit w-3/4 mx-auto"> */}
 
-      <div className="flex flex-col md:flex-row lg:space-x-4 gap-4 justify-between ">
+      <div className="grid grid-cols-3  md:flex flex-col md:flex-row lg:space-x-4 gap-4 justify-between ">
         {[
           // "all",
           "meetups",
