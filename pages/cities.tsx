@@ -107,7 +107,7 @@ const CitiesPage: React.FC = () => {
             {/* GridView */}
             <div className="grid grid-cols-2  md:grid-cols-3 gap-6 ">
               {filteredCities.map((city: City, index: number) => (
-                <Link key={index} href={`/${city.name}`} legacyBehavior>
+                <Link key={index} href={`/city/${city.name}`} legacyBehavior>
                   {/* <a
                     className="rounded-xl shadow-md md:w-72 md:h-72 bg-cover bg-center overflow-hidden border-black border mx-auto"
                     style={{

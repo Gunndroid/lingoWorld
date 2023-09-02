@@ -91,16 +91,30 @@ const CityPage: React.FC = () => {
     }
   }, [city, cityImagesForCurrentCity]);
 
+  // useEffect(() => {
+  //   if (city) {
+  //     // Ensure city is a string before calling toLowerCase
+  //     const cityStr = Array.isArray(city) ? city[0] : city;
+  //     const data = cityData.find(
+  //       (cityItem) => cityItem.name.toLowerCase() === cityStr.toLowerCase()
+  //     );
+  //     setCityInfo(data);
+  //   }
+  // }, [city]);
+
   useEffect(() => {
-    if (city) {
-      // Ensure city is a string before calling toLowerCase
-      const cityStr = Array.isArray(city) ? city[0] : city;
+    if (cityStr) {
       const data = cityData.find(
         (cityItem) => cityItem.name.toLowerCase() === cityStr.toLowerCase()
       );
-      setCityInfo(data);
+      if (!data) {
+        // If city doesn't exist in cityData, redirect to 404 page
+        router.push("/404");
+      } else {
+        setCityInfo(data);
+      }
     }
-  }, [city]);
+  }, [cityStr, router]);
 
   return (
     <Layout>
@@ -141,7 +155,7 @@ const CityPage: React.FC = () => {
           </div>
           <div className="flex flex-row gap-4  font-crimson-pro  text-black md:mr-10 mr-2 absolute -top-3 right-0 ">
             {/* <div className="flex gap-4 justify-end mr-10"> */}
-            <Link href={`/${prevCity.name}`}>
+            <Link href={`/city/${prevCity.name}`}>
               <button className="border hidden md:block  border-black rounded-lg p-1.5 px-4 bg-white md:w-32">
                 Prev City
               </button>
@@ -149,7 +163,7 @@ const CityPage: React.FC = () => {
                 ←
               </button>
             </Link>
-            <Link href={`/${nextCity.name}`}>
+            <Link href={`/city/${nextCity.name}`}>
               <button className="border hidden md:block  border-black rounded-lg p-1.5 px-4 bg-white md:w-32">
                 Next City
               </button>
