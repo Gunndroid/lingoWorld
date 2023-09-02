@@ -2,7 +2,7 @@ export type CityImagesType = {
   [key: string]: string[];
 };
 
-export const cityImages: CityImagesType = {
+export const cityHeadingImages: CityImagesType = {
   "rio de janeiro": [
     "https://images.unsplash.com/photo-1626568940331-b9efa277b000?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2874&q=80",
     "https://images.unsplash.com/photo-1589394760151-b4c9890765fe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2948&q=80",
@@ -11,11 +11,9 @@ export const cityImages: CityImagesType = {
     "https://images.unsplash.com/photo-1593014109521-48ea09f22592?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80",
     "https://images.unsplash.com/photo-1528392175875-4ce3ab32663c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2874&q=80",
     "https://images.unsplash.com/photo-1586354822120-bf910e563cdf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2874&q=80",
-    "https://images.unsplash.com/photo-1625230256196-3eea49c4e60e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2874&q=80",
   ],
   cordoba: [
     "https://images.unsplash.com/photo-1547492411-4932ec1bab31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2887&q=80",
-    "https://images.unsplash.com/photo-1543198455-0320f7df42f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80",
     "https://images.unsplash.com/photo-1619906437551-0226322e0a72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80",
   ],
   "la plata": [

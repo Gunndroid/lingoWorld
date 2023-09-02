@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Layout from "@/components/Layout";
 import Link from "next/link";
-import { cities } from "@/utils/cities";
+import { cityData } from "@/utils/cityData";
 import Image from "next/image";
 
 type City = {
@@ -10,7 +10,7 @@ type City = {
   country: string;
   description: string;
   continent: string;
-  imgUrl: string;
+  iconImage: string;
 };
 
 const CitiesPage: React.FC = () => {
@@ -23,7 +23,7 @@ const CitiesPage: React.FC = () => {
   const blueButton =
     " text-white bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-sm shadow-blue-500/50 dark:shadow-sm dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-2 py-2 text-center mr-2 mb-2";
 
-  const filteredCities = cities.filter(
+  const filteredCities = cityData.filter(
     (city) =>
       city.name.toLowerCase().includes(search.toLowerCase()) ||
       city.country.toLowerCase().includes(search.toLowerCase())
@@ -105,7 +105,7 @@ const CitiesPage: React.FC = () => {
               />
             </div> */}
             {/* GridView */}
-            <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 ">
+            <div className="grid grid-cols-2  md:grid-cols-3 gap-6 ">
               {filteredCities.map((city: City, index: number) => (
                 <Link key={index} href={`/${city.name}`} legacyBehavior>
                   {/* <a
@@ -118,9 +118,9 @@ const CitiesPage: React.FC = () => {
                     }}
                   > */}
                   <a
-                    className="rounded-xl shadow-md md:w-72 md:h-72 bg-cover bg-center overflow-hidden border-black border mx-auto"
+                    className="rounded-xl shadow-md md:w-50 md:h-50 lg:w-72 lg:h-72 bg-cover bg-center overflow-hidden border-black border mx-auto"
                     style={{
-                      backgroundImage: `url(${city.imgUrl})`,
+                      backgroundImage: `url(${city.iconImage})`,
                     }}
                   >
                     {/* Shape Div */}
@@ -165,12 +165,12 @@ const CitiesPage: React.FC = () => {
                   className="mb-4 p-2 md:w-1/2 rounded-md"
                 />
               </div> */}
-              {Object.entries(groupedCities).map(([continent, cities]) => (
+              {Object.entries(groupedCities).map(([continent, cityData]) => (
                 <li key={continent}>
                   <h2 className="text-2xl m-4 mt-10 text-center">
                     {continent}
                   </h2>
-                  {cities.map((city: City, index: number) => (
+                  {cityData.map((city: City, index: number) => (
                     <Link key={index} href={`/${city.name}`} legacyBehavior>
                       <span className="text-xl my-2.5 flex border border-gray-400 rounded-md p-2 md:w-1/2 w-11/12 mx-auto hover:cursor-pointer">
                         {city.name}, {city.country}

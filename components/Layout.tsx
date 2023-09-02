@@ -40,6 +40,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           <div className="absolute inset-0 bg-black opacity-50"></div>
           <SignUp
             isSignUpOpen={isSignUpOpen}
+            setIsLoginOpen={setIsLoginOpen}
             onClose={() => setIsSignUpOpen(false)}
           />
         </div>

@@ -10,7 +10,7 @@ import Link from "next/link";
 import QuestionsList from "@/components/QuestionsList";
 import ProposalsList from "@/components/ProposalsList";
 import Image from "next/image";
-import { cityImages } from "@/utils/cityImages";
+import { cityHeadingImages } from "@/utils/cityHeadingImages";
 import MediaList from "@/components/MediaList";
 
 type CityImagesType = {
@@ -23,6 +23,7 @@ type CityDataType = {
   country: string;
   description: string;
   continent: string;
+  iconImage: string;
   meetups?: {
     title: string;
     time: string;
@@ -53,23 +54,31 @@ type CityDataType = {
   // }[];
 };
 
-const blueButton =
-  "mt-4 text-white bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-sm shadow-blue-500/50 dark:shadow-sm dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2";
+// const blueButton =
+//   "mt-4 text-white bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-sm shadow-blue-500/50 dark:shadow-sm dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2";
 
 const CityPage: React.FC = () => {
   const router = useRouter();
   const { city } = router.query;
-  // const imageUrl = `https://source.unsplash.com/featured/?${city},city&${Date.now()}`;
 
   const cityStr = Array.isArray(city) ? city[0] : city;
   const cityImagesForCurrentCity = cityStr
-    ? cityImages[cityStr.toLowerCase()]
+    ? cityHeadingImages[cityStr.toLowerCase()]
     : undefined;
 
-  // Use useState to store the selected image
+  const [selected, setSelected] = useState("meetups");
+  const [cityInfo, setCityInfo] = useState<CityDataType | undefined>(undefined);
   const [selectedImage, setSelectedImage] = useState<string | undefined>(
     undefined
   );
+
+  const cityIndex = cityData.findIndex(
+    (cityItem) => cityItem.name.toLowerCase() === cityStr?.toLowerCase()
+  );
+
+  const nextCity = cityData[(cityIndex + 1) % cityData.length];
+  const prevCity =
+    cityData[(cityIndex - 1 + cityData.length) % cityData.length];
 
   // Use useEffect to update the selected image only when the page is first loaded or when the city changes
   useEffect(() => {
@@ -82,16 +91,6 @@ const CityPage: React.FC = () => {
     }
   }, [city, cityImagesForCurrentCity]);
 
-  // Select a random image from the array for the current city
-  // const imageUrl = cityImagesForCurrentCity
-  //   ? cityImagesForCurrentCity[
-  //       Math.floor(Math.random() * cityImagesForCurrentCity.length)
-  //     ]
-  //   : undefined;
-
-  const [selected, setSelected] = useState("meetups");
-  const [cityInfo, setCityInfo] = useState<CityDataType | undefined>(undefined);
-
   useEffect(() => {
     if (city) {
       // Ensure city is a string before calling toLowerCase
@@ -102,41 +101,6 @@ const CityPage: React.FC = () => {
       setCityInfo(data);
     }
   }, [city]);
-
-  // if (!cityInfo) {
-  //   return (
-  //     <Layout>
-  //       <div className="relative border border-black w-full overflow-hidden h-40 md:h-44 mx-auto mb-10">
-  //         <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-crimson-pro uppercase text-center text-4xl text-black z-10 border border-black rounded-lg w-fit p-6 bg-white">
-  //           {city}
-  //         </h1>
-  //         <Image
-  //           layout="fill"
-  //           objectFit="cover"
-  //           src={imageUrl}
-  //           alt="image"
-  //           className="absolute md:-top-24 z-0"
-  //         />
-  //       </div>
-  //       <div className="text-left ml-10">
-  //         <Link href="/cities" className={blueButton}>
-  //           {" "}
-  //           Back to Cities
-  //         </Link>
-  //       </div>
-  //       {/* <h1 className="font-crimson-pro uppercase text-center text-4xl m-10 mt-14">
-  //         {city}
-  //       </h1> */}
-  //       <CityInfo
-  //         city={"missing"}
-  //         selected={selected}
-  //         setSelected={setSelected}
-  //       />
-
-  //       <div className="text-center m-20">Nothing found... </div>
-  //     </Layout>
-  //   );
-  // }
 
   return (
     <Layout>
@@ -153,13 +117,26 @@ const CityPage: React.FC = () => {
             </span>
           )}
         </h1>
-        {/* <Image
-          layout="fill"
-          objectFit="cover"
-          src={imageUrl}
-          alt="image"
-          className="absolute md:-top-24 z-0 opacity-30"
-        /> */}
+        <div className="flex flex-row gap-4 absolute top-4 md:right-10 right-4 font-crimson-pro  text-black z-10">
+          {/* <div className="flex gap-4 justify-end mr-10"> */}
+          <Link href={`/${prevCity.name}`}>
+            <button className="border hidden md:block  border-black rounded-lg p-1.5 px-4 bg-white md:w-32">
+              Prev City
+            </button>
+            <button className="border md:hidden border-black rounded-lg p-1.5 px-4 bg-white md:w-32 ">
+              ←
+            </button>
+          </Link>
+          <Link href={`/${nextCity.name}`}>
+            <button className="border hidden md:block  border-black rounded-lg p-1.5 px-4 bg-white md:w-32">
+              Next City
+            </button>
+            <button className="border md:hidden border-black rounded-lg p-1.5 px-4 bg-white md:w-32 ">
+              →
+            </button>
+          </Link>
+        </div>
+
         {selectedImage && (
           <Image
             layout="fill"
@@ -174,13 +151,10 @@ const CityPage: React.FC = () => {
       <div className="mb-20">
         <div className="text-left ml-10">
           <Link href="/cities" className="border border-black rounded-md p-2">
-            {/* <Link href="/cities" className={blueButton}> */} Back to Cities
+            {/* <Link href="/cities" className={blueButton}> */}← Back to Cities
           </Link>
         </div>
-        {/* <h1 className="font-crimson-pro uppercase text-center text-4xl  mt-14">
-          {cityInfo.name}, <br />
-          {cityInfo.country}
-        </h1> */}
+
         {cityInfo ? (
           <>
             <CityInfo
@@ -259,7 +233,6 @@ const CityPage: React.FC = () => {
             <div className="text-center m-20">Nothing found... </div>
           </>
         )}
-        {/* <MembersList members={cityInfo.members} /> */}
       </div>
     </Layout>
   );
