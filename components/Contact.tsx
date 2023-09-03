@@ -16,11 +16,11 @@ const Contact: React.FC<ContactProps> = ({ selectedManager }) => {
             <span className="">2.</span>
             <h2 className="text-4xl font-bold py-4">
               <span className="text-m-gold">Contact</span> <br />{" "}
-              {selectedManager || "Mundo Lingo"}
+              {selectedManager || "ML Connect"}
             </h2>
             <div className="dark:text-black">
-              Reach out to Mundo Lingo and share your thoughts! We&apos;re
-              always glad to connect.
+              Reach out to ML Connect and share your thoughts! We&apos;re always
+              glad to connect.
             </div>
           </div>
           {/* <img

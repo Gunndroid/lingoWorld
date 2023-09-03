@@ -17,40 +17,44 @@ export const cityData = [
     meetups: [
       {
         image:
-          "https://mundolingo-prod.s3-eu-west-1.amazonaws.com/uploads/02323b2b-94cf-448d-9c7a-ab4b82122c41.jpeg",
+          // "https://mundolingo-prod.s3-eu-west-1.amazonaws.com/uploads/02323b2b-94cf-448d-9c7a-ab4b82122c41.jpeg",
+          "https://images.unsplash.com/photo-1583244532610-2a234e7c3eca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80",
         title: "Trova",
         time: "Every Thursday at 9 PM",
         location: "📍Trova · Honduras 5903",
         description:
-          "Locals and expats meet every week to chat, meet new people and share ideas. It's free and everyone is welcome",
+          "People from the community and newcomers gather weekly for conversations, networking, and idea-sharing. There's no cost to join, and all are welcome.",
       },
       {
         image:
-          "https://mundolingo-prod.s3-eu-west-1.amazonaws.com/uploads/5dc1f67b-4d08-463f-bffa-31702ae70ee4.jpeg",
+          // "https://mundolingo-prod.s3-eu-west-1.amazonaws.com/uploads/5dc1f67b-4d08-463f-bffa-31702ae70ee4.jpeg",
+          "https://images.unsplash.com/photo-1515092744438-961dffe687bb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2950&q=80",
         title: "Palermo",
 
         time: "Every Wednesday at 9 PM",
         location: "📍Baum Palermo · José A. Cabrera 4427",
         description:
-          "Locals and expats meet every week to chat, meet new people and share ideas. It's free and everyone is welcome",
+          "People from the community and newcomers gather weekly for conversations, networking, and idea-sharing. There's no cost to join, and all are welcome.",
       },
       {
         image:
-          "https://mundolingo-prod.s3-eu-west-1.amazonaws.com/uploads/907430c6-a20d-47c4-b33a-a2f751dafcbf.jpeg",
+          // "https://mundolingo-prod.s3-eu-west-1.amazonaws.com/uploads/907430c6-a20d-47c4-b33a-a2f751dafcbf.jpeg",
+          "https://images.unsplash.com/photo-1542326891-50b14105a80b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2938&q=80",
         title: "San Telmo",
         time: "Every Tuesday at 9 PM",
         location: "📍Temple Trastienda, Balcarce 470",
         description:
-          "Locals and expats meet every week to chat, meet new people and share ideas. It's free and everyone is welcome",
+          "People from the community and newcomers gather weekly for conversations, networking, and idea-sharing. There's no cost to join, and all are welcome.",
       },
       {
         image:
-          "https://mundolingo-prod.s3.eu-west-1.amazonaws.com/uploads/c6ed18dc-843f-4e6a-9cf2-1bd170a1a1bb.jpeg",
+          // "https://mundolingo-prod.s3.eu-west-1.amazonaws.com/uploads/c6ed18dc-843f-4e6a-9cf2-1bd170a1a1bb.jpeg",
+          "https://images.unsplash.com/photo-1531844251246-9a1bfaae09fc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3016&q=80",
         title: "Chacarita",
         time: "Every Friday at 9 PM",
-        location: "📍Chacarita",
+        location: "📍 Chacarita",
         description:
-          "100s of people from around the 🌎 meet weekly to socialise, have a drink, and meet foreign/local people of all ages. It's chilled, fun and free. Connect with us 👉 linktr.ee/mundolingo",
+          "People from the community and newcomers gather weekly for conversations, networking, and idea-sharing. There's no cost to join, and all are welcome. ",
       },
     ],
     members: [
@@ -109,7 +113,7 @@ export const cityData = [
       {
         name: "Bob White",
         question:
-          "Is there a specific location in Buenos Aires where the Mundo Lingo events are regularly held?",
+          "Is there a specific location in Buenos Aires where the ML Connect events are regularly held?",
         imgUrl: "https://source.unsplash.com/100x100/?portrait?2",
         answer:
           "Yes, the events are usually held at [Location Name], but it's always best to check the meetup page for the latest updates.",
@@ -117,7 +121,7 @@ export const cityData = [
       {
         name: "Charlie Black",
         question:
-          "Are there any requirements to participate in a Mundo Lingo event in Buenos Aires?",
+          "Are there any requirements to participate in a ML Connect event in Buenos Aires?",
         imgUrl: "https://source.unsplash.com/100x100/?portrait?3",
         answer:
           "There are no specific requirements! All language levels and backgrounds are welcome. Just come with an open mind and a willingness to learn and communicate.",
@@ -125,23 +129,23 @@ export const cityData = [
       {
         name: "Daisy Brown",
         question:
-          "Do I need to be fluent in Spanish to attend a Mundo Lingo event in Buenos Aires, or can beginners participate?",
+          "Do I need to be fluent in Spanish to attend a ML Connect event in Buenos Aires, or can beginners participate?",
         imgUrl: "https://source.unsplash.com/100x100/?portrait?4",
         answer:
-          "Beginners are absolutely welcome! Mundo Lingo events are designed to be inclusive for everyone, regardless of language proficiency.",
+          "Beginners are absolutely welcome! ML Connect events are designed to be inclusive for everyone, regardless of language proficiency.",
       },
       {
         name: "Edward Blue",
         question:
-          "How often does Mundo Lingo host events in Buenos Aires, and are they free of charge?",
+          "How often does ML Connect host events in Buenos Aires, and are they free of charge?",
         imgUrl: "https://source.unsplash.com/100x100/?portrait?5",
         answer:
-          "Mundo Lingo hosts events every [specific day, e.g., 'Tuesday'] in Buenos Aires. While most events are free, some special events might have a cover charge, so it's best to check the event details.",
+          "ML Connect hosts events every [specific day, e.g., 'Tuesday'] in Buenos Aires. While most events are free, some special events might have a cover charge, so it's best to check the event details.",
       },
       {
         name: "Fiona Grey",
         question:
-          "Can I bring a friend with me to the Mundo Lingo event, or is there a limit to the number of attendees?",
+          "Can I bring a friend with me to the ML Connect event, or is there a limit to the number of attendees?",
         imgUrl: "https://source.unsplash.com/100x100/?portrait?6",
         answer:
           "You're welcome to bring a friend! However, there might be a limit on attendees due to venue capacity, especially for popular events, so it's always a good idea to RSVP in advance.",
@@ -193,13 +197,12 @@ export const cityData = [
       "https://images.unsplash.com/photo-1547492411-4932ec1bab31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2887&q=80",
     meetups: [
       {
-        image:
-          "https://mundolingo-prod.s3.eu-west-1.amazonaws.com/uploads/c3a033aa-3daa-4ca0-9f9a-f904260865e5.png",
-        title: "Mundo Lingo Cordoba",
+        image: "https://source.unsplash.com/random/?group",
+        title: "ML Connect Cordoba",
         time: "Every Wednesday at 9 PM",
         location: "📍BroBar · Belgrano 647",
         description:
-          "Locals and expats meet every week to chat, meet new people and share ideas. It's free and everyone is welcome",
+          "People from the community and newcomers gather weekly for conversations, networking, and idea-sharing. There's no cost to join, and all are welcome.",
       },
     ],
     members: [],
@@ -220,11 +223,15 @@ export const cityData = [
       "https://images.unsplash.com/photo-1606881400491-b5884a57bbc9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2934&q=80",
     meetups: [
       {
-        image: "https://mundolingo-prod.s3.eu-west-1.amazonaws.com/uploads/14ae99e8-816d-4615-a43c-33d02f6289bc.jpeg",
-        title: "Mundo Lingo La Plata",
+        // image:
+        //   "https://mundolingo-prod.s3.eu-west-1.amazonaws.com/uploads/14ae99e8-816d-4615-a43c-33d02f6289bc.jpeg",
+        image: "https://source.unsplash.com/random/?group",
+
+        title: "ML Connect La Plata",
         time: "Every Wednesday at 8 PM",
         location: "📍Antares · C.56 818",
-        description: "Locals and expats meet every week to chat, meet new people and share ideas. It's free and everyone is welcome",
+        description:
+          "People from the community and newcomers gather weekly for conversations, networking, and idea-sharing. There's no cost to join, and all are welcome.",
       },
     ],
     members: [],
@@ -245,11 +252,15 @@ export const cityData = [
       "https://images.unsplash.com/photo-1618597804943-c77470b8c95b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2946&q=80",
     meetups: [
       {
-        image: "https://mundolingo-prod.s3.eu-west-1.amazonaws.com/uploads/db9ec64e-7d94-45db-af83-ae96d5672c9e.jpeg",
-        title: "Mundo Lingo Monterrey",
+        // image:
+        //   "https://mundolingo-prod.s3.eu-west-1.amazonaws.com/uploads/db9ec64e-7d94-45db-af83-ae96d5672c9e.jpeg",
+        image: "https://source.unsplash.com/random/?group",
+
+        title: "ML Connect Monterrey",
         time: "Every Thursday at 7 PM",
         location: "📍BerlinPlatz",
-        description: "Locals and expats meet every week to chat, meet new people and share ideas. It's free and everyone is welcome",
+        description:
+          "People from the community and newcomers gather weekly for conversations, networking, and idea-sharing. There's no cost to join, and all are welcome.",
       },
     ],
     members: [],
@@ -270,11 +281,15 @@ export const cityData = [
       "https://images.unsplash.com/photo-1613060688005-0bbcc1d7fbe3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2874&q=80",
     meetups: [
       {
-        image: "https://mundolingo-prod.s3.eu-west-1.amazonaws.com/uploads/2996de84-1a45-40b2-b2f5-d8a11a7337cf.jpeg",
-        title: "Mundo Lingo Le Plateau",
+        // image:
+        //   "https://mundolingo-prod.s3.eu-west-1.amazonaws.com/uploads/2996de84-1a45-40b2-b2f5-d8a11a7337cf.jpeg",
+        image: "https://source.unsplash.com/random/?group",
+
+        title: "ML Connect Le Plateau",
         time: "Every Wednesday at 7 PM",
         location: "📍Clébard · 4557 Rue Saint-Denis",
-        description: "Meeting point for locals and expats. Every week, meet new people and share ideas. It's free and everyone is welcome",
+        description:
+          "Meeting point for locals and expats. Every week, meet new people and share ideas. It's free and everyone is welcome",
       },
     ],
     members: [],
@@ -296,22 +311,26 @@ export const cityData = [
       "https://images.unsplash.com/photo-1605626995364-4b94598c7728?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80",
     meetups: [
       {
-        image:
-          "https://mundolingo-prod.s3.eu-west-1.amazonaws.com/uploads/8a386ceb-0aa1-4a33-874d-a5ef682853ff.jpeg",
+        // image:
+        //   "https://mundolingo-prod.s3.eu-west-1.amazonaws.com/uploads/8a386ceb-0aa1-4a33-874d-a5ef682853ff.jpeg",
+        image: "https://source.unsplash.com/random/?group",
+
         title: "Ipanema Beach Hostel",
         time: "Every Thursday at 7 PM",
         location: "📍R. Paul Redfern, 37",
         description:
-          "Locals and expats meet every week to chat, meet new people and share ideas. It's free and everyone is welcome",
+          "People from the community and newcomers gather weekly for conversations, networking, and idea-sharing. There's no cost to join, and all are welcome.",
       },
       {
-        image:
-          "https://mundolingo-prod.s3.eu-west-1.amazonaws.com/uploads/6738b2bb-f1ff-412e-b48a-aa269a541bcc.png",
-        title: "Mundo Lingo Botafogo",
+        // image:
+        //   "https://mundolingo-prod.s3.eu-west-1.amazonaws.com/uploads/6738b2bb-f1ff-412e-b48a-aa269a541bcc.png",
+        image: "https://source.unsplash.com/random/?group",
+
+        title: "ML Connect Botafogo",
         time: "Every Tuesday at 7 PM",
         location: "📍Jungle Garden Pub · R. Martins Ferreira, 48",
         description:
-          "Locals and expats meet every week to chat, meet new people and share ideas. It's free and everyone is welcome",
+          "People from the community and newcomers gather weekly for conversations, networking, and idea-sharing. There's no cost to join, and all are welcome.",
       },
     ],
     members: [
@@ -335,7 +354,7 @@ export const cityData = [
       {
         name: "Mia White",
         question:
-          "Is there a specific location in Rio de Janeiro where the Mundo Lingo events are regularly held?",
+          "Is there a specific location in Rio de Janeiro where the ML Connect events are regularly held?",
         imgUrl: "https://source.unsplash.com/100x100/?portrait?12",
         answer:
           "Yes, the events are usually held at Ipanema Beach Hostel and Jungle Garden Pub, but it's always best to check the meetup page for the latest updates.",
@@ -343,7 +362,7 @@ export const cityData = [
       {
         name: "Noah Black",
         question:
-          "Are there any requirements to participate in a Mundo Lingo event in Rio de Janeiro?",
+          "Are there any requirements to participate in a ML Connect event in Rio de Janeiro?",
         imgUrl: "https://source.unsplash.com/100x100/?portrait?13",
         answer:
           "There are no specific requirements! All language levels and backgrounds are welcome. Just come with an open mind and a willingness to learn and communicate.",
@@ -384,11 +403,15 @@ export const cityData = [
       "https://images.unsplash.com/photo-1591218160338-076b4d852ea5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80",
     meetups: [
       {
-        image: "https://mundolingo-prod.s3.eu-west-1.amazonaws.com/uploads/affd09bd-3e3a-4a06-a9bc-b7482e737f21.png",
-        title: "Mundo Lingo Thao Dien",
+        // image:
+        //   "https://mundolingo-prod.s3.eu-west-1.amazonaws.com/uploads/affd09bd-3e3a-4a06-a9bc-b7482e737f21.png",
+        image: "https://source.unsplash.com/random/?group",
+
+        title: "ML Connect Thao Dien",
         time: "Every Thursday at 7 PM",
         location: "📍SOMA · 6 Lê Văn Miến",
-        description: "Locals and expats meet every week to chat, meet new people and share ideas. It's free and everyone is welcome",
+        description:
+          "People from the community and newcomers gather weekly for conversations, networking, and idea-sharing. There's no cost to join, and all are welcome.",
       },
     ],
     members: [],
@@ -409,11 +432,16 @@ export const cityData = [
       "https://images.unsplash.com/photo-1580316205823-da182af14ab3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80",
     meetups: [
       {
-        image: "https://mundolingo-prod.s3-eu-west-1.amazonaws.com/uploads/3018df76-fdb3-4a29-886d-7659847f1e50.png",
-        title: "Mundo Lingo Geneva",
+        // image:
+        //   "https://mundolingo-prod.s3-eu-west-1.amazonaws.com/uploads/3018df76-fdb3-4a29-886d-7659847f1e50.png",
+
+        image: "https://source.unsplash.com/random/?group",
+
+        title: "ML Connect Geneva",
         time: "Every Thursday at 6 PM",
         location: "Bd Carl-Vogt 20, 1205 Genève",
-        description: "Locals and expats meet every week to chat, meet new people and share ideas. It's free and everyone is welcome",
+        description:
+          "People from the community and newcomers gather weekly for conversations, networking, and idea-sharing. There's no cost to join, and all are welcome.",
       },
     ],
     members: [],
@@ -436,11 +464,15 @@ export const cityData = [
       "https://images.unsplash.com/photo-1543349689-9a4d426bee8e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2901&q=80",
     meetups: [
       {
-        image: "https://mundolingo-prod.s3.eu-west-1.amazonaws.com/uploads/27c3a3b1-624f-4b00-83af-2a207c515256.jpeg",
-        title: "Mundo Lingo Paris",
+        // image:
+        //   "https://mundolingo-prod.s3.eu-west-1.amazonaws.com/uploads/27c3a3b1-624f-4b00-83af-2a207c515256.jpeg",
+        image: "https://source.unsplash.com/random/?group",
+
+        title: "ML Connect Paris",
         time: "Every Thursday at 7 PM",
         location: "📍 La MaiZon 123 Rue Oberkampf",
-        description: "Locals and expats meet every week to chat, meet new people and share ideas. It's free and everyone is welcome",
+        description:
+          "People from the community and newcomers gather weekly for conversations, networking, and idea-sharing. There's no cost to join, and all are welcome.",
       },
     ],
     members: [],

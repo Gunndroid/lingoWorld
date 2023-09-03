@@ -26,7 +26,7 @@
 //       <div className="flex flex-col gap-14 text-center text-xl m-6">
 //         <h1 className="text-4xl ">Join Us</h1>
 //         <div>
-//           <h2>Want to run a Mundo Lingo in your city?</h2>
+//           <h2>Want to run a ML Connect in your city?</h2>
 //           <button type="button" className={pinkButton}>
 //             Run an Event in Your City
 //           </button>
@@ -51,7 +51,7 @@
 //         </div>
 //         <div>
 //           <h2>
-//             Promote Mundo Lingo in your Uni, Hostel, Café, Dorms, Language
+//             Promote ML Connect in your Uni, Hostel, Café, Dorms, Language
 //             school or other location? <br /> We have a gift for you!
 //           </h2>
 //           <button type="button" className={pinkButton}>
@@ -61,7 +61,7 @@
 
 //         <div className="md:w-3/4 text-center flex flex-col gap-6 bg-slate-200 border border-black rounded-lg mx-auto p-10">
 //           <div>
-//             <h2>Want to grow with Mundo Lingo?</h2>
+//             <h2>Want to grow with ML Connect?</h2>
 //           </div>
 //           <p>
 //             Our international team is spread around the world working remotely.
@@ -114,9 +114,9 @@ const JoinUsPage: React.FC = () => {
       </div>
       <div className="flex flex-col gap-14 text-center text-xl m-6 md:m-20">
         <h1 className="text-4xl font-crimson-pro  uppercase">Join Us</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           <div className="flex flex-col items-center border-gray-400 border rounded-xl py-8 px-4">
-            <h2>Want to run a Mundo Lingo in your city?</h2>
+            <h2>Want to run a ML Connect in your city?</h2>
             <button type="button" className={pinkButton}>
               Run an Event in Your City
             </button>
@@ -141,18 +141,18 @@ const JoinUsPage: React.FC = () => {
           </div>
           <div className="flex flex-col items-center border-gray-400 border rounded-xl py-8 px-4">
             <h2>
-              Promote Mundo Lingo in your Uni, Hostel, Café, Dorms, Language
+              Promote ML Connect in your Uni, Hostel, Café, Dorms, Language
               school or other location? We have a gift for you!
             </h2>
             <button type="button" className={pinkButton}>
               Add a Venue
             </button>{" "}
           </div>
-        </div>
+        </div> */}
 
-        <div className="md:w-3/4 text-center flex flex-col gap-6 bg-m-goldlight border border-gray-400 rounded-lg mx-auto p-10">
+        {/* <div className="md:w-3/4 text-center flex flex-col gap-6 bg-m-goldlight border border-gray-400 rounded-lg mx-auto p-10">
           <div>
-            <h2>Want to grow with Mundo Lingo?</h2>
+            <h2>Want to grow with ML Connect?</h2>
           </div>
           <p>
             Our international team is spread around the world working remotely.
@@ -165,7 +165,64 @@ const JoinUsPage: React.FC = () => {
           </p>
           <div className="flex justify-center items-center">
             <button className={goldButton}>
-              <a href="mailto:talent@mundolingo.org">talent@demo.org</a>
+              <a href="mailto:talent@demo.org">talent@demo.org</a>
+            </button>
+          </div>
+        </div> */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <div className="flex flex-col items-center border-gray-400 border rounded-xl py-8 px-4">
+            <h2>Interested in introducing ML Connect to your hometown?</h2>
+            <button type="button" className={pinkButton}>
+              Launch in Your City
+            </button>
+          </div>
+          <div className="flex flex-col items-center border-gray-400 border rounded-xl py-8 px-4">
+            <h2>Become a voice for ML Connect as a local representative</h2>
+            <button type="button" className={pinkButton}>
+              Be a Local Representative
+            </button>
+          </div>
+          <div className="flex flex-col items-center border-gray-400 border rounded-xl py-8 px-4">
+            <h2>Showcase your photographic skills with our community</h2>
+            <button type="button" className={pinkButton}>
+              Join as a Photographer
+            </button>
+          </div>
+          <div className="flex flex-col items-center border-gray-400 border rounded-xl py-8 px-4">
+            <h2>Have a venue in mind that would be perfect for ML Connect?</h2>
+            <button type="button" className={pinkButton}>
+              Suggest a Venue
+            </button>
+          </div>
+          <div className="flex flex-col items-center border-gray-400 border rounded-xl py-8 px-4">
+            <h2>
+              Want to spread the word about ML Connect at your University,
+              Coffee shop, Dormitory, Language center or elsewhere? Let us
+              reward you!
+            </h2>
+            <button type="button" className={pinkButton}>
+              Partner with Us
+            </button>
+          </div>
+        </div>
+
+        <div className="md:w-3/4 text-center flex flex-col gap-6 bg-m-goldlight border border-gray-400 rounded-lg mx-auto p-10">
+          <div>
+            <h2>Join the ML Connect Movement!</h2>
+          </div>
+          <p>
+            Our global ensemble operates seamlessly from diverse corners of the
+            globe.
+          </p>
+          <p>
+            Whether you&apos;re seeking internships or are a seasoned expert
+            keen on exploring the Digital Nomad lifestyle, we&apos;re eager to
+            hear from you. Drop in your succinct cover letter, anticipated
+            salary bracket, and resume at:
+          </p>
+          <div className="flex justify-center items-center">
+            <button className={goldButton}>
+              <a href="mailto:talent@demo.org">talent@demo.org</a>
             </button>
           </div>
         </div>

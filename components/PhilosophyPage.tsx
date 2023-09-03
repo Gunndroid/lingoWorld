@@ -17,7 +17,7 @@ export default function StoryPage() {
           alt="image"
         />
       </div>
-      <div className="flex flex-col gap-10 px-10 md:px-40  text-lg">
+      {/* <div className="flex flex-col gap-10 px-10 md:px-40  text-lg">
         <h1 className="font-crimson-pro uppercase text-center text-4xl md:mt-12 pb-6">
           Our Philosophy{" "}
         </h1>
@@ -55,7 +55,7 @@ export default function StoryPage() {
           Commissions
         </h2>
         <p>
-          Mundo Lingo thrives on social capital. Recognising the reality of the
+          ML Connect thrives on social capital. Recognising the reality of the
           system we&apos;re in, we have approved some limited channels of money
           to enable us to grow. Commissions is not one of them. We cannot give
           nor receive commissions of any kind. We hope our friends in our
@@ -73,6 +73,55 @@ export default function StoryPage() {
           grateful to those people, businesses and organisations, big and small,
           that still choose to promote our events without the prospect of return
           profits.
+        </p>
+      </div> */}
+      <div className="flex flex-col gap-10 px-10 md:px-40  text-lg">
+        <h1 className="font-crimson-pro uppercase text-center text-4xl md:mt-12 pb-6">
+          Core Beliefs
+        </h1>
+        <p>
+          At ML Connect, individuals come before gains. We promise a spam-free
+          experience without financial strings attached. Feel free to contribute
+          by getting a beverage at the venue when the mood strikes. We believe
+          in a free-flowing social environment without disruptions. Our events
+          exclude forced interactions, mandatory sign-ups, and gimmicks. Your
+          privacy and personal space are paramount to us.
+        </p>
+        <h2 className="md:text-3xl text-2xl font-crimson-pro flex flex-col text-center gap-4">
+          Our Stance on Promotions
+        </h2>
+        <p>
+          We decline affiliations, thus eliminating the need to push products
+          during our events. However, we might occasionally highlight a
+          complimentary, language-centric service that aligns with our ethos.
+        </p>
+        <h2 className="md:text-3xl text-2xl font-crimson-pro flex flex-col text-center gap-4">
+          Flags & Politics
+        </h2>
+        <p>
+          Our flag system symbolizes languages. We urge participants not to
+          attribute political connotations to them. Sport the flag corresponding
+          to your linguistic capabilities. Engaging in political conversations
+          is welcome but always in a courteous manner.
+        </p>
+        <h2 className="md:text-3xl text-2xl font-crimson-pro flex flex-col text-center gap-4">
+          Monetary Transactions
+        </h2>
+        <p>
+          While ML Connect believes in the power of connections, we acknowledge
+          the importance of financial support for growth. However, we distance
+          ourselves from any form of commission-based collaborations. We
+          appreciate the understanding of our partners in this endeavor.
+        </p>
+        <h2 className="md:text-3xl text-2xl font-crimson-pro flex flex-col text-center gap-4">
+          Partnership Ethics
+        </h2>
+        <p>
+          We meticulously respect our foundational principles, leading us to
+          decline most cross-promotion or data-sharing collaborations. However,
+          we are open to initiatives with global non-profits, assessed
+          individually. A heartfelt thank you to those who continue to champion
+          our events, sans any direct incentives.
         </p>
       </div>
     </div>

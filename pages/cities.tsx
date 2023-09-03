@@ -66,8 +66,8 @@ const CitiesPage: React.FC = () => {
         {/* Text */}
         <div className="mb-6">
           <h1 className="font-crimson-pro uppercase text-center text-4xl mt-14 pb-2 px-4">
-            <p className="text-center text-2xl">DEMO</p>
-            Mundo Lingo Cities
+            {/* <p className="text-center text-2xl">DEMO</p> */}
+            ML Connect Cities
           </h1>
           <p className="text-center md:text-xl">
             Here is a list of cities where our events take place

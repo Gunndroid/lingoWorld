@@ -80,9 +80,10 @@ const ContactYourCity: React.FC<ContactYourCityProps> = ({
         >
           <div className="flex-shrink-0 w-16 md:w-1/5">
             <img
-              src="/mundoLingo/header-logo-color.png"
+              // src="/mundoLingo/header-logo-color.png"
+              src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80"
               alt="International Inquiries Avatar"
-              className="object-cover object-center w-full rounded-full shadow-sm shadow-black"
+              className="object-cover object-center w-full h-full rounded-full shadow-sm shadow-black"
             />
           </div>
           <div className="flex flex-col space-y-4 ">

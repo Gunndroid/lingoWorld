@@ -19,7 +19,7 @@ const Menu: React.FC = () => {
           alt="image"
         />
       </div>
-      <div className="flex flex-col justify-center px-10 md:px-40 md:py-10">
+      {/* <div className="flex flex-col justify-center px-10 md:px-40 md:py-10">
         <h1 className="font-crimson-pro text-center text-4xl pb-6 uppercase">
           History
         </h1>
@@ -30,23 +30,23 @@ const Menu: React.FC = () => {
           observed the difficulty of befriending locals (despite their
           enthusiastically friendly nature towards foreigners). A problem was
           identified; A social convention was needed to unite locals and
-          internationals. The first Mundo Lingo was organised on July 7th with
+          internationals. The first ML Connect was organised on July 7th with
           the aim of offering Argentines an opportunity to practice languages
           and foreigners a chance to befriend the local Argentines.
           <br />
           <br />
           That same year,{" "}
-          <strong>Mundo Lingo grew to some 300 monthly visits.</strong> A flag
+          <strong>ML Connect grew to some 300 monthly visits.</strong> A flag
           sticker format was devised to allow participants to self-organise
           without direct help from organisers. This would become the unique
-          identifying feature of Mundo Lingo.
+          identifying feature of ML Connect.
           <br />
           <br />
           By 2014 the format proved popular, receiving 2500+ monthly visits. We
           decided to export the &apos;buena onda&apos; to new cities starting in
           Cologne, London, Montreal.{" "}
           <strong>
-            Over the next 5 years Mundo Lingo would open in yet more cities
+            Over the next 5 years ML Connect would open in yet more cities
             reaching 18K+ monthly visits across North + South America, Europe
             and Asia,
           </strong>{" "}
@@ -56,13 +56,56 @@ const Menu: React.FC = () => {
           <br />
           In January 2020 we suspended events in Nanjing, other cities would
           quickly follow in just a few short weeks. We decided to use this
-          down-time to take Mundo Lingo into a bigger mission of enabling
+          down-time to take ML Connect into a bigger mission of enabling
           communities to self-organise in cities around the world.
           <br />
           <br />
-          <strong>In 2022 Mundo Lingo launched a new proposal</strong> to
+          <strong>In 2022 ML Connect launched a new proposal</strong> to
           organise communities, establish consensus and promote solidarity, with
           an initial soft launch in Buenos Aires…
+        </p>
+      </div> */}
+      <div className="flex flex-col justify-center px-10 md:px-40 md:py-10">
+        <h1 className="font-crimson-pro text-center text-4xl pb-6 uppercase">
+          History
+        </h1>
+        <p className="text-lg">
+          A Journey Through Connections...
+          <br />
+          <br /> <strong>In 2011</strong>, in the bustling heart of MetroCity, a
+          traveler realized the challenge of connecting with natives, despite
+          their welcoming demeanor. The inaugural &apos;ML Connect&apos; was
+          held in July, aiming to offer natives an avenue for cultural exchanges
+          and newcomers a chance to connect deeply with the city.
+          <br />
+          <br />
+          The same year saw{" "}
+          <strong>
+            ML Connect gaining traction with 300+ attendees monthly
+          </strong>
+          . A badge system was introduced, enabling attendees to network
+          effortlessly, becoming the hallmark of ML Connect.
+          <br />
+          <br />
+          Come 2014, the concept had garnered a following of 2500 monthly
+          enthusiasts. ML Connect expanded its horizons to cities like NeoTown,
+          EastVille, and TerraPort.{" "}
+          <strong>
+            Over half a decade, our presence spread across continents,
+            witnessing 18K monthly visitors,
+          </strong>{" "}
+          and an online community in the hundreds of thousands, supported by
+          numerous dedicated volunteers.
+          <br />
+          <br />
+          2020 saw a pause in our gatherings, with the first halt in SunCity,
+          followed by others. This period was utilized to envision a broader
+          scope for ML Connect, focusing on empowering global communities to
+          come together.
+          <br />
+          <br />
+          <strong>By 2022, ML Connect unveiled an initiative</strong> centered
+          on community building, consensus, and unity, piloted in MetroCity...
         </p>
       </div>
     </div>

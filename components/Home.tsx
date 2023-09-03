@@ -17,7 +17,7 @@ const Home: React.FC = () => {
       <section className="bg-m-gold text-black  text-xl  pb-20">
         {/* <div>
           <h2 className="text-white pb-10 md:text-7xl text-5xl text-center font-crimson-pro up">
-            Mundo Lingo&apos;s <br /> Community Hub
+            ML Connect&apos;s <br /> Community Hub
           </h2>
           <h3 className="text-white pb-20 md:text-2xl text-2xl text-center font-crimson-pro">
             Connect with your community on every level
@@ -39,13 +39,11 @@ const Home: React.FC = () => {
                   className="w-full h-full object-cover opacity-40"
                 />
               </div>
-              <div className="relative z-10 flex flex-col justify-center flex-1 md:p-6 text-center">
+              {/* <div className="relative z-10 flex flex-col justify-center flex-1 md:p-6 text-center">
                 <div>
-                  <p className="text-white md:text-4xl text-2xl text-center mb-4">
-                    - Demo Site -
-                  </p>
+
                   <h2 className="text-white pb-10 md:text-7xl text-5xl text-center font-crimson-pro">
-                    Mundo Lingo&apos;s <br /> Community Hub
+                    ML Connect&apos;s <br /> Community Hub
                   </h2>
                   <h3 className="text-white pb-20 md:text-3xl text-2xl text-center font-crimson-pro">
                     Connect with your community on every level
@@ -55,6 +53,23 @@ const Home: React.FC = () => {
                 <p className="my-6 text-white">
                   Build community and solidarity in-real-life, online and around
                   the world.
+                </p>
+              </div> */}
+              <div className="relative z-10 flex flex-col justify-center flex-1 md:p-6 text-center">
+                <div>
+                  <h2 className="text-white pb-10 md:text-7xl text-5xl text-center font-crimson-pro">
+                    Welcome to ML Connect <br /> Global Hub
+                  </h2>
+                  <h3 className="text-white pb-20 md:text-3xl text-2xl text-center font-crimson-pro">
+                    Engage, Interact, and Grow with Our Community
+                  </h3>
+                </div>
+                <h3 className="text-3xl font-bold text-white">
+                  Our Commitment
+                </h3>
+                <p className="my-6 text-white">
+                  To foster connections, both online and offline, uniting
+                  individuals across the globe.
                 </p>
               </div>
             </div>
@@ -68,8 +83,8 @@ const Home: React.FC = () => {
                   alt=""
                   className="h-80 dark:bg-gray-500"
                 /> */}
-              <div className="flex flex-col justify-center flex-1 p-10 bg-white">
-                <h3 className="text-3xl font-bold">Mundo Lingo Promise</h3>
+              {/* <div className="flex flex-col justify-center flex-1 p-10 bg-white">
+                <h3 className="text-3xl font-bold">ML Connect Promise</h3>
                 <p className="my-6 ">
                   <span className="font-bold">Community</span>
                   <br />
@@ -85,6 +100,27 @@ const Home: React.FC = () => {
                   <br />
                   We do not sell your data, nor sell you as advertising space.
                 </p>
+              </div> */}
+              <div className="flex flex-col justify-center flex-1 p-10 bg-white">
+                <h3 className="text-3xl font-bold">ML Connect Values</h3>
+                <p className="my-6 ">
+                  <span className="font-bold">Empowerment</span>
+                  <br />
+                  Enabling you to build and nurture your community without
+                  barriers.
+                  <br />
+                  <br />
+                  <span className="font-bold">Respect</span>
+                  <br />
+                  Upholding the personal space and privacy of every member,
+                  in-person and online.
+                  <br />
+                  <br />
+                  <span className="font-bold">Transparency</span>
+                  <br />
+                  Prioritizing your trust; we neither monetize your data nor use
+                  you for advertising gains.
+                </p>
               </div>
             </div>
             {/* group */}
@@ -95,7 +131,7 @@ const Home: React.FC = () => {
                     alt=""
                     className="h-80 dark:bg-gray-500"
                   /> */}
-                <div className="flex flex-col justify-center flex-1 p-10 bg-white">
+                {/* <div className="flex flex-col justify-center flex-1 p-10 bg-white">
                   <h3 className="text-3xl font-bold">We pivoted, upwards!</h3>
                   <p className="my-6 ">
                     Pre-2020 we built communities in 30+ cities around the
@@ -104,6 +140,19 @@ const Home: React.FC = () => {
                     <br />
                     2020 &apos;happened&apos;, and we gave ourselves an
                     additional mission... to organise the world&apos;s
+                    communities!
+                  </p>
+                </div> */}
+
+                <div className="flex flex-col justify-center flex-1 p-10 bg-white">
+                  <h3 className="text-3xl font-bold">Our Evolution</h3>
+                  <p className="my-6 ">
+                    Before a significant global event, we built communities in
+                    numerous cities worldwide.
+                    <br />
+                    <br />
+                    Then, a transformative year arrived, prompting us to expand
+                    our horizons. Now, we aim to bring together global
                     communities!
                   </p>
                 </div>
@@ -116,9 +165,9 @@ const Home: React.FC = () => {
                     className="w-full h-full object-cover"
                   />
                 </div> */}
-                <div className="flex flex-col justify-center flex-1 p-10 bg-white">
+                {/* <div className="flex flex-col justify-center flex-1 p-10 bg-white">
                   <h3 className="text-3xl font-bold">
-                    Mundo Lingo IRL Format + Spaces
+                    ML Connect IRL Format + Spaces
                   </h3>
                   <p className="my-6 ">
                     Native language at the top, the rest below stand to mingle,
@@ -127,6 +176,19 @@ const Home: React.FC = () => {
                   <p className="mb-6 ">
                     None-interfering music, beautiful venues, personal space is
                     respected.
+                  </p>
+                </div> */}
+                <div className="flex flex-col justify-center flex-1 p-10 bg-white">
+                  <h3 className="text-3xl font-bold">
+                    Community Event Format + Ambience
+                  </h3>
+                  <p className="my-6 ">
+                    Primary language showcased prominently; for discussions,
+                    stand to engage, sit to disengage.
+                  </p>
+                  <p className="mb-6 ">
+                    Subtle background tunes, scenic venues, personal boundaries
+                    honored.
                   </p>
                 </div>
               </div>
@@ -142,10 +204,7 @@ const Home: React.FC = () => {
                 />
               </div>
               <div className="flex flex-col justify-center flex-1 py-8 px-20 bg-white ">
-                {/* <span className="text-xs uppercase ">
-                    Join, it's free
-                  </span> */}
-                <h3 className="text-3xl font-bold ital">
+                {/* <h3 className="text-3xl font-bold ital">
                   Our Battle Cry:
                   <br />
                   <br />
@@ -165,10 +224,26 @@ const Home: React.FC = () => {
                   local goods and services, and acting on local ideas and
                   collaboration; we&apos;re building a space with the tools to
                   do that right here.
+                </p> */}
+                <h3 className="text-3xl font-bold ital">
+                  Our Guiding Principle:
+                  <br />
+                  <br />
+                  <span className="italic">
+                    Empower Local &quot;Economies&quot;
+                  </span>
+                </h3>
+                <p className="my-6 ">
+                  Local communities are challenged as small businesses and
+                  independent traders struggle against corporate giants.
+                  <br />
+                  <br />
+                  Advocate for your town or city by bolstering local ventures
+                  and enterprises. Resist the drain of local resources to global
+                  conglomerates by choosing local products, services, and
+                  collaborations. We&apos;re developing a platform with the
+                  necessary tools for this purpose.
                 </p>
-                {/* <button type="button" className="self-start">
-                    Action
-                  </button> */}
               </div>
             </div>
           </div>
