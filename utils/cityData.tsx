@@ -201,9 +201,9 @@ export const cityData = [
       "https://images.unsplash.com/photo-1506259091721-347e791bab0f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YWJzdHJhY3R8ZW58MHwwfDB8fHww&auto=format&fit=crop&w=800&q=60",
       "https://images.unsplash.com/photo-1519751138087-5bf79df62d5b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80",
     ],
-    // swaps: [],
+    //
 
-    // avatars: [],
+    //
   },
   // Cordoba
   {
@@ -224,13 +224,93 @@ export const cityData = [
           "People from the community and newcomers gather weekly for conversations, networking, and idea-sharing. There's no cost to join, and all are welcome.",
       },
     ],
-    members: [],
-    questions: [],
-    proposals: [],
-    headerImages: [],
-    swaps: [],
-    media: [],
-    avatars: [],
+    members: [
+      {
+        name: "Carlos Gomez",
+        bio: "Enthusiastic about linguistics and world cultures. Fluent in Spanish and learning Italian.",
+        imgUrl: "https://source.unsplash.com/100x100/?portrait?1",
+      },
+      {
+        name: "Lucia Morales",
+        bio: "Loves exploring world cuisines. Speaks fluent French and is learning Japanese.",
+        imgUrl: "https://source.unsplash.com/100x100/?portrait?2",
+      },
+      {
+        name: "Gabriel Rodriguez",
+        bio: "Travel enthusiast with a passion for music. Fluent in German and picking up Mandarin.",
+        imgUrl: "https://source.unsplash.com/100x100/?portrait?3",
+      },
+      {
+        name: "Sofia Perez",
+        bio: "Artist who finds inspiration from different cultures. Conversational in Portuguese and Turkish.",
+        imgUrl: "https://source.unsplash.com/100x100/?portrait?4",
+      },
+    ],
+    questions: [
+      {
+        name: "Carlos Gomez",
+        question:
+          "Is there a specific location in Cordoba where the LingoWorld events are regularly held?",
+        imgUrl: "https://source.unsplash.com/100x100/?portrait?1",
+        answer:
+          "Yes, the events are usually held at [Location Name], but it's always best to check the meetup page for the latest updates.",
+      },
+      {
+        name: "Lucia Morales",
+        question:
+          "Are there any requirements to participate in a LingoWorld event in Cordoba?",
+        imgUrl: "https://source.unsplash.com/100x100/?portrait?2",
+        answer:
+          "There are no specific requirements! All language levels and backgrounds are welcome. Just come with an open mind and a willingness to learn and communicate.",
+      },
+      {
+        name: "Gabriel Rodriguez",
+        question:
+          "Do I need to be fluent in Spanish to attend a LingoWorld event in Cordoba, or can beginners participate?",
+        imgUrl: "https://source.unsplash.com/100x100/?portrait?3",
+        answer:
+          "Beginners are absolutely welcome! LingoWorld events are designed to be inclusive for everyone, regardless of language proficiency.",
+      },
+      {
+        name: "Sofia Perez",
+        question:
+          "How often does LingoWorld host events in Cordoba, and are they free of charge?",
+        imgUrl: "https://source.unsplash.com/100x100/?portrait?4",
+        answer:
+          "LingoWorld hosts events every [specific day, e.g., 'Tuesday'] in Cordoba. While most events are free, some special events might have a cover charge, so it's best to check the event details.",
+      },
+    ],
+    proposals: [
+      {
+        name: "Carlos Gomez",
+        proposal:
+          "Suggest organizing a weekly virtual language exchange to cater to members from different parts of the world.",
+        imgUrl: "https://source.unsplash.com/100x100/?portrait?1",
+      },
+      {
+        name: "Lucia Morales",
+        proposal:
+          "How about creating a mentorship program where fluent speakers can mentor those wanting to learn their language?",
+        imgUrl: "https://source.unsplash.com/100x100/?portrait?2",
+      },
+      {
+        name: "Gabriel Rodriguez",
+        proposal:
+          "Can we have a special event for indigenous languages? It could help promote and preserve them.",
+        imgUrl: "https://source.unsplash.com/100x100/?portrait?3",
+      },
+      {
+        name: "Sofia Perez",
+        proposal:
+          "Proposal for a 'language of the month' initiative to introduce and immerse members in a new language.",
+        imgUrl: "https://source.unsplash.com/100x100/?portrait?4",
+      },
+    ],
+    media: [
+      "https://images.unsplash.com/photo-1563089145-599997674d42?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80",
+      "https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YWJzdHJhY3R8ZW58MHwwfDB8fHww&auto=format&fit=crop&w=800&q=60",
+      "https://images.unsplash.com/photo-1510906594845-bc082582c8cc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YWJzdHJhY3R8ZW58MHwwfDB8fHww&auto=format&fit=crop&w=800&q=60",
+    ],
   },
   // La Plata
   {
@@ -242,25 +322,100 @@ export const cityData = [
       "https://images.unsplash.com/photo-1606881400491-b5884a57bbc9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2934&q=80",
     meetups: [
       {
-        // image:
-        //   "https://mundolingo-prod.s3.eu-west-1.amazonaws.com/uploads/14ae99e8-816d-4615-a43c-33d02f6289bc.jpeg",
         image: "https://source.unsplash.com/random/?yellow",
-
         title: "La Plata",
         time: "Every Wednesday at 8 PM",
-        // location: "📍Antares · C.56 818",
         location: "📍 Avenida Santa Fe 1234, Recoleta, Buenos Aires, Argentina",
         description:
           "People from the community and newcomers gather weekly for conversations, networking, and idea-sharing. There's no cost to join, and all are welcome.",
       },
+      {
+        image: "https://source.unsplash.com/random/?blue",
+        title: "La Plata II",
+        time: "Every Friday at 6 PM",
+        location: "📍 Calle 51 1234, La Plata, Buenos Aires, Argentina",
+        description:
+          "A bi-weekly meetup for language enthusiasts. Come join us for a fun and engaging language exchange session.",
+      },
+      {
+        image: "https://source.unsplash.com/random/?green",
+        title: "La Plata III",
+        time: "Every Sunday at 10 AM",
+        location: "📍 Plaza Moreno, La Plata, Buenos Aires, Argentina",
+        description:
+          "A weekend meetup for those who want to practice languages in a relaxed environment. All levels are welcome.",
+      },
+      {
+        image: "https://source.unsplash.com/random/?red",
+        title: "La Plata IV",
+        time: "Every Tuesday at 7 PM",
+        location: "📍 Calle 12 1234, La Plata, Buenos Aires, Argentina",
+        description:
+          "A weekly meetup for those who want to dive deep into language learning. Bring your notebooks and let's learn together.",
+      },
     ],
-    members: [],
-    questions: [],
-    proposals: [],
-    headerImages: [],
-    swaps: [],
-    media: [],
-    avatars: [],
+    members: [
+      {
+        name: "Juan Perez",
+        bio: "Language enthusiast with a love for cultures. Fluent in English and learning French.",
+        imgUrl: "https://source.unsplash.com/100x100/?portrait?7",
+      },
+      {
+        name: "Maria Lopez",
+        bio: "Traveler and language lover. Fluent in Italian and learning German.",
+        imgUrl: "https://source.unsplash.com/100x100/?portrait?8",
+      },
+      {
+        name: "Pedro Rodriguez",
+        bio: "Polyglot with a passion for learning. Fluent in Portuguese and learning Mandarin.",
+        imgUrl: "https://source.unsplash.com/100x100/?portrait?9",
+      },
+    ],
+    questions: [
+      {
+        name: "Juan Perez",
+        question: "What languages are usually spoken at the meetups?",
+        imgUrl: "https://source.unsplash.com/100x100/?portrait?7",
+        answer:
+          "All languages are welcome! We have members who speak a variety of languages, so you'll always find someone to practice with.",
+      },
+      {
+        name: "Maria Lopez",
+        question: "Can I bring a friend to the meetup?",
+        imgUrl: "https://source.unsplash.com/100x100/?portrait?8",
+        answer:
+          "Absolutely! The more the merrier. Just make sure they're also interested in language exchange.",
+      },
+      {
+        name: "Pedro Rodriguez",
+        question: "Do I need to be fluent in a language to attend?",
+        imgUrl: "https://source.unsplash.com/100x100/?portrait?9",
+        answer:
+          "Not at all! Our meetups are for everyone, regardless of their language proficiency. It's a great place to learn and practice.",
+      },
+    ],
+    proposals: [
+      {
+        name: "Juan Perez",
+        proposal:
+          "How about we organize a language exchange trip to a nearby city?",
+        imgUrl: "https://source.unsplash.com/100x100/?portrait?7",
+      },
+      {
+        name: "Maria Lopez",
+        proposal: "I propose we start a book club in different languages.",
+        imgUrl: "https://source.unsplash.com/100x100/?portrait?8",
+      },
+      {
+        name: "Pedro Rodriguez",
+        proposal: "Can we have a special event for sign languages?",
+        imgUrl: "https://source.unsplash.com/100x100/?portrait?9",
+      },
+    ],
+    media: [
+      "https://images.unsplash.com/photo-1563089145-599997674d42?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80",
+      "https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YWJzdHJhY3R8ZW58MHwwfDB8fHww&auto=format&fit=crop&w=800&q=60",
+    ],
   },
   // Monterrey
   {
@@ -287,10 +442,8 @@ export const cityData = [
     members: [],
     questions: [],
     proposals: [],
-    headerImages: [],
-    swaps: [],
+
     media: [],
-    avatars: [],
   },
   // Montreal
   {
@@ -317,10 +470,8 @@ export const cityData = [
     members: [],
     questions: [],
     proposals: [],
-    headerImages: [],
-    swaps: [],
+
     media: [],
-    avatars: [],
   },
   // Rio de Janeiro
   {
@@ -412,10 +563,8 @@ export const cityData = [
         imgUrl: "https://source.unsplash.com/100x100/?portrait?13",
       },
     ],
-    headerImages: [],
-    swaps: [],
+
     media: [],
-    avatars: [],
   },
   // Saigon
   {
@@ -442,10 +591,8 @@ export const cityData = [
     members: [],
     questions: [],
     proposals: [],
-    headerImages: [],
-    swaps: [],
+
     media: [],
-    avatars: [],
   },
   // Geneva
   {
@@ -473,10 +620,8 @@ export const cityData = [
     members: [],
     questions: [],
     proposals: [],
-    headerImages: [],
-    swaps: [],
+
     media: [],
-    avatars: [],
   },
   // Paris
   {
@@ -505,9 +650,7 @@ export const cityData = [
     members: [],
     questions: [],
     proposals: [],
-    headerImages: [],
-    swaps: [],
+
     media: [],
-    avatars: [],
   },
 ];
