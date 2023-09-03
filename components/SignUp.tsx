@@ -30,7 +30,7 @@ export default function SignUp({
         <div className="mb-6 text-center">
           <h1 className="my-3 text-4xl font-bold">Sign up</h1>
           <p className="text-sm dark:text-gray-400">
-            Create a ML Connect Account
+            Create a LingoWorld Account
           </p>
         </div>
         <div>

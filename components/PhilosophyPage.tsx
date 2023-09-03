@@ -55,7 +55,7 @@ export default function StoryPage() {
           Commissions
         </h2>
         <p>
-          ML Connect thrives on social capital. Recognising the reality of the
+          LingoWorld thrives on social capital. Recognising the reality of the
           system we&apos;re in, we have approved some limited channels of money
           to enable us to grow. Commissions is not one of them. We cannot give
           nor receive commissions of any kind. We hope our friends in our
@@ -80,7 +80,7 @@ export default function StoryPage() {
           Core Beliefs
         </h1>
         <p>
-          At ML Connect, individuals come before gains. We promise a spam-free
+          At LingoWorld, individuals come before gains. We promise a spam-free
           experience without financial strings attached. Feel free to contribute
           by getting a beverage at the venue when the mood strikes. We believe
           in a free-flowing social environment without disruptions. Our events
@@ -108,7 +108,7 @@ export default function StoryPage() {
           Monetary Transactions
         </h2>
         <p>
-          While ML Connect believes in the power of connections, we acknowledge
+          While LingoWorld believes in the power of connections, we acknowledge
           the importance of financial support for growth. However, we distance
           ourselves from any form of commission-based collaborations. We
           appreciate the understanding of our partners in this endeavor.

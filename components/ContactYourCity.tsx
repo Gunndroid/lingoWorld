@@ -13,7 +13,7 @@ const ContactYourCity: React.FC<ContactYourCityProps> = ({
 }) => {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedManagerName, setSelectedManagerName] = useState<string | null>(
-    "International Inquiries"
+    "International Reqests"
   );
 
   const filteredManagers = managers.filter((manager) =>
@@ -41,7 +41,7 @@ const ContactYourCity: React.FC<ContactYourCityProps> = ({
         <div className="flex-shrink-0 w-16 md:w-1/5">
           <img
             src="/mundoLingo/header-logo-color.png"
-            alt="International Inquiries Avatar"
+            alt="International Reqests Avatar"
             className="object-cover object-center w-full rounded-full shadow-sm shadow-black"
           />
         </div>
@@ -71,9 +71,9 @@ const ContactYourCity: React.FC<ContactYourCityProps> = ({
       {/* Contacts List */}
       <div className="grid gap-4 max-h-[70vh] md:max-h-[80vh] overflow-y-scroll overflow-x-hidden border border-gray-400 p-4 md:p-6 rounded-lg">
         <div
-          onClick={() => handleManagerSelect("International Inquiries")}
+          onClick={() => handleManagerSelect("International Reqests")}
           className={`p-3 flex gap-4  rounded-lg border border-gray-400 ${
-            selectedManagerName === "International Inquiries"
+            selectedManagerName === "International Reqests"
               ? "bg-m-gold"
               : "bg-gray-50"
           } hover:cursor-pointer`}
@@ -83,14 +83,14 @@ const ContactYourCity: React.FC<ContactYourCityProps> = ({
               // src="/mundoLingo/header-logo-color.png"
               // src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80"
               src="https://images.unsplash.com/photo-1533095729892-33012d8e4a4f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2680&q=80"
-              alt="International Inquiries Avatar"
-              className="object-cover object-center w-full h-full rounded-full shadow-sm shadow-black"
+              alt="International Reqests Avatar"
+              className="object-cover object-center w-full rounded-full shadow-sm shadow-black"
             />
           </div>
           <div className="flex flex-col space-y-4 ">
             <div className="flex flex-col">
               <h2 id="inquiry-type" className="text-2xl font-semibold">
-                International | Inquiries
+                International Reqests
               </h2>
               <span id="description" className="text-black ">
                 Media & International Enquiry

@@ -17,7 +17,7 @@ const Home: React.FC = () => {
       <section className="bg-m-gold text-black  text-xl  pb-20">
         {/* <div>
           <h2 className="text-white pb-10 md:text-7xl text-5xl text-center font-crimson-pro up">
-            ML Connect&apos;s <br /> Community Hub
+            LingoWorld&apos;s <br /> Community Hub
           </h2>
           <h3 className="text-white pb-20 md:text-2xl text-2xl text-center font-crimson-pro">
             Connect with your community on every level
@@ -43,7 +43,7 @@ const Home: React.FC = () => {
                 <div>
 
                   <h2 className="text-white pb-10 md:text-7xl text-5xl text-center font-crimson-pro">
-                    ML Connect&apos;s <br /> Community Hub
+                    LingoWorld&apos;s <br /> Community Hub
                   </h2>
                   <h3 className="text-white pb-20 md:text-3xl text-2xl text-center font-crimson-pro">
                     Connect with your community on every level
@@ -58,7 +58,7 @@ const Home: React.FC = () => {
               <div className="relative z-10 flex flex-col justify-center flex-1 md:p-6 text-center">
                 <div>
                   <h2 className="text-white pb-10 md:text-7xl text-5xl text-center font-crimson-pro">
-                    Welcome to ML <br /> Global Hub
+                    Welcome to LingoWorld
                   </h2>
                   <h3 className="text-white pb-20 md:text-3xl text-2xl text-center font-crimson-pro">
                     Engage, Interact, and Grow with Our Community
@@ -84,7 +84,7 @@ const Home: React.FC = () => {
                   className="h-80 dark:bg-gray-500"
                 /> */}
               {/* <div className="flex flex-col justify-center flex-1 p-10 bg-white">
-                <h3 className="text-3xl font-bold">ML Connect Promise</h3>
+                <h3 className="text-3xl font-bold">LingoWorld Promise</h3>
                 <p className="my-6 ">
                   <span className="font-bold">Community</span>
                   <br />
@@ -102,7 +102,7 @@ const Home: React.FC = () => {
                 </p>
               </div> */}
               <div className="flex flex-col justify-center flex-1 p-10 bg-white">
-                <h3 className="text-3xl font-bold">ML Connect Values</h3>
+                <h3 className="text-3xl font-bold">LingoWorld Values</h3>
                 <p className="my-6 ">
                   <span className="font-bold">Empowerment</span>
                   <br />
@@ -167,7 +167,7 @@ const Home: React.FC = () => {
                 </div> */}
                 {/* <div className="flex flex-col justify-center flex-1 p-10 bg-white">
                   <h3 className="text-3xl font-bold">
-                    ML Connect IRL Format + Spaces
+                    LingoWorld IRL Format + Spaces
                   </h3>
                   <p className="my-6 ">
                     Native language at the top, the rest below stand to mingle,

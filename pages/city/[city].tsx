@@ -156,18 +156,50 @@ const CityPage: React.FC = () => {
           <div className="flex flex-row gap-4  font-crimson-pro  text-black md:mr-10 mr-2 absolute -top-3 right-0 ">
             {/* <div className="flex gap-4 justify-end mr-10"> */}
             <Link href={`/city/${prevCity.name}`}>
-              <button className="border hidden md:block  border-black rounded-lg p-1.5 px-4 bg-white md:w-32">
+              <button
+                className="border hidden md:block  border-black rounded-lg p-1.5 px-4 bg-white md:w-32"
+                onClick={(e) => {
+                  e.preventDefault();
+                  router.push(`/city/${prevCity.name}`, undefined, {
+                    scroll: false,
+                  });
+                }}
+              >
                 Prev City
               </button>
-              <button className="border md:hidden border-black rounded-lg p-1.5 px-4 bg-white md:w-32 ">
+              <button
+                className="border md:hidden border-black rounded-lg p-1.5 px-4 bg-white md:w-32 "
+                onClick={(e) => {
+                  e.preventDefault();
+                  router.push(`/city/${prevCity.name}`, undefined, {
+                    scroll: false,
+                  });
+                }}
+              >
                 ←
               </button>
             </Link>
             <Link href={`/city/${nextCity.name}`}>
-              <button className="border hidden md:block  border-black rounded-lg p-1.5 px-4 bg-white md:w-32">
+              <button
+                className="border hidden md:block  border-black rounded-lg p-1.5 px-4 bg-white md:w-32"
+                onClick={(e) => {
+                  e.preventDefault();
+                  router.push(`/city/${nextCity.name}`, undefined, {
+                    scroll: false,
+                  });
+                }}
+              >
                 Next City
               </button>
-              <button className="border md:hidden border-black rounded-lg p-1.5 px-4 bg-white md:w-32 ">
+              <button
+                className="border md:hidden border-black rounded-lg p-1.5 px-4 bg-white md:w-32 "
+                onClick={(e) => {
+                  e.preventDefault();
+                  router.push(`/city/${nextCity.name}`, undefined, {
+                    scroll: false,
+                  });
+                }}
+              >
                 →
               </button>
             </Link>

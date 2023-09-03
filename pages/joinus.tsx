@@ -26,7 +26,7 @@
 //       <div className="flex flex-col gap-14 text-center text-xl m-6">
 //         <h1 className="text-4xl ">Join Us</h1>
 //         <div>
-//           <h2>Want to run a ML Connect in your city?</h2>
+//           <h2>Want to run a LingoWorld in your city?</h2>
 //           <button type="button" className={pinkButton}>
 //             Run an Event in Your City
 //           </button>
@@ -51,7 +51,7 @@
 //         </div>
 //         <div>
 //           <h2>
-//             Promote ML Connect in your Uni, Hostel, Café, Dorms, Language
+//             Promote LingoWorld in your Uni, Hostel, Café, Dorms, Language
 //             school or other location? <br /> We have a gift for you!
 //           </h2>
 //           <button type="button" className={pinkButton}>
@@ -61,7 +61,7 @@
 
 //         <div className="md:w-3/4 text-center flex flex-col gap-6 bg-slate-200 border border-black rounded-lg mx-auto p-10">
 //           <div>
-//             <h2>Want to grow with ML Connect?</h2>
+//             <h2>Want to grow with LingoWorld?</h2>
 //           </div>
 //           <p>
 //             Our international team is spread around the world working remotely.
@@ -116,7 +116,7 @@ const JoinUsPage: React.FC = () => {
         <h1 className="text-4xl font-crimson-pro  uppercase">Join Us</h1>
         {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           <div className="flex flex-col items-center border-gray-400 border rounded-xl py-8 px-4">
-            <h2>Want to run a ML Connect in your city?</h2>
+            <h2>Want to run a LingoWorld in your city?</h2>
             <button type="button" className={pinkButton}>
               Run an Event in Your City
             </button>
@@ -141,7 +141,7 @@ const JoinUsPage: React.FC = () => {
           </div>
           <div className="flex flex-col items-center border-gray-400 border rounded-xl py-8 px-4">
             <h2>
-              Promote ML Connect in your Uni, Hostel, Café, Dorms, Language
+              Promote LingoWorld in your Uni, Hostel, Café, Dorms, Language
               school or other location? We have a gift for you!
             </h2>
             <button type="button" className={pinkButton}>
@@ -152,7 +152,7 @@ const JoinUsPage: React.FC = () => {
 
         {/* <div className="md:w-3/4 text-center flex flex-col gap-6 bg-m-goldlight border border-gray-400 rounded-lg mx-auto p-10">
           <div>
-            <h2>Want to grow with ML Connect?</h2>
+            <h2>Want to grow with LingoWorld?</h2>
           </div>
           <p>
             Our international team is spread around the world working remotely.
@@ -171,13 +171,13 @@ const JoinUsPage: React.FC = () => {
         </div> */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           <div className="flex flex-col items-center border-gray-400 border rounded-xl py-8 px-4">
-            <h2>Interested in introducing ML Connect to your hometown?</h2>
+            <h2>Interested in introducing LingoWorld to your hometown?</h2>
             <button type="button" className={pinkButton}>
               Launch in Your City
             </button>
           </div>
           <div className="flex flex-col items-center border-gray-400 border rounded-xl py-8 px-4">
-            <h2>Become a voice for ML Connect as a local representative</h2>
+            <h2>Become a voice for LingoWorld as a local representative</h2>
             <button type="button" className={pinkButton}>
               Be a Local Representative
             </button>
@@ -189,14 +189,14 @@ const JoinUsPage: React.FC = () => {
             </button>
           </div>
           <div className="flex flex-col items-center border-gray-400 border rounded-xl py-8 px-4">
-            <h2>Have a venue in mind that would be perfect for ML Connect?</h2>
+            <h2>Have a venue in mind that would be perfect for LingoWorld?</h2>
             <button type="button" className={pinkButton}>
               Suggest a Venue
             </button>
           </div>
           <div className="flex flex-col items-center border-gray-400 border rounded-xl py-8 px-4">
             <h2>
-              Want to spread the word about ML Connect at your University,
+              Want to spread the word about LingoWorld at your University,
               Coffee shop, Dormitory, Language center or elsewhere? Let us
               reward you!
             </h2>
@@ -208,7 +208,7 @@ const JoinUsPage: React.FC = () => {
 
         <div className="md:w-3/4 text-center flex flex-col gap-6 bg-m-goldlight border border-gray-400 rounded-lg mx-auto p-10">
           <div>
-            <h2>Join the ML Connect Movement!</h2>
+            <h2>Join the LingoWorld Movement!</h2>
           </div>
           <p>
             Our global ensemble operates seamlessly from diverse corners of the

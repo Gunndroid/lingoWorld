@@ -19,7 +19,7 @@ const Meetups: React.FC<MeetupsProps> = ({ meetups }) => {
   useEffect(() => {
     const urls = meetups.map((meetup, index) => {
       const randomNum = Math.floor(Math.random() * 100) + 1;
-      return `https://source.unsplash.com/random/?yellow,${randomNum}`;
+      return `https://source.unsplash.com/random/?abstract,${randomNum}`;
     });
     setImageUrls(urls);
   }, [meetups]);

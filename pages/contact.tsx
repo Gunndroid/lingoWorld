@@ -7,11 +7,11 @@ import Image from "next/image";
 
 const ContactPage: React.FC = () => {
   const [selectedManager, setSelectedManager] = useState<string>(
-    "International Inquiries"
+    "International Requests"
   );
 
   // const handleInternationalSelect = () => {
-  //   setSelectedManager("International Inquiries");
+  //   setSelectedManager("International Reqests");
   // };
 
   return (

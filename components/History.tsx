@@ -30,23 +30,23 @@ const Menu: React.FC = () => {
           observed the difficulty of befriending locals (despite their
           enthusiastically friendly nature towards foreigners). A problem was
           identified; A social convention was needed to unite locals and
-          internationals. The first ML Connect was organised on July 7th with
+          internationals. The first LingoWorld was organised on July 7th with
           the aim of offering Argentines an opportunity to practice languages
           and foreigners a chance to befriend the local Argentines.
           <br />
           <br />
           That same year,{" "}
-          <strong>ML Connect grew to some 300 monthly visits.</strong> A flag
+          <strong>LingoWorld grew to some 300 monthly visits.</strong> A flag
           sticker format was devised to allow participants to self-organise
           without direct help from organisers. This would become the unique
-          identifying feature of ML Connect.
+          identifying feature of LingoWorld.
           <br />
           <br />
           By 2014 the format proved popular, receiving 2500+ monthly visits. We
           decided to export the &apos;buena onda&apos; to new cities starting in
           Cologne, London, Montreal.{" "}
           <strong>
-            Over the next 5 years ML Connect would open in yet more cities
+            Over the next 5 years LingoWorld would open in yet more cities
             reaching 18K+ monthly visits across North + South America, Europe
             and Asia,
           </strong>{" "}
@@ -56,11 +56,11 @@ const Menu: React.FC = () => {
           <br />
           In January 2020 we suspended events in Nanjing, other cities would
           quickly follow in just a few short weeks. We decided to use this
-          down-time to take ML Connect into a bigger mission of enabling
+          down-time to take LingoWorld into a bigger mission of enabling
           communities to self-organise in cities around the world.
           <br />
           <br />
-          <strong>In 2022 ML Connect launched a new proposal</strong> to
+          <strong>In 2022 LingoWorld launched a new proposal</strong> to
           organise communities, establish consensus and promote solidarity, with
           an initial soft launch in Buenos Aires…
         </p>
@@ -74,21 +74,21 @@ const Menu: React.FC = () => {
           <br />
           <br /> <strong>In 2011</strong>, in the bustling heart of MetroCity, a
           traveler realized the challenge of connecting with natives, despite
-          their welcoming demeanor. The inaugural &apos;ML Connect&apos; was
+          their welcoming demeanor. The inaugural &apos;LingoWorld&apos; was
           held in July, aiming to offer natives an avenue for cultural exchanges
           and newcomers a chance to connect deeply with the city.
           <br />
           <br />
           The same year saw{" "}
           <strong>
-            ML Connect gaining traction with 300+ attendees monthly
+            LingoWorld gaining traction with 300+ attendees monthly
           </strong>
           . A badge system was introduced, enabling attendees to network
-          effortlessly, becoming the hallmark of ML Connect.
+          effortlessly, becoming the hallmark of LingoWorld.
           <br />
           <br />
           Come 2014, the concept had garnered a following of 2500 monthly
-          enthusiasts. ML Connect expanded its horizons to cities like NeoTown,
+          enthusiasts. LingoWorld expanded its horizons to cities like NeoTown,
           EastVille, and TerraPort.{" "}
           <strong>
             Over half a decade, our presence spread across continents,
@@ -100,11 +100,11 @@ const Menu: React.FC = () => {
           <br />
           2020 saw a pause in our gatherings, with the first halt in SunCity,
           followed by others. This period was utilized to envision a broader
-          scope for ML Connect, focusing on empowering global communities to
+          scope for LingoWorld, focusing on empowering global communities to
           come together.
           <br />
           <br />
-          <strong>By 2022, ML Connect unveiled an initiative</strong> centered
+          <strong>By 2022, LingoWorld unveiled an initiative</strong> centered
           on community building, consensus, and unity, piloted in MetroCity...
         </p>
       </div>

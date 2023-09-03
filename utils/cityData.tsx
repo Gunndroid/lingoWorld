@@ -113,7 +113,7 @@ export const cityData = [
       {
         name: "Bob White",
         question:
-          "Is there a specific location in Buenos Aires where the ML Connect events are regularly held?",
+          "Is there a specific location in Buenos Aires where the LingoWorld events are regularly held?",
         imgUrl: "https://source.unsplash.com/100x100/?portrait?2",
         answer:
           "Yes, the events are usually held at [Location Name], but it's always best to check the meetup page for the latest updates.",
@@ -121,7 +121,7 @@ export const cityData = [
       {
         name: "Charlie Black",
         question:
-          "Are there any requirements to participate in a ML Connect event in Buenos Aires?",
+          "Are there any requirements to participate in a LingoWorld event in Buenos Aires?",
         imgUrl: "https://source.unsplash.com/100x100/?portrait?3",
         answer:
           "There are no specific requirements! All language levels and backgrounds are welcome. Just come with an open mind and a willingness to learn and communicate.",
@@ -129,23 +129,23 @@ export const cityData = [
       {
         name: "Daisy Brown",
         question:
-          "Do I need to be fluent in Spanish to attend a ML Connect event in Buenos Aires, or can beginners participate?",
+          "Do I need to be fluent in Spanish to attend a LingoWorld event in Buenos Aires, or can beginners participate?",
         imgUrl: "https://source.unsplash.com/100x100/?portrait?4",
         answer:
-          "Beginners are absolutely welcome! ML Connect events are designed to be inclusive for everyone, regardless of language proficiency.",
+          "Beginners are absolutely welcome! LingoWorld events are designed to be inclusive for everyone, regardless of language proficiency.",
       },
       {
         name: "Edward Blue",
         question:
-          "How often does ML Connect host events in Buenos Aires, and are they free of charge?",
+          "How often does LingoWorld host events in Buenos Aires, and are they free of charge?",
         imgUrl: "https://source.unsplash.com/100x100/?portrait?5",
         answer:
-          "ML Connect hosts events every [specific day, e.g., 'Tuesday'] in Buenos Aires. While most events are free, some special events might have a cover charge, so it's best to check the event details.",
+          "LingoWorld hosts events every [specific day, e.g., 'Tuesday'] in Buenos Aires. While most events are free, some special events might have a cover charge, so it's best to check the event details.",
       },
       {
         name: "Fiona Grey",
         question:
-          "Can I bring a friend with me to the ML Connect event, or is there a limit to the number of attendees?",
+          "Can I bring a friend with me to the LingoWorld event, or is there a limit to the number of attendees?",
         imgUrl: "https://source.unsplash.com/100x100/?portrait?6",
         answer:
           "You're welcome to bring a friend! However, there might be a limit on attendees due to venue capacity, especially for popular events, so it's always a good idea to RSVP in advance.",
@@ -198,7 +198,7 @@ export const cityData = [
     meetups: [
       {
         image: "https://source.unsplash.com/random/?yellow",
-        title: "ML Connect Cordoba",
+        title: "Cordoba",
         time: "Every Wednesday at 9 PM",
         location: "📍BroBar · Belgrano 647",
         description:
@@ -227,7 +227,7 @@ export const cityData = [
         //   "https://mundolingo-prod.s3.eu-west-1.amazonaws.com/uploads/14ae99e8-816d-4615-a43c-33d02f6289bc.jpeg",
         image: "https://source.unsplash.com/random/?yellow",
 
-        title: "ML Connect La Plata",
+        title: "La Plata",
         time: "Every Wednesday at 8 PM",
         location: "📍Antares · C.56 818",
         description:
@@ -256,7 +256,7 @@ export const cityData = [
         //   "https://mundolingo-prod.s3.eu-west-1.amazonaws.com/uploads/db9ec64e-7d94-45db-af83-ae96d5672c9e.jpeg",
         image: "https://source.unsplash.com/random/?yellow",
 
-        title: "ML Connect Monterrey",
+        title: "Monterrey",
         time: "Every Thursday at 7 PM",
         location: "📍BerlinPlatz",
         description:
@@ -285,7 +285,7 @@ export const cityData = [
         //   "https://mundolingo-prod.s3.eu-west-1.amazonaws.com/uploads/2996de84-1a45-40b2-b2f5-d8a11a7337cf.jpeg",
         image: "https://source.unsplash.com/random/?yellow",
 
-        title: "ML Connect Le Plateau",
+        title: "Le Plateau",
         time: "Every Wednesday at 7 PM",
         location: "📍Clébard · 4557 Rue Saint-Denis",
         description:
@@ -326,7 +326,7 @@ export const cityData = [
         //   "https://mundolingo-prod.s3.eu-west-1.amazonaws.com/uploads/6738b2bb-f1ff-412e-b48a-aa269a541bcc.png",
         image: "https://source.unsplash.com/random/?yellow",
 
-        title: "ML Connect Botafogo",
+        title: "Botafogo",
         time: "Every Tuesday at 7 PM",
         location: "📍Jungle Garden Pub · R. Martins Ferreira, 48",
         description:
@@ -354,7 +354,7 @@ export const cityData = [
       {
         name: "Mia White",
         question:
-          "Is there a specific location in Rio de Janeiro where the ML Connect events are regularly held?",
+          "Is there a specific location in Rio de Janeiro where the LingoWorld events are regularly held?",
         imgUrl: "https://source.unsplash.com/100x100/?portrait?12",
         answer:
           "Yes, the events are usually held at Ipanema Beach Hostel and Jungle Garden Pub, but it's always best to check the meetup page for the latest updates.",
@@ -362,7 +362,7 @@ export const cityData = [
       {
         name: "Noah Black",
         question:
-          "Are there any requirements to participate in a ML Connect event in Rio de Janeiro?",
+          "Are there any requirements to participate in a LingoWorld event in Rio de Janeiro?",
         imgUrl: "https://source.unsplash.com/100x100/?portrait?13",
         answer:
           "There are no specific requirements! All language levels and backgrounds are welcome. Just come with an open mind and a willingness to learn and communicate.",
@@ -407,7 +407,7 @@ export const cityData = [
         //   "https://mundolingo-prod.s3.eu-west-1.amazonaws.com/uploads/affd09bd-3e3a-4a06-a9bc-b7482e737f21.png",
         image: "https://source.unsplash.com/random/?yellow",
 
-        title: "ML Connect Thao Dien",
+        title: "Thao Dien",
         time: "Every Thursday at 7 PM",
         location: "📍SOMA · 6 Lê Văn Miến",
         description:
@@ -437,7 +437,7 @@ export const cityData = [
 
         image: "https://source.unsplash.com/random/?yellow",
 
-        title: "ML Connect Geneva",
+        title: "Geneva",
         time: "Every Thursday at 6 PM",
         location: "Bd Carl-Vogt 20, 1205 Genève",
         description:
@@ -468,7 +468,7 @@ export const cityData = [
         //   "https://mundolingo-prod.s3.eu-west-1.amazonaws.com/uploads/27c3a3b1-624f-4b00-83af-2a207c515256.jpeg",
         image: "https://source.unsplash.com/random/?yellow",
 
-        title: "ML Connect Paris",
+        title: "Paris",
         time: "Every Thursday at 7 PM",
         location: "📍 La MaiZon 123 Rue Oberkampf",
         description:
