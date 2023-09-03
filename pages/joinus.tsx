@@ -165,7 +165,7 @@ const JoinUsPage: React.FC = () => {
           </p>
           <div className="flex justify-center items-center">
             <button className={goldButton}>
-              <a href="mailto:talent@demo.org">talent@demo.org</a>
+              <a href="mailto:talent@LingoWorld.org">talent@LingoWorld.org</a>
             </button>
           </div>
         </div> */}
@@ -222,7 +222,7 @@ const JoinUsPage: React.FC = () => {
           </p>
           <div className="flex justify-center items-center">
             <button className={goldButton}>
-              <a href="mailto:talent@demo.org">talent@demo.org</a>
+              <a href="mailto:talent@LingoWorld.org">talent@LingoWorld.org</a>
             </button>
           </div>
         </div>

@@ -18,7 +18,6 @@ type CityImagesType = {
 };
 
 type CityDataType = {
-  media?: any[] | null; // replace with the actual type if known
   name: string;
   country: string;
   description: string;
@@ -47,11 +46,7 @@ type CityDataType = {
     proposal: string;
     imgUrl: string;
   }[];
-  // members: {
-  //   name: string;
-  //   bio: string;
-  //   imgUrl: string;
-  // }[];
+  media?: any[] | null; // replace with the actual type if known
 };
 
 // const blueButton =

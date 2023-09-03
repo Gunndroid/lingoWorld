@@ -41,7 +41,7 @@ const Meetups: React.FC<MeetupsProps> = ({ meetups }) => {
             <div className="flex flex-col justify-center flex-1 p-6 bg-white">
               <h2 className="text-3xl font-bold">{event.title}</h2>
               <p className="my-2">{event.time}</p>
-              <p className="my-2">{event.location}</p>
+              <p className="my-2 italic">{event.location}</p>
               <p className="my-2">{event.description}</p>
             </div>
           </div>

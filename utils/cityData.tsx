@@ -21,7 +21,8 @@ export const cityData = [
           "https://images.unsplash.com/photo-1583244532610-2a234e7c3eca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80",
         title: "Trova",
         time: "Every Thursday at 9 PM",
-        location: "📍Trova · Honduras 5903",
+        // location: "📍Trova · Honduras 5903",
+        location: "📍 Avenida Santa Fe 1234, Recoleta, Buenos Aires, Argentina",
         description:
           "People from the community and newcomers gather weekly for conversations, networking, and idea-sharing. There's no cost to join, and all are welcome.",
       },
@@ -32,7 +33,8 @@ export const cityData = [
         title: "Palermo",
 
         time: "Every Wednesday at 9 PM",
-        location: "📍Baum Palermo · José A. Cabrera 4427",
+        // location: "📍Baum Palermo · José A. Cabrera 4427",
+        location: "📍 Avenida Santa Fe 1234, Recoleta, Buenos Aires, Argentina",
         description:
           "People from the community and newcomers gather weekly for conversations, networking, and idea-sharing. There's no cost to join, and all are welcome.",
       },
@@ -42,7 +44,8 @@ export const cityData = [
           "https://images.unsplash.com/photo-1542326891-50b14105a80b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2938&q=80",
         title: "San Telmo",
         time: "Every Tuesday at 9 PM",
-        location: "📍Temple Trastienda, Balcarce 470",
+        // location: "📍Temple Trastienda, Balcarce 470",
+        location: "📍 Avenida Santa Fe 1234, Recoleta, Buenos Aires, Argentina",
         description:
           "People from the community and newcomers gather weekly for conversations, networking, and idea-sharing. There's no cost to join, and all are welcome.",
       },
@@ -52,7 +55,8 @@ export const cityData = [
           "https://images.unsplash.com/photo-1531844251246-9a1bfaae09fc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3016&q=80",
         title: "Chacarita",
         time: "Every Friday at 9 PM",
-        location: "📍 Chacarita",
+        // location: "📍 Chacarita",
+        location: "📍 Avenida Santa Fe 1234, Recoleta, Buenos Aires, Argentina",
         description:
           "People from the community and newcomers gather weekly for conversations, networking, and idea-sharing. There's no cost to join, and all are welcome. ",
       },
@@ -183,8 +187,22 @@ export const cityData = [
         imgUrl: "https://source.unsplash.com/100x100/?portrait?6",
       },
     ],
+    media: [
+      "https://images.unsplash.com/photo-1563089145-599997674d42?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80",
+      "https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YWJzdHJhY3R8ZW58MHwwfDB8fHww&auto=format&fit=crop&w=800&q=60",
+      "https://images.unsplash.com/photo-1510906594845-bc082582c8cc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YWJzdHJhY3R8ZW58MHwwfDB8fHww&auto=format&fit=crop&w=800&q=60",
+      "https://images.unsplash.com/photo-1552083974-186346191183?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGFic3RyYWN0fGVufDB8MHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+      "https://images.unsplash.com/photo-1506259091721-347e791bab0f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YWJzdHJhY3R8ZW58MHwwfDB8fHww&auto=format&fit=crop&w=800&q=60",
+      "https://images.unsplash.com/photo-1519751138087-5bf79df62d5b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80",
+      "https://images.unsplash.com/photo-1563089145-599997674d42?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80",
+      "https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YWJzdHJhY3R8ZW58MHwwfDB8fHww&auto=format&fit=crop&w=800&q=60",
+      "https://images.unsplash.com/photo-1510906594845-bc082582c8cc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YWJzdHJhY3R8ZW58MHwwfDB8fHww&auto=format&fit=crop&w=800&q=60",
+      "https://images.unsplash.com/photo-1552083974-186346191183?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGFic3RyYWN0fGVufDB8MHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+      "https://images.unsplash.com/photo-1506259091721-347e791bab0f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YWJzdHJhY3R8ZW58MHwwfDB8fHww&auto=format&fit=crop&w=800&q=60",
+      "https://images.unsplash.com/photo-1519751138087-5bf79df62d5b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80",
+    ],
     // swaps: [],
-    // media: [],
+
     // avatars: [],
   },
   // Cordoba
@@ -200,7 +218,8 @@ export const cityData = [
         image: "https://source.unsplash.com/random/?yellow",
         title: "Cordoba",
         time: "Every Wednesday at 9 PM",
-        location: "📍BroBar · Belgrano 647",
+        // location: "📍BroBar · Belgrano 647",
+        location: "📍 Avenida Santa Fe 1234, Recoleta, Buenos Aires, Argentina",
         description:
           "People from the community and newcomers gather weekly for conversations, networking, and idea-sharing. There's no cost to join, and all are welcome.",
       },
@@ -229,7 +248,8 @@ export const cityData = [
 
         title: "La Plata",
         time: "Every Wednesday at 8 PM",
-        location: "📍Antares · C.56 818",
+        // location: "📍Antares · C.56 818",
+        location: "📍 Avenida Santa Fe 1234, Recoleta, Buenos Aires, Argentina",
         description:
           "People from the community and newcomers gather weekly for conversations, networking, and idea-sharing. There's no cost to join, and all are welcome.",
       },
@@ -258,7 +278,8 @@ export const cityData = [
 
         title: "Monterrey",
         time: "Every Thursday at 7 PM",
-        location: "📍BerlinPlatz",
+        // location: "📍BerlinPlatz",
+        location: "📍 Avenida Santa Fe 1234, Recoleta, Buenos Aires, Argentina",
         description:
           "People from the community and newcomers gather weekly for conversations, networking, and idea-sharing. There's no cost to join, and all are welcome.",
       },
@@ -287,7 +308,8 @@ export const cityData = [
 
         title: "Le Plateau",
         time: "Every Wednesday at 7 PM",
-        location: "📍Clébard · 4557 Rue Saint-Denis",
+        // location: "📍Clébard · 4557 Rue Saint-Denis",
+        location: "📍 Avenida Santa Fe 1234, Recoleta, Buenos Aires, Argentina",
         description:
           "Meeting point for locals and expats. Every week, meet new people and share ideas. It's free and everyone is welcome",
       },
@@ -317,7 +339,8 @@ export const cityData = [
 
         title: "Ipanema Beach Hostel",
         time: "Every Thursday at 7 PM",
-        location: "📍R. Paul Redfern, 37",
+        // location: "📍R. Paul Redfern, 37",
+        location: "📍 Avenida Santa Fe 1234, Recoleta, Buenos Aires, Argentina",
         description:
           "People from the community and newcomers gather weekly for conversations, networking, and idea-sharing. There's no cost to join, and all are welcome.",
       },
@@ -328,7 +351,8 @@ export const cityData = [
 
         title: "Botafogo",
         time: "Every Tuesday at 7 PM",
-        location: "📍Jungle Garden Pub · R. Martins Ferreira, 48",
+        // location: "📍Jungle Garden Pub · R. Martins Ferreira, 48",
+        location: "📍 Avenida Santa Fe 1234, Recoleta, Buenos Aires, Argentina",
         description:
           "People from the community and newcomers gather weekly for conversations, networking, and idea-sharing. There's no cost to join, and all are welcome.",
       },
@@ -409,7 +433,8 @@ export const cityData = [
 
         title: "Thao Dien",
         time: "Every Thursday at 7 PM",
-        location: "📍SOMA · 6 Lê Văn Miến",
+        // location: "📍SOMA · 6 Lê Văn Miến",
+        location: "📍 Avenida Santa Fe 1234, Recoleta, Buenos Aires, Argentina",
         description:
           "People from the community and newcomers gather weekly for conversations, networking, and idea-sharing. There's no cost to join, and all are welcome.",
       },
@@ -439,7 +464,8 @@ export const cityData = [
 
         title: "Geneva",
         time: "Every Thursday at 6 PM",
-        location: "Bd Carl-Vogt 20, 1205 Genève",
+        // location: "Bd Carl-Vogt 20, 1205 Genève",
+        location: "📍 Avenida Santa Fe 1234, Recoleta, Buenos Aires, Argentina",
         description:
           "People from the community and newcomers gather weekly for conversations, networking, and idea-sharing. There's no cost to join, and all are welcome.",
       },
@@ -470,7 +496,8 @@ export const cityData = [
 
         title: "Paris",
         time: "Every Thursday at 7 PM",
-        location: "📍 La MaiZon 123 Rue Oberkampf",
+        // location: "📍 La MaiZon 123 Rue Oberkampf",
+        location: "📍 Avenida Santa Fe 1234, Recoleta, Buenos Aires, Argentina",
         description:
           "People from the community and newcomers gather weekly for conversations, networking, and idea-sharing. There's no cost to join, and all are welcome.",
       },

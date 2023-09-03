@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
           </a> */}
         </p>
         <p className="break-words ">
-          <a href="mailto:talent@demo.org">talent@demo.org</a>
+          <a href="mailto:talent@LingoWorld.org">talent@LingoWorld.org</a>
           {/* <a href="mailto:talent@mundolingo.org">talent@mundolingo.org</a> */}
         </p>
       </div>
