@@ -4,7 +4,7 @@ type MediaListProps = {
 
 const MediaList: React.FC<MediaListProps> = ({ media }) => {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+    <div className="grid grid-cols-2 md:grid-cols-3 gap-4 m-2">
       {media.map((item, index) => (
         <div key={index}>
           <img
