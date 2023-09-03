@@ -197,7 +197,7 @@ export const cityData = [
       "https://images.unsplash.com/photo-1547492411-4932ec1bab31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2887&q=80",
     meetups: [
       {
-        image: "https://source.unsplash.com/random/?group",
+        image: "https://source.unsplash.com/random/?yellow",
         title: "ML Connect Cordoba",
         time: "Every Wednesday at 9 PM",
         location: "📍BroBar · Belgrano 647",
@@ -225,7 +225,7 @@ export const cityData = [
       {
         // image:
         //   "https://mundolingo-prod.s3.eu-west-1.amazonaws.com/uploads/14ae99e8-816d-4615-a43c-33d02f6289bc.jpeg",
-        image: "https://source.unsplash.com/random/?group",
+        image: "https://source.unsplash.com/random/?yellow",
 
         title: "ML Connect La Plata",
         time: "Every Wednesday at 8 PM",
@@ -254,7 +254,7 @@ export const cityData = [
       {
         // image:
         //   "https://mundolingo-prod.s3.eu-west-1.amazonaws.com/uploads/db9ec64e-7d94-45db-af83-ae96d5672c9e.jpeg",
-        image: "https://source.unsplash.com/random/?group",
+        image: "https://source.unsplash.com/random/?yellow",
 
         title: "ML Connect Monterrey",
         time: "Every Thursday at 7 PM",
@@ -283,7 +283,7 @@ export const cityData = [
       {
         // image:
         //   "https://mundolingo-prod.s3.eu-west-1.amazonaws.com/uploads/2996de84-1a45-40b2-b2f5-d8a11a7337cf.jpeg",
-        image: "https://source.unsplash.com/random/?group",
+        image: "https://source.unsplash.com/random/?yellow",
 
         title: "ML Connect Le Plateau",
         time: "Every Wednesday at 7 PM",
@@ -313,7 +313,7 @@ export const cityData = [
       {
         // image:
         //   "https://mundolingo-prod.s3.eu-west-1.amazonaws.com/uploads/8a386ceb-0aa1-4a33-874d-a5ef682853ff.jpeg",
-        image: "https://source.unsplash.com/random/?group",
+        image: "https://source.unsplash.com/random/?yellow",
 
         title: "Ipanema Beach Hostel",
         time: "Every Thursday at 7 PM",
@@ -324,7 +324,7 @@ export const cityData = [
       {
         // image:
         //   "https://mundolingo-prod.s3.eu-west-1.amazonaws.com/uploads/6738b2bb-f1ff-412e-b48a-aa269a541bcc.png",
-        image: "https://source.unsplash.com/random/?group",
+        image: "https://source.unsplash.com/random/?yellow",
 
         title: "ML Connect Botafogo",
         time: "Every Tuesday at 7 PM",
@@ -405,7 +405,7 @@ export const cityData = [
       {
         // image:
         //   "https://mundolingo-prod.s3.eu-west-1.amazonaws.com/uploads/affd09bd-3e3a-4a06-a9bc-b7482e737f21.png",
-        image: "https://source.unsplash.com/random/?group",
+        image: "https://source.unsplash.com/random/?yellow",
 
         title: "ML Connect Thao Dien",
         time: "Every Thursday at 7 PM",
@@ -435,7 +435,7 @@ export const cityData = [
         // image:
         //   "https://mundolingo-prod.s3-eu-west-1.amazonaws.com/uploads/3018df76-fdb3-4a29-886d-7659847f1e50.png",
 
-        image: "https://source.unsplash.com/random/?group",
+        image: "https://source.unsplash.com/random/?yellow",
 
         title: "ML Connect Geneva",
         time: "Every Thursday at 6 PM",
@@ -466,7 +466,7 @@ export const cityData = [
       {
         // image:
         //   "https://mundolingo-prod.s3.eu-west-1.amazonaws.com/uploads/27c3a3b1-624f-4b00-83af-2a207c515256.jpeg",
-        image: "https://source.unsplash.com/random/?group",
+        image: "https://source.unsplash.com/random/?yellow",
 
         title: "ML Connect Paris",
         time: "Every Thursday at 7 PM",

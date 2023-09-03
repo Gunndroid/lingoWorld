@@ -11,6 +11,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap"
           rel="stylesheet"
         />
+        <link rel="icon" href="/icon.png" sizes="any" />
       </Head>
       <Component {...pageProps} />
     </>

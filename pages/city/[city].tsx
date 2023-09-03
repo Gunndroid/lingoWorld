@@ -192,23 +192,33 @@ const CityPage: React.FC = () => {
               ) : null}
             </div>
             <div id="members" className="">
-              {selected === "members" && cityInfo.members && (
+              {selected === "members" &&
+              cityInfo.members &&
+              cityInfo.members.length > 0 ? (
                 <MembersList members={cityInfo.members} />
-              )}
+              ) : selected === "members" ? (
+                <div className="text-center m-20">Nothing found...</div>
+              ) : null}
             </div>
 
             <div id="questions" className="">
-              {selected === "questions" && cityInfo.questions && (
-                // <QuestionsList questions={cityInfo.questions} />
+              {selected === "questions" &&
+              cityInfo.questions &&
+              cityInfo.questions.length > 0 ? (
                 <QuestionsList questions={cityInfo.questions} />
-              )}
+              ) : selected === "questions" ? (
+                <div className="text-center m-20">Nothing found...</div>
+              ) : null}
             </div>
 
             <div id="proposals" className="">
-              {selected === "proposals" && cityInfo.proposals && (
-                // <QuestionsList questions={cityInfo.questions} />
+              {selected === "proposals" &&
+              cityInfo.proposals &&
+              cityInfo.proposals.length > 0 ? (
                 <ProposalsList proposals={cityInfo.proposals} />
-              )}
+              ) : selected === "proposals" ? (
+                <div className="text-center m-20">Nothing found...</div>
+              ) : null}
             </div>
 
             <div id="media" className="lg:w-2/3 mx-auto">

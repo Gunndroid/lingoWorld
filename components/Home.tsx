@@ -58,7 +58,7 @@ const Home: React.FC = () => {
               <div className="relative z-10 flex flex-col justify-center flex-1 md:p-6 text-center">
                 <div>
                   <h2 className="text-white pb-10 md:text-7xl text-5xl text-center font-crimson-pro">
-                    Welcome to ML Connect <br /> Global Hub
+                    Welcome to ML <br /> Global Hub
                   </h2>
                   <h3 className="text-white pb-20 md:text-3xl text-2xl text-center font-crimson-pro">
                     Engage, Interact, and Grow with Our Community

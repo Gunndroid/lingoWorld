@@ -1,5 +1,5 @@
 // root/components/Meetups.tsx
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 type Meetup = {
   title: string;
@@ -14,6 +14,16 @@ type MeetupsProps = {
 };
 
 const Meetups: React.FC<MeetupsProps> = ({ meetups }) => {
+  const [imageUrls, setImageUrls] = useState<string[]>([]);
+
+  useEffect(() => {
+    const urls = meetups.map((meetup, index) => {
+      const randomNum = Math.floor(Math.random() * 100) + 1;
+      return `https://source.unsplash.com/random/?yellow,${randomNum}`;
+    });
+    setImageUrls(urls);
+  }, [meetups]);
+
   return (
     <>
       <div className="grid md:grid-cols-2 m-6 md:m-10 gap-4 md:gap-10">
@@ -23,7 +33,8 @@ const Meetups: React.FC<MeetupsProps> = ({ meetups }) => {
             className="flex flex-col overflow-hidden rounded-md shadow-sm border border-black  "
           >
             <img
-              src={event.image}
+              // src={event.image}
+              src={imageUrls[index]}
               alt="Meetup Image"
               className="h-60 dark:bg-gray-500"
             />
