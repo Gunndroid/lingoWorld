@@ -1,7 +1,5 @@
-import { useEffect, useState } from "react";
-
 type MediaListProps = {
-  media: { src: string; alt?: string }[];
+  media: string[];
 };
 
 const MediaList: React.FC<MediaListProps> = ({ media }) => {
@@ -9,7 +7,11 @@ const MediaList: React.FC<MediaListProps> = ({ media }) => {
     <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
       {media.map((item, index) => (
         <div key={index}>
-          <img className="h-auto max-w-full rounded-lg" src={item} alt="" />
+          <img
+            className="h-auto max-w-full rounded-lg"
+            src={item}
+            alt="gallery image lingoworld"
+          />
         </div>
       ))}
     </div>
